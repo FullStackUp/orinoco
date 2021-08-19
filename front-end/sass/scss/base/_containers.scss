@@ -1,0 +1,21 @@
+.containerWrapTheme{
+    border: 1px solid black;
+    height: 10rem;
+    width: 18rem;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+.xWrapCercle{
+    border: 1px solid $color-primary;
+    border-radius: 25px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 18rem;
+    top: 92px;
+    background-color: lighten($color: $color-primary, $amount: 30);
+}

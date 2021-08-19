@@ -1,0 +1,223 @@
+.containerWrapTheme, .wrapOriFurniture, .wrapOriCamara, .wrapOriTeddyBear {
+  border: 1px solid black;
+  height: 10rem;
+  width: 18rem;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.xWrapCercle {
+  border: 1px solid #e68a09;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  left: 18rem;
+  top: 92px;
+  background-color: #fbcd8d;
+}
+
+.blocHeaderLogoUserBasket {
+  display: flex;
+  justify-content: space-between;
+}
+.blocHeaderLogoUserBasket .blocLinkHeaderLogo {
+  justify-content: center;
+  align-content: center;
+}
+.blocHeaderLogoUserBasket .blocHeaderUserBasket {
+  display: flex;
+}
+
+.textOrinoco {
+  font-family: "Finger Paint", cursive, sans-serif;
+}
+
+.wrapOriTeddyBear {
+  font-family: "Finger Paint", cursive, sans-serif;
+}
+
+.wrapOriCamara {
+  font-family: "Finger Paint", cursive, sans-serif;
+}
+
+.wrapOriFurniture {
+  font-family: "Finger Paint", cursive, sans-serif;
+}
+
+.logoHeaderOrinoco {
+  font-family: "Finger Paint", cursive, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 375px;
+}
+
+#wrapHeaderMenu {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 3rem;
+  display: flex;
+  transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: absolute;
+}
+#wrapHeaderMenu .blocHeaderMenu {
+  background-color: #fef8f0;
+  height: 700px;
+  width: 330px;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: -17rem;
+  top: -47px;
+}
+#wrapHeaderMenu .blocHeaderMenu .fa-bars {
+  position: absolute;
+  right: -3rem;
+  top: 76px;
+  font-size: 25px;
+}
+#wrapHeaderMenu .blocHeaderMenu .titleWrapLogo {
+  margin-left: 16px;
+}
+#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart {
+  font-size: 20px;
+}
+#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart .fa-shopping-cart {
+  background: -webkit-linear-gradient(left, #e68a09, #8f5bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#wrapHeaderMenu:not(:target) {
+  transform: translate3d(-335px, 0, 0);
+}
+
+#wrapHeaderMenu:target {
+  transform: translate3d(0, 0, 0);
+}
+
+#open,
+#close {
+  text-align: right;
+  display: block;
+}
+
+#wrapHeaderMenu:target #open,
+#wrapHeaderMenu:not(:target) #close {
+  display: none;
+}
+
+#wrapHeaderMenu:target #open {
+  display: none;
+}
+
+img {
+  height: 85%;
+  width: 100%;
+  opacity: 60%;
+}
+
+#header {
+  min-width: 375px;
+  height: 135px;
+  background-color: #f3e8f1;
+}
+#header a {
+  text-decoration: none;
+}
+#header a:focus {
+  color: black;
+}
+#header a:visited {
+  color: black;
+}
+#header .blocHeaderLogoUserBasket {
+  height: 4rem;
+  align-items: center;
+  padding-right: 5px;
+}
+#header .blocHeaderLogoUserBasket .blocHeaderLogo {
+  margin-left: 5px;
+  display: flex;
+}
+#header .blocHeaderLogoUserBasket .blocHeaderLogo .iconeHeaderBars {
+  font-size: 25px;
+}
+#header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo {
+  margin-left: 5px;
+}
+#header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo .logoHeaderOrinoco {
+  font-size: 25px;
+}
+#header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo .iconeHeaderCart {
+  font-size: 25px;
+}
+#header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo .iconeHeaderCart .fa-shopping-cart {
+  background: -webkit-linear-gradient(left, #e68a09, #8f5bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#header .blocLinkHeaderUser {
+  padding-right: 1rem;
+}
+#header .blocLinkHeaderUser .textHeaderUser {
+  font-size: 16px;
+}
+#header .blocLinkHeaderUser .iconeHeaderUser {
+  font-size: 16px;
+  color: #f7f3ff;
+  border: 1px solid #8f5bfe;
+  border-radius: 70%;
+  padding: 5px;
+  background-color: #6c28fe;
+}
+#header .textHeaderBasket {
+  font-size: 16px;
+}
+#header .iconeHeaderBasket {
+  font-size: 16px;
+  color: #844f05;
+}
+#header .blocHeaderSearch {
+  display: flex;
+  justify-content: center;
+}
+#header .blocHeaderSearch input {
+  height: 50px;
+  width: 60%;
+  font-size: 16px;
+  border: none;
+  background-color: #fbcd8d;
+  border-radius: 10px 0px 0px 10px;
+  padding: 16px;
+}
+#header .blocHeaderSearch input:focus {
+  outline: none;
+}
+#header .blocHeaderSearch .iconeHeaderSearch {
+  border-radius: 0px 10px 10px 0px;
+  height: 50px;
+  width: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 18px;
+  background-color: #b28efe;
+}
+#header .blocHeaderSearch .iconeHeaderSearch:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
