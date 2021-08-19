@@ -131,7 +131,7 @@ img {
 #header {
   min-width: 375px;
   height: 135px;
-  background-color: #f3e8f1;
+  background-color: #f7f3ff;
 }
 #header a {
   text-decoration: none;
@@ -172,21 +172,19 @@ img {
   padding-right: 1rem;
 }
 #header .blocLinkHeaderUser .textHeaderUser {
-  font-size: 16px;
+  font-size: 20px;
 }
 #header .blocLinkHeaderUser .iconeHeaderUser {
-  font-size: 16px;
-  color: #f7f3ff;
-  border: 1px solid #8f5bfe;
-  border-radius: 70%;
+  font-size: 20px;
+  color: #a074fe;
+  border-radius: 10px;
   padding: 5px;
-  background-color: #6c28fe;
 }
 #header .textHeaderBasket {
-  font-size: 16px;
+  font-size: 20px;
 }
 #header .iconeHeaderBasket {
-  font-size: 16px;
+  font-size: 20px;
   color: #844f05;
 }
 #header .blocHeaderSearch {

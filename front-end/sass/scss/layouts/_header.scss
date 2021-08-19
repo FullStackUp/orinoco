@@ -77,7 +77,7 @@ body{
 #header{
     min-width: 375px;
     height: 135px;
-    background-color: $color-tertiary;
+    background-color: lighten($color: $color-secondary, $amount: 30);
     a{
         text-decoration: none;
     }
@@ -116,22 +116,20 @@ body{
         .blocLinkHeaderUser{
             padding-right: 1rem;
             .textHeaderUser{
-            font-size: 16px;
+            font-size: 20px;
             }
             .iconeHeaderUser{
-            font-size: 16px;
-            color: lighten($color: $color-secondary, $amount: 30%);
-            border: 1px solid $color-secondary;
-            border-radius: 70%;
+            font-size: 20px;
+            color: lighten($color: $color-secondary, $amount: 5%);
+            border-radius: 10px;
             padding: 5px;
-            background-color: darken($color: $color-secondary, $amount: 10%);
             }
         }
         .textHeaderBasket{
-            font-size: 16px;
+            font-size: 20px;
         }
         .iconeHeaderBasket{
-            font-size: 16px;
+            font-size: 20px;
             color: darken($color: $color-primary, $amount: 20%);
         }
 
