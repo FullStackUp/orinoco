@@ -12,7 +12,7 @@ body{
     transition: transform .2s cubic-bezier(.25, .1, .25, 1);
     position: absolute;
     .blocHeaderMenu {
-      background-color: lighten($color: $color-primary, $amount: 50);
+      background-color: lighten($color: $color-primary, $amount: 46);
       height: 700px;
       width: 330px;
       display:inline-block;
@@ -34,7 +34,7 @@ body{
         text-decoration: none;
         display: block;
         .iconeHeaderCart{
-          font-size: 20px;
+          font-size: 25px;
           .fa-shopping-cart{
             background: -webkit-linear-gradient(left,$color-primary,$color-secondary);
             -webkit-background-clip: text;
@@ -69,9 +69,11 @@ body{
   }
 
   img{
-    height: 85%;
+    height: 100%;
     width: 100%;
-    opacity: 60%;
+    opacity: 80%;
+    position: relative;
+    border-radius: 23px;
   }
   
 #header{
