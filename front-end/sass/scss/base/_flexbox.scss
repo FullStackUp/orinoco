@@ -9,3 +9,22 @@
     display: flex;
     }
 }
+
+.blocWrapOriItems{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+.linkSupportFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reseauxSociauxFooter ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

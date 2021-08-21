@@ -4,35 +4,38 @@ body{
     min-width: 375px;
 }
 
-#wrapHeaderMenu {
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 3rem;
-    display: flex;
-    transition: transform .2s cubic-bezier(.25, .1, .25, 1);
-    position: absolute;
-    .blocHeaderMenu {
-      background-color: lighten($color: $color-primary, $amount: 46);
-      height: 700px;
-      width: 330px;
-      display:inline-block;
-      vertical-align:top;
-      position: absolute;
-      right: -17rem;
-      top: -47px;
-      .fa-bars{
-        position: absolute;
-        right: -3rem;
-        top: 76px;
+#header{
+  min-width: 375px;
+  height: 135px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 2px solid $color-secondary;
+  background-color: lighten($color: $color-secondary, $amount: 28);
+  a{
+    text-decoration: none;
+  }
+  a:focus{
+    color: black;
+  }
+  a:visited{
+    color: black;
+  }
+  .blocHeaderLogoUserBasket{
+    height: 4rem;
+    align-items: center;
+    padding-right: 5px;
+    .blocHeaderLogo{
+      margin-left: 5px;
+      display: flex;
+      .iconeHeaderBars{
         font-size: 25px;
       }
-      .titleWrapLogo{
-        margin-left: 16px;
-      }
-      .navHeaderMenu a {
-        color: black;
-        text-decoration: none;
-        display: block;
+      .blocLinkHeaderLogo{
+        margin-left: 5px;
+        .logoHeaderOrinoco{
+          font-size: 25px;
+        }
         .iconeHeaderCart{
           font-size: 25px;
           .fa-shopping-cart{
@@ -42,127 +45,55 @@ body{
           }
         }
       }
+    }      
+  }
+  .blocLinkHeaderUser{
+    padding-right: 1rem;
+    .textHeaderUser{
+      font-size: 20px;
+    }
+    .iconeHeaderUser{
+      font-size: 20px;
+      color: lighten($color: $color-secondary, $amount: 5%);
+      border-radius: 10px;
+      padding: 5px;
     }
   }
-  
-  #wrapHeaderMenu:not(:target) {
-    transform: translate3d(-335px, 0, 0);
+  .textHeaderBasket{
+    font-size: 20px;
   }
-  
-  #wrapHeaderMenu:target {
-    transform: translate3d(0, 0, 0);
+  .iconeHeaderBasket{
+    font-size: 20px;
+    color: darken($color: $color-primary, $amount: 20%);
   }
-  
-  #open,
-  #close {
-    text-align: right;
-    display: block;
-  }
-  
-  #wrapHeaderMenu:target #open,
-  #wrapHeaderMenu:not(:target) #close {
-    display: none;
-  }
-  
-  #wrapHeaderMenu:target #open {
-    display: none;
-  }
-
-  img{
-    height: 100%;
-    width: 100%;
-    opacity: 80%;
-    position: relative;
-    border-radius: 23px;
-  }
-  
-#header{
-    min-width: 375px;
-    height: 135px;
-    background-color: lighten($color: $color-secondary, $amount: 30);
-    a{
-        text-decoration: none;
+  .blocHeaderSearch{
+    display: flex;
+    justify-content: center;
+    input{
+      height: 50px;
+      width: 60%;
+      font-size: 16px;
+      border: none;
+      background-color: lighten($color: $color-primary, $amount: 30%);
+      border-radius: 10px 0px 0px 10px;
+      padding: 16px;
     }
-    a:focus{
-        color: black;
+    input:focus{
+      outline: none;
     }
-    a:visited{
-        color: black;
+    .iconeHeaderSearch{
+      border-radius: 0px 10px 10px 0px;
+      height: 50px;
+      width: 60px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      font-size: 18px;
+      background-color: lighten($color: $color-secondary, $amount: 10%);
     }
-    .blocHeaderLogoUserBasket{
-        height: 4rem;
-        align-items: center;
-        padding-right: 5px;
-        .blocHeaderLogo{
-            margin-left: 5px;
-            display: flex;
-            .iconeHeaderBars{
-                font-size: 25px;
-            }
-            .blocLinkHeaderLogo{
-                margin-left: 5px;
-                .logoHeaderOrinoco{
-                    font-size: 25px;
-                    }
-                .iconeHeaderCart{
-                    font-size: 25px;
-                    .fa-shopping-cart{
-                        background: -webkit-linear-gradient(left,$color-primary,$color-secondary);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-            }
-        }      
+    .iconeHeaderSearch:hover{
+      cursor: pointer;
     }
-        .blocLinkHeaderUser{
-            padding-right: 1rem;
-            .textHeaderUser{
-            font-size: 20px;
-            }
-            .iconeHeaderUser{
-            font-size: 20px;
-            color: lighten($color: $color-secondary, $amount: 5%);
-            border-radius: 10px;
-            padding: 5px;
-            }
-        }
-        .textHeaderBasket{
-            font-size: 20px;
-        }
-        .iconeHeaderBasket{
-            font-size: 20px;
-            color: darken($color: $color-primary, $amount: 20%);
-        }
-
-    .blocHeaderSearch{
-        display: flex;
-        justify-content: center;
-        input{
-            height: 50px;
-            width: 60%;
-            font-size: 16px;
-            border: none;
-            background-color: lighten($color: $color-primary, $amount: 30%);
-            border-radius: 10px 0px 0px 10px;
-            padding: 16px;
-        }
-        input:focus{
-            outline: none;
-        }
-        .iconeHeaderSearch{
-            border-radius: 0px 10px 10px 0px;
-            height: 50px;
-            width: 60px;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            font-size: 18px;
-            background-color: lighten($color: $color-secondary, $amount: 10%);
-        }
-        .iconeHeaderSearch:hover{
-            cursor: pointer;
-        }
-    }
+  }
 }

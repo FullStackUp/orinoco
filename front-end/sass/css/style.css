@@ -1,40 +1,3 @@
-.wrapOriCards {
-  border: 2px solid #e68a09;
-  border-radius: 25px;
-  height: 10rem;
-  width: 18rem;
-  margin-bottom: 16px;
-  margin-left: 16px;
-}
-
-.xWrapCercle {
-  border: 2px solid #e68a09;
-  border-radius: 25px;
-  height: 25px;
-  width: 25px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-  left: 18rem;
-  top: 92px;
-  background-color: #fbcd8d;
-}
-
-.wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures {
-  position: absolute;
-  z-index: 1;
-  border: 2px solid #e68a09;
-  border-radius: 25px 25px 25px 0px;
-  background-color: #fbcd8d;
-  font-size: 14px;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-left: -2px;
-  margin-top: -2px;
-  height: 21px;
-}
-
 .blocHeaderLogoUserBasket {
   display: flex;
   justify-content: space-between;
@@ -45,6 +8,25 @@
 }
 .blocHeaderLogoUserBasket .blocHeaderUserBasket {
   display: flex;
+}
+
+.blocWrapOriItems {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.linkSupportFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reseauxSociauxFooter ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .textOrinoco {
@@ -59,88 +41,24 @@
   font-family: "Finger Paint", cursive, sans-serif;
 }
 
+.titleOriTeddies, .titleOriCameras, .titleOriFurnitures {
+  font-family: "Finger Paint", cursive, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   min-width: 375px;
 }
 
-#wrapHeaderMenu {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 3rem;
-  display: flex;
-  transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
-  position: absolute;
-}
-#wrapHeaderMenu .blocHeaderMenu {
-  background-color: #fef0dc;
-  height: 700px;
-  width: 330px;
-  display: inline-block;
-  vertical-align: top;
-  position: absolute;
-  right: -17rem;
-  top: -47px;
-}
-#wrapHeaderMenu .blocHeaderMenu .fa-bars {
-  position: absolute;
-  right: -3rem;
-  top: 76px;
-  font-size: 25px;
-}
-#wrapHeaderMenu .blocHeaderMenu .titleWrapLogo {
-  margin-left: 16px;
-}
-#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a {
-  color: black;
-  text-decoration: none;
-  display: block;
-}
-#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart {
-  font-size: 25px;
-}
-#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart .fa-shopping-cart {
-  background: -webkit-linear-gradient(left, #e68a09, #8f5bfe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#wrapHeaderMenu:not(:target) {
-  transform: translate3d(-335px, 0, 0);
-}
-
-#wrapHeaderMenu:target {
-  transform: translate3d(0, 0, 0);
-}
-
-#open,
-#close {
-  text-align: right;
-  display: block;
-}
-
-#wrapHeaderMenu:target #open,
-#wrapHeaderMenu:not(:target) #close {
-  display: none;
-}
-
-#wrapHeaderMenu:target #open {
-  display: none;
-}
-
-img {
-  height: 100%;
-  width: 100%;
-  opacity: 80%;
-  position: relative;
-  border-radius: 23px;
-}
-
 #header {
   min-width: 375px;
   height: 135px;
-  background-color: #f7f3ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 2px solid #8f5bfe;
+  background-color: #f0e9ff;
 }
 #header a {
   text-decoration: none;
@@ -225,6 +143,209 @@ img {
 }
 #header .blocHeaderSearch .iconeHeaderSearch:hover {
   cursor: pointer;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.blocImgOriBook {
+  height: 29rem;
+  width: 100%;
+  margin-top: 11rem;
+}
+
+.blocImgOriTextil {
+  height: 20rem;
+  width: 100%;
+  margin-top: -11rem;
+}
+
+img {
+  height: 15rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.welcomeSection {
+  border: 2px solid #e68a09;
+  background-color: #fce3bf;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.oriTeddiesCards {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.oriTeddiesCards .oriTeddiesSection {
+  margin-top: 32px;
+  border: 2px solid #8f5bfe;
+  background-color: #e6daff;
+}
+.oriTeddiesCards .oriTeddiesSection a {
+  text-decoration: none;
+}
+
+.oriCamerasCards {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.oriCamerasCards .oriCamerasSection {
+  margin-top: 32px;
+  border: 2px solid #8f5bfe;
+  background-color: #e6daff;
+}
+.oriCamerasCards .oriCamerasSection a {
+  text-decoration: none;
+}
+
+.oriFurnituresCards {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.oriFurnituresCards .oriFurnituresSection {
+  margin-top: 32px;
+  border: 2px solid #8f5bfe;
+  background-color: #e6daff;
+}
+.oriFurnituresCards .oriFurnituresSection a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  margin-top: 16px;
+  height: 16rem;
+}
+footer ul li {
+  list-style-type: none;
+}
+
+.linkSupportFooter {
+  margin-right: 30px;
+  color: white;
+}
+.linkSupportFooter a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.reseauxSociauxFooter ul {
+  padding-right: 8rem;
+}
+.reseauxSociauxFooter ul a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+.mentionLegalFooter {
+  margin-top: 3rem;
+  text-align: center;
+  margin-right: 30px;
+  color: white;
+}
+
+#wrapHeaderMenu {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 3rem;
+  display: flex;
+  transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: absolute;
+}
+#wrapHeaderMenu .blocHeaderMenu {
+  background-color: #fef0dc;
+  height: 509px;
+  width: 213px;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: -10rem;
+  top: -43px;
+  opacity: 90%;
+}
+#wrapHeaderMenu .blocHeaderMenu .fa-bars {
+  position: absolute;
+  right: -10rem;
+  top: 71px;
+  font-size: 25px;
+}
+#wrapHeaderMenu .blocHeaderMenu .xWrapCercle {
+  border: 2px solid #e68a09;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 11rem;
+  margin-top: -5px;
+  margin-bottom: -2rem;
+  background-color: #fbcd8d;
+}
+#wrapHeaderMenu .blocHeaderMenu .blocWrapTitle {
+  border-bottom: 2px solid #e68a09;
+}
+#wrapHeaderMenu .blocHeaderMenu .titleWrapLogo {
+  margin-left: 16px;
+  padding-bottom: 16px;
+  font-size: 25px;
+  color: #fdedd7;
+}
+#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a {
+  /*text-decoration: none;*/
+  display: block;
+}
+#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart {
+  font-size: 25px;
+}
+#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart .fa-shopping-cart {
+  background: -webkit-linear-gradient(left, #e68a09, #8f5bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures {
+  border: 2px solid #e68a09;
+  border-radius: 25px;
+  background-color: #fbcd8d;
+  font-size: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: 16px;
+}
+
+#wrapHeaderMenu:not(:target) {
+  transform: translate3d(-335px, 0, 0);
+}
+
+#wrapHeaderMenu:target {
+  transform: translate3d(0, 0, 0);
+}
+
+#open, #close {
+  text-align: right;
+  display: block;
+}
+
+#wrapHeaderMenu:target #open, #wrapHeaderMenu:not(:target) #close {
+  display: none;
+}
+
+#wrapHeaderMenu:target #open {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
