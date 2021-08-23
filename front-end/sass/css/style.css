@@ -20,15 +20,32 @@
 .linkSupportFooter {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .reseauxSociauxFooter ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
+@keyframes icone-full {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .textOrinoco {
   font-family: "Finger Paint", cursive, sans-serif;
 }
@@ -57,7 +74,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 2px solid #8f5bfe;
+  border-bottom: 2px solid #8F5BFE;
   background-color: #f0e9ff;
 }
 #header a {
@@ -91,7 +108,7 @@ body {
   font-size: 25px;
 }
 #header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo .iconeHeaderCart .fa-shopping-cart {
-  background: -webkit-linear-gradient(left, #e68a09, #8f5bfe);
+  background: -webkit-linear-gradient(left, #E68A09, #8F5BFE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -149,6 +166,11 @@ main {
   margin: 0;
   padding: 0;
 }
+main .blocMainAll {
+  max-width: 1345px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .blocImgOriBook {
   height: 29rem;
@@ -169,7 +191,7 @@ img {
 }
 
 .welcomeSection {
-  border: 2px solid #e68a09;
+  border: 2px solid #E68A09;
   background-color: #fce3bf;
   text-align: center;
   margin-top: 32px;
@@ -182,7 +204,7 @@ img {
 }
 .oriTeddiesCards .oriTeddiesSection {
   margin-top: 32px;
-  border: 2px solid #8f5bfe;
+  border: 2px solid #8F5BFE;
   background-color: #e6daff;
 }
 .oriTeddiesCards .oriTeddiesSection a {
@@ -196,7 +218,7 @@ img {
 }
 .oriCamerasCards .oriCamerasSection {
   margin-top: 32px;
-  border: 2px solid #8f5bfe;
+  border: 2px solid #8F5BFE;
   background-color: #e6daff;
 }
 .oriCamerasCards .oriCamerasSection a {
@@ -210,7 +232,7 @@ img {
 }
 .oriFurnituresCards .oriFurnituresSection {
   margin-top: 32px;
-  border: 2px solid #8f5bfe;
+  border: 2px solid #8F5BFE;
   background-color: #e6daff;
 }
 .oriFurnituresCards .oriFurnituresSection a {
@@ -222,22 +244,32 @@ footer {
   margin-top: 16px;
   height: 16rem;
 }
+footer .blocFooterAll {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 footer ul li {
   list-style-type: none;
 }
 
-.linkSupportFooter {
-  margin-right: 30px;
-  color: white;
-}
 .linkSupportFooter a {
   text-decoration: none;
   font-size: 20px;
   color: white;
+  background: linear-gradient(to top, #8F5BFE 0%, #8F5BFE 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
 }
 
-.reseauxSociauxFooter ul {
-  padding-right: 8rem;
+.linkSupportFooter a:hover {
+  background-size: 100% 100%;
+}
+
+.reseauxSociauxFooter ul li {
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 .reseauxSociauxFooter ul a {
   text-decoration: none;
@@ -245,10 +277,102 @@ footer ul li {
   color: white;
 }
 
+.blocSocialFacebook li:hover {
+  cursor: pointer;
+  border-color: #0065FC;
+}
+
+.iconeFacebook {
+  position: absolute;
+  box-sizing: border-box;
+}
+.iconeFacebook .fa {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconeFacebook .fa-facebook:hover {
+  font-weight: bold;
+  -moz-animation: icone-full 0.8s;
+  -webkit-animation: icone-full 0.8s;
+  animation: icone-full 0.8s;
+  background: linear-gradient(#0065FC, #5DADE2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blocSocialInstagram li:hover {
+  cursor: pointer;
+  border-color: #FFE436;
+}
+
+.iconeInstagram {
+  position: absolute;
+  box-sizing: border-box;
+}
+.iconeInstagram .fa {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconeInstagram .fa-instagram:hover {
+  font-weight: bold;
+  -moz-animation: icone-full 0.8s;
+  -webkit-animation: icone-full 0.8s;
+  animation: icone-full 0.8s;
+  background: linear-gradient(#FFE436, #8F5BFE);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blocSocialTwitter li:hover {
+  cursor: pointer;
+  border-color: #77B5FE;
+}
+
+.iconeTwitter {
+  position: absolute;
+  box-sizing: border-box;
+}
+.iconeTwitter .fa {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconeTwitter .fa-twitter:hover {
+  font-weight: bold;
+  -moz-animation: icone-full 0.8s;
+  -webkit-animation: icone-full 0.8s;
+  animation: icone-full 0.8s;
+  background: linear-gradient(#77B5FE, #00FFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .mentionLegalFooter {
   margin-top: 3rem;
   text-align: center;
-  margin-right: 30px;
   color: white;
 }
 
@@ -278,7 +402,7 @@ footer ul li {
   font-size: 25px;
 }
 #wrapHeaderMenu .blocHeaderMenu .xWrapCercle {
-  border: 2px solid #e68a09;
+  border: 2px solid #E68A09;
   border-radius: 25px;
   height: 25px;
   width: 25px;
@@ -291,7 +415,7 @@ footer ul li {
   background-color: #fbcd8d;
 }
 #wrapHeaderMenu .blocHeaderMenu .blocWrapTitle {
-  border-bottom: 2px solid #e68a09;
+  border-bottom: 2px solid #E68A09;
 }
 #wrapHeaderMenu .blocHeaderMenu .titleWrapLogo {
   margin-left: 16px;
@@ -312,13 +436,13 @@ footer ul li {
   font-size: 25px;
 }
 #wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart .fa-shopping-cart {
-  background: -webkit-linear-gradient(left, #e68a09, #8f5bfe);
+  background: -webkit-linear-gradient(left, #E68A09, #8F5BFE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures {
-  border: 2px solid #e68a09;
+  border: 2px solid #E68A09;
   border-radius: 25px;
   background-color: #fbcd8d;
   font-size: 20px;
