@@ -1,139 +1,146 @@
 footer {
-    background-color: black;
+  background-color: black;
+  margin-top: 16px;
+  height: 19rem;
+  .blocFooterAll {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul {
     margin-top: 16px;
-    height: 16rem;
-    .blocFooterAll{
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    ul li{
-        list-style-type: none;
-    }
+  }
+  ul li {
+    list-style-type: none;
+  }
 }
 
-.linkSupportFooter a{
-      text-decoration: none;
-      font-size: 20px;
-      color: white;
-      background: linear-gradient(to top, $color-secondary 0%, $color-secondary 10%, transparent 10.01%) no-repeat /*background-size*/ left bottom / 0 100%;
-      transition: background-size .5s;
+.linkSupportFooter a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(
+      to top,
+      $color-secondary 0%,
+      $color-secondary 10%,
+      transparent 10.01%
+    )
+    no-repeat /*background-size*/ left bottom / 0 100%;
+  transition: background-size 0.5s;
 }
 
 .linkSupportFooter a:hover {
-    background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
-.reseauxSociauxFooter ul{
-    li{
-        border: 3px solid white;
-        border-radius: 50%;
-        height: 50px;
-        width: 50px;
-    }
-    a{
-      text-decoration: none;
-      font-size: 30px;
-      color: white;
-    }
-}
-
-.blocSocialFacebook li:hover{
-    cursor: pointer;
-    border-color: $color-facebook;
-}
-
-.iconeFacebook{ 
-    position:absolute;
-    box-sizing: border-box;
-    .fa{
-        position:absolute;
-        font-size: 30px;
-        color: white; 
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fa-facebook:hover{ 
-        font-weight:bold;
-        -moz-animation: icone-full .8s;
-        -webkit-animation: icone-full .8s;
-        animation: icone-full .8s;
-        background:$color-iconeFacebook;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-
-.blocSocialInstagram li:hover{
-    cursor: pointer;
-    border-color: $color-instagram;
-}
-
-.iconeInstagram{ 
-    position:absolute;
-    box-sizing: border-box;
-    .fa{
-        position:absolute;
-        font-size: 30px;
-        color: white; 
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fa-instagram:hover{ 
-        font-weight:bold;
-        -moz-animation: icone-full .8s;
-        -webkit-animation: icone-full .8s;
-        animation: icone-full .8s;
-        background:$color-iconeInstagram;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-
-.blocSocialTwitter li:hover{
-    cursor: pointer;
-    border-color: $color-twitter;
-}
-.iconeTwitter{ 
-    position:absolute;
-    box-sizing: border-box;
-    .fa{
-        position:absolute;
-        font-size: 30px;
-        color: white; 
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fa-twitter:hover{ 
-        font-weight:bold;
-        -moz-animation: icone-full .8s;
-        -webkit-animation: icone-full .8s;
-        animation: icone-full .8s;
-        background:$color-iconeTwitter;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-.mentionLegalFooter{
-    margin-top: 3rem;
-    text-align: center;
+.reseauxSociauxFooter ul {
+  li {
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 30px;
     color: white;
+  }
+}
+
+.blocSocialFacebook li:hover {
+  cursor: pointer;
+  border-color: $color-facebook;
+}
+
+.iconeFacebook {
+  position: absolute;
+  box-sizing: border-box;
+  .fa {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-facebook:hover {
+    font-weight: bold;
+    -moz-animation: icone-full 0.8s;
+    -webkit-animation: icone-full 0.8s;
+    animation: icone-full 0.8s;
+    background: $color-iconeFacebook;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.blocSocialInstagram li:hover {
+  cursor: pointer;
+  border-color: $color-instagram;
+}
+
+.iconeInstagram {
+  position: absolute;
+  box-sizing: border-box;
+  .fa {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-instagram:hover {
+    font-weight: bold;
+    -moz-animation: icone-full 0.8s;
+    -webkit-animation: icone-full 0.8s;
+    animation: icone-full 0.8s;
+    background: $color-iconeInstagram;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.blocSocialTwitter li:hover {
+  cursor: pointer;
+  border-color: $color-twitter;
+}
+.iconeTwitter {
+  position: absolute;
+  box-sizing: border-box;
+  .fa {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-twitter:hover {
+    font-weight: bold;
+    -moz-animation: icone-full 0.8s;
+    -webkit-animation: icone-full 0.8s;
+    animation: icone-full 0.8s;
+    background: $color-iconeTwitter;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.mentionLegalFooter {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
 }
