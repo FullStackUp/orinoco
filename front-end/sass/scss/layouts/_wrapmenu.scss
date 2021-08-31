@@ -49,8 +49,10 @@
         width: 100%
       }
       .navHeaderMenu a {
-        /*text-decoration: none;*/
         display: block;
+        .textOrinoco{
+          font-family: 'Finger Paint',cursive, sans-serif;
+        }
         .iconeHeaderCart{
           font-size: 25px;
           .fa-shopping-cart{
@@ -64,6 +66,7 @@
   }
 
 .wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures{
+    font-family: 'Finger Paint',cursive, sans-serif; 
     border: 2px solid $color-primary;
     border-radius: 25px;
     background-color: lighten($color: $color-primary, $amount: 30);

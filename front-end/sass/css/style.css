@@ -46,22 +46,6 @@
     opacity: 1;
   }
 }
-.textOrinoco {
-  font-family: "Finger Paint", cursive, sans-serif;
-}
-
-.wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures {
-  font-family: "Finger Paint", cursive, sans-serif;
-}
-
-.logoHeaderOrinoco {
-  font-family: "Finger Paint", cursive, sans-serif;
-}
-
-.titleOriTeddies, .titleOriCameras, .titleOriFurnitures {
-  font-family: "Finger Paint", cursive, sans-serif;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -102,6 +86,7 @@ body {
   margin-left: 5px;
 }
 #header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo .logoHeaderOrinoco {
+  font-family: "Finger Paint", cursive, sans-serif;
   font-size: 25px;
 }
 #header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo .iconeHeaderCart {
@@ -206,6 +191,7 @@ img {
 }
 
 .oriTeddiesCards {
+  font-family: "Finger Paint", cursive, sans-serif;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -220,6 +206,7 @@ img {
 }
 
 .oriCamerasCards {
+  font-family: "Finger Paint", cursive, sans-serif;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -234,6 +221,7 @@ img {
 }
 
 .oriFurnituresCards {
+  font-family: "Finger Paint", cursive, sans-serif;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -249,7 +237,7 @@ img {
 
 footer {
   background-color: black;
-  margin-top: 10rem;
+  margin-top: 20rem;
   height: 16rem;
 }
 footer .blocFooterAll {
@@ -446,8 +434,10 @@ footer ul li {
   width: 100%;
 }
 #wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a {
-  /*text-decoration: none;*/
   display: block;
+}
+#wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .textOrinoco {
+  font-family: "Finger Paint", cursive, sans-serif;
 }
 #wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart {
   font-size: 25px;
@@ -459,6 +449,7 @@ footer ul li {
 }
 
 .wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures {
+  font-family: "Finger Paint", cursive, sans-serif;
   border: 2px solid #e68a09;
   border-radius: 25px;
   background-color: #fbcd8d;
@@ -487,6 +478,18 @@ footer ul li {
 
 #wrapHeaderMenu:target #open {
   display: none;
+}
+
+/****************************
+Debut _oriteddyarticles.html
+*****************************/
+#blocPageTeddies {
+  text-align: center;
+}
+
+#titlePageTeddy {
+  font-family: "Finger Paint", cursive, sans-serif;
+  margin-top: 20rem;
 }
 
 #blocSectionArticles {
@@ -545,5 +548,9 @@ footer ul li {
   justify-content: center;
   align-items: center;
 }
+
+/****************************
+Fin _oriteddyarticles.html
+*****************************/
 
 /*# sourceMappingURL=style.css.map */
