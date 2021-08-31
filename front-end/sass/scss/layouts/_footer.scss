@@ -1,7 +1,7 @@
 footer {
   background-color: black;
-  margin-top: 16px;
-  height: 19rem;
+  margin-top: 10rem;
+  height: 16rem;
   .blocFooterAll {
     max-width: 600px;
     margin-left: auto;
@@ -65,6 +65,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    left: -3px;
+    top: -3px;
   }
   .fa-facebook:hover {
     font-weight: bold;
@@ -96,6 +98,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    left: -2px;
+    top: -3px;
   }
   .fa-instagram:hover {
     font-weight: bold;
@@ -126,6 +130,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    left: -3px;
+    top: -3px;
   }
   .fa-twitter:hover {
     font-weight: bold;

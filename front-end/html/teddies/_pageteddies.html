@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../sass/css/style.css">
+    <link rel="stylesheet" href="/front-end/sass/css/style.css">
     <script src="https://kit.fontawesome.com/4dfeac96bc.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-    <title> Orinoco : Entreprise de commerce en ligne </title>
+
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" ></script>--> 
+    <title> OriTeddies : Les péluches pour tous</title>
 </head>
 
 <body>
@@ -20,7 +24,7 @@
           <a href="#wrapHeaderMenu" id="open"><i class="fas fa-bars"></i></a>
           <div class="xWrapCercle"><a href="#" id="close">×</a></div>
           <div class="blocWrapTitle">
-            <a href="#" class="titleWrapLogo">
+            <a href="../index.html" class="titleWrapLogo">
               Parcourir</br> 
               <span class="iconeHeaderCart">
                 <i class="fas fa-shopping-cart"></i>
@@ -29,9 +33,9 @@
             </a>
           </div>
           <div class="blocWrapOriItems">
-            <a href="./teddies/_pageteddies.html"><span class="wrapOriTeddies">OriTeddies</span> </a>
-            <a href="./index.html"><span class="wrapOriCameras">OriCameras</span></a>
-            <a href="./index.html"><span class="wrapOriFurnitures">OriFurnitures</span></a>
+            <a href="#"><span class="wrapOriTeddies">OriTeddies</span> </a>
+            <a href="../index.html"><span class="wrapOriCameras">OriCameras</span></a>
+            <a href="../index.html"><span class="wrapOriFurnitures">OriFurnitures</span></a>
           </div>
         </nav>
       </div>
@@ -40,7 +44,7 @@
     <div class="blocHeaderAll">
       <div class="blocHeaderLogoUserBasket">
         <div class="blocHeaderLogo">
-          <a href="#" class="blocLinkHeaderLogo">
+          <a href="../index.html" class="blocLinkHeaderLogo">
             <h1 class="iconeHeaderCart">
               <i class="fas fa-shopping-cart"></i>
               <span class="logoHeaderOrinoco">Orinoco</span>
@@ -67,70 +71,27 @@
     </div>
   </header>
 
-  <main id="main">
-    <div class="blocMainAll">
-      <section class="blocOriBook">
-        <article class="blocImgOriBook">
-          <figure>
-            <img src="../image/OriBook.png" alt="OriBook">
+  <main id="blocPageTeddies">
+    <!--<section id="blocSectionProducts">
+      <article class="allProducts">
+      </article>
+    
+    </section>-->
+  <template id="blocTemplateProducts">
+    <section id="blocSectionProducts">
+      <article id="blocCardProduct">
+        <a href="" id="linkCardProduct">
+          <figure id="figureCardProduct">
+              <img src="" id="imageCardProduct">
           </figure>
-        </article>
-      </section>
-      <section class="blocOriTextil">
-        <article class="blocImgOriTextil">
-          <figure>
-            <img src="../image/OriTextil.jpeg" alt="OriTextil">
-          </figure>
-        </article>
-      </section>
-
-      <section class="welcomeSection">
-        <article class="blocWelcomeSection">
-          <h2> Bienvenue sur notre site <strong>e-commerce</strong> : Orinoco</h2>
-          <p> Ici nous vous proposons une large choix de games, que ce soit des péluches pour enfant ou des caméras pour des professionnels ou encore des meubles pour des particuliers, sans oublier que bintôt il y aura tout types de vêtements ainsi qu'une large choix de livres pour tout publique, il ne vous manquera rien, il suffit de parcourir notre site...</p>
-        </article>
-      </section>
-
-      <a class="oriTeddiesCards" href="./teddies/_pageteddies.html">
-        <section class="oriTeddiesSection">
-          <h2 class="titleOriTeddies">OriTeddies</h2> 
-          <article>
-            <figure>
-              <img src="../image/teddy-bear-toy.jpeg" alt="Ours en péluche">
-            </figure> 
-          </article>
-        </section>
-      </a>
-
-      <a class="oriCamerasCards" href="./index.html">
-        <section class="oriCamerasSection">
-          <h2 class="titleOriTeddies">OriCameras</h2> 
-          <article>
-            <figure>
-              <img src="../image/camera.jpeg" alt="Caméras">
-            </figure> 
-          </article>
-        </section>
-      </a>
-
-      <a class="oriFurnituresCards" href="./index.html">
-        <section class="oriFurnituresSection">
-          <h2 class="titleOriFurnitures">OriFurnitures</h2> 
-          <article>
-            <figure>
-              <img src="../image/furniture.jpeg" alt="Meubles">
-            </figure> 
-          </article>
-        </section>
-      </a>
-
-      <section class="welcomeSection">
-        <article class="blocWelcomeSection">
-          <h2> Biographie</h2>
-          <p> Orinoco à vu le jour le 19 Juin 1998 par un Espagnol l'actuel Prisident porteur du même nom Mr Orinoco. Chez Orinoco la plupart de nos article sont confectionner par nous-même, afin de limiter la polution et pour offrir le meilleur qualité de nos produit. En ce qui concerne les autres article, ils sont mininusionner étudier et testés afin de vous offrir le meilleur qualité service</p>
-        </article>
-      </section>
-   </div>
+          <div class="detailsCardProduct">
+            <h2 id="titleCardProduct"></h2>
+            <p id="priceCardProduct"></p>
+          </div>
+        </a>
+      </article>
+    </section>
+  </template>
   </main>
 
   <footer>
@@ -190,7 +151,7 @@
       </div>
     </div>
   </footer>
-  
-<script src="../javascript/index.js"></script>
+<script src="/front-end/javascript/_pageoriteddiesproducts.js"></script>
+<!--<script src="/front-end/javascript/_pageteddies.js"></script>-->
 </body>
 </html>

@@ -1,40 +1,56 @@
-.allProducts {
-  margin-top: 10rem;
-}
-
 #blocSectionProducts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-top: 15rem;
+  margin-bottom: -8rem;
 }
 
-.teddiesProducts {
-  text-align: center;
-  margin-bottom: 5rem;
-  border: 5px solid $color-primary;
+#blocCardProduct {
+  border: 3px solid $color-primary;
   width: 50%;
-}
-.teddiesPicture img {
-  margin-bottom: 28px;
-  height: 14rem;
-  width: 100%;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.teddiesDetails {
-  background-color: lighten($color: $color-primary, $amount: 20);
-  height: 16rem;
-  margin-top: -32px;
-  padding-top: 10px;
-}
-
-.teddiesPrix {
-  font-size: 20px;
-}
-
-.btnBuy {
-  color: black;
+#linkCardProduct {
   text-decoration: none;
+  color: black;
+}
+
+#imageCardProduct {
+  width: 100%;
+}
+
+.detailsCardProduct {
+  display: grid;
+  /*row(rang) / column (col) */
+  grid-template: 1fr 1fr / repeat(2, 1fr);
+  background-color: lighten($color: $color-primary, $amount: 30);
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 16px;
+  margin-top: -4px;
+}
+
+#titleCardProduct {
+  grid-area: 1;
+  font-size: 25px;
+  border: 3px solid $color-primary;
+  background-color: $color-card;
+  padding: 5px;
+}
+
+#priceCardProduct {
+  /*debut row / debut col / fin row / fin col */
+  grid-area: 2 / 3 / 2 / -1;
   font-size: 20px;
+  margin-right: 20px;
+  margin-top: -5px;
+  border: 3px solid $color-primary;
+  background-color: $color-card;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }

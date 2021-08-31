@@ -1,75 +1,83 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 main {
-    margin: 0;
-    padding: 0;
-  .blocMainAll{
+  margin: 0;
+  padding: 0;
+  .blocMainAll {
     max-width: 1345px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.blocImgOriBook{
+.blocImgOriBook {
   height: 29rem;
   width: 100%;
   margin-top: 11rem;
 }
 
-.blocImgOriTextil{
+.blocImgOriTextil {
   height: 20rem;
   width: 100%;
   margin-top: -11rem;
 }
 
-img{
+img {
   height: 15rem;
   width: 100%;
   cursor: pointer;
 }
 
-.welcomeSection{
+.welcomeSection {
   border: 2px solid $color-primary;
   background-color: lighten($color: $color-primary, $amount: 40);
   text-align: center;
   margin-top: 32px;
 }
 
-.oriTeddiesCards{
+.oriTeddiesCards {
   text-align: center;
   text-decoration: none;
   color: black;
-  .oriTeddiesSection{
+  .oriTeddiesSection {
     margin-top: 32px;
     border: 2px solid $color-secondary;
     background-color: lighten($color: $color-secondary, $amount: 25);
-    a{
+    a {
       text-decoration: none;
     }
   }
 }
 
-.oriCamerasCards{
+.oriCamerasCards {
   text-align: center;
   text-decoration: none;
   color: black;
-  .oriCamerasSection{
+  .oriCamerasSection {
     margin-top: 32px;
     border: 2px solid $color-secondary;
     background-color: lighten($color: $color-secondary, $amount: 25);
-    a{
+    a {
       text-decoration: none;
     }
   }
 }
 
-.oriFurnituresCards{
+.oriFurnituresCards {
   text-align: center;
   text-decoration: none;
   color: black;
-  .oriFurnituresSection{
+  .oriFurnituresSection {
     margin-top: 32px;
     border: 2px solid $color-secondary;
     background-color: lighten($color: $color-secondary, $amount: 25);
-    a{
+    a {
       text-decoration: none;
     }
   }

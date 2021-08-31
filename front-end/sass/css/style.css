@@ -74,7 +74,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 2px solid #8F5BFE;
+  border-bottom: 2px solid #8f5bfe;
   background-color: #f0e9ff;
 }
 #header a {
@@ -108,7 +108,7 @@ body {
   font-size: 25px;
 }
 #header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo .iconeHeaderCart .fa-shopping-cart {
-  background: -webkit-linear-gradient(left, #E68A09, #8F5BFE);
+  background: -webkit-linear-gradient(left, #e68a09, #8f5bfe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -162,6 +162,14 @@ body {
   cursor: pointer;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 main {
   margin: 0;
   padding: 0;
@@ -191,7 +199,7 @@ img {
 }
 
 .welcomeSection {
-  border: 2px solid #E68A09;
+  border: 2px solid #e68a09;
   background-color: #fce3bf;
   text-align: center;
   margin-top: 32px;
@@ -204,7 +212,7 @@ img {
 }
 .oriTeddiesCards .oriTeddiesSection {
   margin-top: 32px;
-  border: 2px solid #8F5BFE;
+  border: 2px solid #8f5bfe;
   background-color: #e6daff;
 }
 .oriTeddiesCards .oriTeddiesSection a {
@@ -218,7 +226,7 @@ img {
 }
 .oriCamerasCards .oriCamerasSection {
   margin-top: 32px;
-  border: 2px solid #8F5BFE;
+  border: 2px solid #8f5bfe;
   background-color: #e6daff;
 }
 .oriCamerasCards .oriCamerasSection a {
@@ -232,7 +240,7 @@ img {
 }
 .oriFurnituresCards .oriFurnituresSection {
   margin-top: 32px;
-  border: 2px solid #8F5BFE;
+  border: 2px solid #8f5bfe;
   background-color: #e6daff;
 }
 .oriFurnituresCards .oriFurnituresSection a {
@@ -241,8 +249,8 @@ img {
 
 footer {
   background-color: black;
-  margin-top: 16px;
-  height: 19rem;
+  margin-top: 10rem;
+  height: 16rem;
 }
 footer .blocFooterAll {
   max-width: 600px;
@@ -260,7 +268,7 @@ footer ul li {
   text-decoration: none;
   font-size: 20px;
   color: white;
-  background: linear-gradient(to top, #8F5BFE 0%, #8F5BFE 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #8f5bfe 0%, #8f5bfe 10%, transparent 10.01%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
 }
 
@@ -282,7 +290,7 @@ footer ul li {
 
 .blocSocialFacebook li:hover {
   cursor: pointer;
-  border-color: #0065FC;
+  border-color: #0065fc;
 }
 
 .iconeFacebook {
@@ -299,13 +307,15 @@ footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  left: -3px;
+  top: -3px;
 }
 .iconeFacebook .fa-facebook:hover {
   font-weight: bold;
   -moz-animation: icone-full 0.8s;
   -webkit-animation: icone-full 0.8s;
   animation: icone-full 0.8s;
-  background: linear-gradient(#0065FC, #5DADE2);
+  background: linear-gradient(#0065fc, #5dade2);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -313,7 +323,7 @@ footer ul li {
 
 .blocSocialInstagram li:hover {
   cursor: pointer;
-  border-color: #FFE436;
+  border-color: #ffe436;
 }
 
 .iconeInstagram {
@@ -330,13 +340,15 @@ footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  left: -2px;
+  top: -3px;
 }
 .iconeInstagram .fa-instagram:hover {
   font-weight: bold;
   -moz-animation: icone-full 0.8s;
   -webkit-animation: icone-full 0.8s;
   animation: icone-full 0.8s;
-  background: linear-gradient(#FFE436, #8F5BFE);
+  background: linear-gradient(#ffe436, #8f5bfe);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -344,7 +356,7 @@ footer ul li {
 
 .blocSocialTwitter li:hover {
   cursor: pointer;
-  border-color: #77B5FE;
+  border-color: #77b5fe;
 }
 
 .iconeTwitter {
@@ -361,13 +373,15 @@ footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  left: -3px;
+  top: -3px;
 }
 .iconeTwitter .fa-twitter:hover {
   font-weight: bold;
   -moz-animation: icone-full 0.8s;
   -webkit-animation: icone-full 0.8s;
   animation: icone-full 0.8s;
-  background: linear-gradient(#77B5FE, #00FFFF);
+  background: linear-gradient(#77b5fe, #00ffff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -405,7 +419,7 @@ footer ul li {
   font-size: 25px;
 }
 #wrapHeaderMenu .blocHeaderMenu .xWrapCercle {
-  border: 2px solid #E68A09;
+  border: 2px solid #e68a09;
   border-radius: 25px;
   height: 25px;
   width: 25px;
@@ -418,7 +432,7 @@ footer ul li {
   background-color: #fbcd8d;
 }
 #wrapHeaderMenu .blocHeaderMenu .blocWrapTitle {
-  border-bottom: 2px solid #E68A09;
+  border-bottom: 2px solid #e68a09;
 }
 #wrapHeaderMenu .blocHeaderMenu .titleWrapLogo {
   margin-left: 16px;
@@ -439,13 +453,13 @@ footer ul li {
   font-size: 25px;
 }
 #wrapHeaderMenu .blocHeaderMenu .navHeaderMenu a .iconeHeaderCart .fa-shopping-cart {
-  background: -webkit-linear-gradient(left, #E68A09, #8F5BFE);
+  background: -webkit-linear-gradient(left, #e68a09, #8f5bfe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures {
-  border: 2px solid #E68A09;
+  border: 2px solid #e68a09;
   border-radius: 25px;
   background-color: #fbcd8d;
   font-size: 20px;
@@ -475,46 +489,61 @@ footer ul li {
   display: none;
 }
 
-.allProducts {
-  margin-top: 10rem;
-}
-
 #blocSectionProducts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-top: 15rem;
+  margin-bottom: -8rem;
 }
 
-.teddiesProducts {
-  text-align: center;
-  margin-bottom: 5rem;
-  border: 5px solid #E68A09;
+#blocCardProduct {
+  border: 3px solid #e68a09;
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.teddiesPicture img {
-  margin-bottom: 28px;
-  height: 14rem;
-  width: 100%;
-  text-align: center;
-}
-
-.teddiesDetails {
-  background-color: #f9b85c;
-  height: 16rem;
-  margin-top: -32px;
-  padding-top: 10px;
-}
-
-.teddiesPrix {
-  font-size: 20px;
-}
-
-.btnBuy {
-  color: black;
+#linkCardProduct {
   text-decoration: none;
+  color: black;
+}
+
+#imageCardProduct {
+  width: 100%;
+}
+
+.detailsCardProduct {
+  display: grid;
+  /*row(rang) / column (col) */
+  grid-template: 1fr 1fr/repeat(2, 1fr);
+  background-color: #fbcd8d;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 16px;
+  margin-top: -4px;
+}
+
+#titleCardProduct {
+  grid-area: 1;
+  font-size: 25px;
+  border: 3px solid #e68a09;
+  background-color: #f1f1f1;
+  padding: 5px;
+}
+
+#priceCardProduct {
+  /*debut row / debut col / fin row / fin col */
+  grid-area: 2/3/2/-1;
   font-size: 20px;
+  margin-right: 20px;
+  margin-top: -5px;
+  border: 3px solid #e68a09;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
