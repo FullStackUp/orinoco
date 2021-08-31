@@ -489,28 +489,28 @@ footer ul li {
   display: none;
 }
 
-#blocSectionProducts {
+#blocSectionArticles {
   padding-top: 15rem;
   margin-bottom: -8rem;
 }
 
-#blocCardProduct {
+#blocCardArticle {
   border: 3px solid #e68a09;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#linkCardProduct {
+#linkCardArticle {
   text-decoration: none;
   color: black;
 }
 
-#imageCardProduct {
+#imageCardArticle {
   width: 100%;
 }
 
-.detailsCardProduct {
+.detailsCardArticle {
   display: grid;
   /*row(rang) / column (col) */
   grid-template: 1fr 1fr/repeat(2, 1fr);
@@ -521,7 +521,7 @@ footer ul li {
   margin-top: -4px;
 }
 
-#titleCardProduct {
+#titleCardArticle {
   grid-area: 1;
   font-size: 25px;
   border: 3px solid #e68a09;
@@ -529,7 +529,7 @@ footer ul li {
   padding: 5px;
 }
 
-#priceCardProduct {
+#priceCardArticle {
   /*debut row / debut col / fin row / fin col */
   grid-area: 2/3/2/-1;
   font-size: 20px;
