@@ -406,6 +406,10 @@ footer ul li {
   top: 71px;
   font-size: 25px;
 }
+#wrapHeaderMenu .blocHeaderMenu #close {
+  display: flex;
+  align-items: center;
+}
 #wrapHeaderMenu .blocHeaderMenu .xWrapCercle {
   border: 2px solid #e68a09;
   border-radius: 25px;
@@ -487,7 +491,7 @@ Debut _oriteddyarticles.html
   text-align: center;
 }
 
-#titlePageTeddy {
+#titlePageTeddies {
   font-family: "Finger Paint", cursive, sans-serif;
   margin-top: 20rem;
 }
@@ -499,7 +503,7 @@ Debut _oriteddyarticles.html
 
 #blocCardArticle {
   border: 3px solid #e68a09;
-  width: 50%;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -525,7 +529,7 @@ Debut _oriteddyarticles.html
 }
 
 #titleCardArticle {
-  grid-area: 1;
+  grid-area: 1/1/1/-1;
   font-size: 25px;
   border: 3px solid #e68a09;
   background-color: #f1f1f1;
@@ -536,8 +540,9 @@ Debut _oriteddyarticles.html
   /*debut row / debut col / fin row / fin col */
   grid-area: 2/3/2/-1;
   font-size: 20px;
-  margin-right: 20px;
+  margin-right: 4px;
   margin-top: -5px;
+  padding-left: 3px;
   border: 3px solid #e68a09;
   background-color: #f1f1f1;
   border-radius: 50px;

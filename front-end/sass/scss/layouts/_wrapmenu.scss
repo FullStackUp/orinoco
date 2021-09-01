@@ -21,6 +21,10 @@
         top: 71px;
         font-size: 25px;
       }
+      #close{
+        display: flex;
+        align-items: center;
+      }
       .xWrapCercle{
         border: 2px solid $color-primary;
         border-radius: 25px;

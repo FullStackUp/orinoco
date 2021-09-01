@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
 
 
-    <title> OriTeddy : Produit Selectionné </title>
+    <title>Produit OriTeddy Selectionné </title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
             </a>
           </div>
           <div class="blocWrapOriItems">
-            <a href="../teddies/_pageteddies.html"><span class="wrapOriTeddies">OriTeddies</span> </a>
+            <a href="./_oriteddiesarticles.html"><span class="wrapOriTeddies">OriTeddies</span> </a>
             <a href="../index.html"><span class="wrapOriCameras">OriCameras</span></a>
             <a href="../index.html"><span class="wrapOriFurnitures">OriFurnitures</span></a>
           </div>
@@ -69,15 +69,44 @@
     </div>
   </header>
 
-  <main>
-    <section id="selectionproduit">
-      <div id="selectionoption">
-          <label for="choixoption">Choix de la couleur :</label>
-          <select name="option" id="choixoption"></select>          
-      </div>
+  <main id="blocPageTeddy">
+    <h1 id="titlePageTeddy">OriTeddy : Description du Produit</h1>
 
-      <button id="boutonacheter">Acheter</button>
-    </section>
+    <template id="blocTemplateProduct">
+      <section id="blocSectionProduct">
+        <figure id="figureCardProduct">
+          <img src="" id="imageCardProduct">
+        </figure>
+
+        <article id="blocCardProduct">
+          <h2 id="titleCardProduct"></h2>
+          <p class="priceCardProduct"></p>
+          <p class="descriptionCardProduct"></p>
+        </article>
+
+        <form method="POST" action="traitement.php">
+          <fieldset id="blocFormCardProduct">
+            <p class="blocColorsCardProduct">
+                <label for="colors">Choisissez une couleur </label></br>
+                <select name="colors" id="colorsOption">
+                  <option value="red">red</option>
+                  <option value="blue">blue</option>
+                  <option value="green">green</option>
+                  <option value="yellow">yellow</option>
+                </select>
+            </p></br>
+
+            <p class="blocAmountCardProduct">
+              <label for="number">Quantité </label></br>
+              <input type="number" min="1" max="20" required/>
+            </p></br>
+
+            <input type="submit" value="Ajouter au panier" id="blocButtonCardProduct">
+
+          </fieldset> 
+        </form>
+      </section>
+    </template>
   </main>
 
   <footer>
