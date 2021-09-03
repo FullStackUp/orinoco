@@ -18,6 +18,7 @@ function getArticles() {
     })
     .catch(function (error) {//si j'ai une erreur c'est le bloc catch qui affichera un message
       alert(error);
+      alert(`WARNING information : veuillez vous connecter au serveur "port 3000" ou activer javascript`);
     });
 }
 
@@ -26,10 +27,10 @@ function getArticles() {
   const copyBlocTemplateArticles = document.getElementById("blocTemplateArticles");
   const cloneBlocTemplateArticles = document.importNode(copyBlocTemplateArticles.content, true);
 
-  cloneBlocTemplateArticles.getElementById("linkCardArticle").href = "_oriteddyproduct.html?id=" + article._id;
+  cloneBlocTemplateArticles.getElementById("linkCardArticle").href += `?id=${article._id}`;//lien en concaténation qui conduit vers la fiche individuelle d'un produit
   cloneBlocTemplateArticles.getElementById("imageCardArticle").src = article.imageUrl;
   cloneBlocTemplateArticles.getElementById("titleCardArticle").textContent = article.name;
   cloneBlocTemplateArticles.getElementById("priceCardArticle").textContent = article.price / 100 + "€";
 
-  document.getElementById("blocPageTeddies").appendChild(cloneBlocTemplateArticles);
+  document.getElementById("mainArticlesTeddies").appendChild(cloneBlocTemplateArticles);
 }

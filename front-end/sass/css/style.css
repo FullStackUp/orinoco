@@ -155,31 +155,38 @@ body {
   padding: 0;
 }
 
-main {
+/*#mainPage {
   margin: 0;
   padding: 0;
-}
-main .blocMainAll {
+  .blocMainPage {
+    max-width: 1345px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}*/
+#mainPage {
+  margin: 0;
+  padding: 0;
   max-width: 1345px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .blocImgOriBook {
   height: 29rem;
-  width: 100%;
   margin-top: 11rem;
 }
 
 .blocImgOriTextil {
   height: 20rem;
-  width: 100%;
   margin-top: -11rem;
 }
 
 img {
   height: 15rem;
-  width: 100%;
+  width: 384px;
   cursor: pointer;
 }
 
@@ -237,7 +244,7 @@ img {
 
 footer {
   background-color: black;
-  margin-top: 20rem;
+  /*margin-top: 20rem;*/
   height: 16rem;
 }
 footer .blocFooterAll {
@@ -487,13 +494,18 @@ footer ul li {
 /****************************
 Debut _oriteddyarticles.html
 *****************************/
-#blocPageTeddies {
+#mainArticlesTeddies {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 136px;
+  max-width: 1345px;
+  background-color: #fdedd7;
+  height: 190rem;
 }
-
-#titlePageTeddies {
+#mainArticlesTeddies #titlePageTeddies {
   font-family: "Finger Paint", cursive, sans-serif;
-  margin-top: 20rem;
+  padding-top: 190px;
 }
 
 #blocSectionArticles {
@@ -556,6 +568,167 @@ Debut _oriteddyarticles.html
 
 /****************************
 Fin _oriteddyarticles.html
+*****************************/
+/****************************
+Debut _oriteddyproduct.html
+*****************************/
+#mainProductTeddy {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 136px;
+  max-width: 1345px;
+  height: 130rem;
+  background-color: #fdedd7;
+}
+#mainProductTeddy #titlePageTeddy {
+  font-family: "Finger Paint", cursive, sans-serif;
+  padding-top: 190px;
+}
+
+#blocCardProduct {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blocHeaderCardProduct {
+  margin-top: 16rem;
+  background-color: #fbcd8d;
+  width: 384px;
+  border: 1px solid;
+}
+#blocHeaderCardProduct img {
+  width: 100%;
+  height: 360px;
+  cursor: zoom-in;
+}
+#blocHeaderCardProduct #titleCardProduct {
+  font-size: 30px;
+  padding: 5%;
+}
+
+#blocDetailedProduct {
+  /*row(rang) / column (col) */
+  display: grid;
+  grid-template: repeat(9, 80px)/repeat(4, 100px);
+  border: 3px solid #f1f1f1;
+  background-color: #e4e4e4;
+  width: 400px;
+  height: 720px;
+  border: 1px solid;
+  margin-top: 5rem;
+}
+#blocDetailedProduct #noteOpinionCustomer {
+  /*debut row / debut col / fin row / fin col */
+  grid-area: 1/1/1/3;
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cfb300;
+}
+#blocDetailedProduct #numberOpinionCustomer {
+  grid-area: 1/3/1/-1;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProduct #descriptionCardProduct {
+  grid-area: 2/1/2/-1;
+  font-size: 20px;
+}
+#blocDetailedProduct #priceCardProduct {
+  grid-area: 3/1/3/-1;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProduct #titleColorsOption {
+  grid-area: 4/1/4/-1;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProduct #productColorsOption {
+  grid-area: 5/1/5/-1;
+  display: grid;
+  grid-template: 50px/repeat(4, 1fr);
+  width: 400px;
+}
+#blocDetailedProduct #amountOrderProduct {
+  grid-area: 6/1/6/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProduct #numberOrderProduct {
+  grid-area: 6/3/6/-1;
+  width: 60px;
+  margin: 24px;
+  padding: 3px;
+}
+#blocDetailedProduct #linkButtonAddCart {
+  grid-area: 7/1/7/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: lightskyblue;
+  width: 398px;
+}
+#blocDetailedProduct #linkButtonAddCart #buttonAddCart {
+  font-size: 20px;
+  color: black;
+}
+#blocDetailedProduct #linkButtonContinuedBuy {
+  grid-area: 8/1/8/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: lightpink;
+  width: 398px;
+}
+#blocDetailedProduct #linkButtonContinuedBuy #buttonContinuedBuy {
+  font-size: 20px;
+  color: black;
+}
+#blocDetailedProduct #linkButtonBuyProduct {
+  grid-area: 9/1/9/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: lightgreen;
+  width: 398px;
+  height: 77px;
+}
+#blocDetailedProduct #linkButtonBuyProduct #buttonBuyProduct {
+  font-size: 20px;
+  color: black;
+}
+
+#productOptionOne, #productOptionFour, #productOptionThree, #productOptionTwo {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/****************************
+Fin _oriteddyproduct.html
 *****************************/
 
 /*# sourceMappingURL=style.css.map */

@@ -69,44 +69,56 @@
     </div>
   </header>
 
-  <main id="blocPageTeddy">
-    <h1 id="titlePageTeddy">OriTeddy : Description du Produit</h1>
+  <main id="mainProductTeddy">
+      <h1 id="titlePageTeddy">OriTeddy : Produit Détaillé</h1>
+      <template id="blocTemplateProduct">
+        <section id="blocSectionProduct">
+          <article id="blocCardProduct">
 
-    <template id="blocTemplateProduct">
-      <section id="blocSectionProduct">
-        <figure id="figureCardProduct">
-          <img src="" id="imageCardProduct">
-        </figure>
+            <div id="blocHeaderCardProduct">
+              <figure id="figureCardProduct">
+                <img src="" id="imageCardProduct">
+              </figure>
+              <h2 id="titleCardProduct"></h2>
+            </div>
 
-        <article id="blocCardProduct">
-          <h2 id="titleCardProduct"></h2>
-          <p class="priceCardProduct"></p>
-          <p class="descriptionCardProduct"></p>
-        </article>
+            <div id="blocDetailedProduct">
+              <ul id="noteOpinionCustomer">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+              </ul>
+              <span id="numberOpinionCustomer"></span>
+              <p id="descriptionCardProduct"></p>
+          
+              <span id="priceCardProduct"></span>
+              <p id="titleColorsOption"></p>
+              <div id="productColorsOption">
+                <option id="productOptionOne"></option>
+                <option id="productOptionTwo"></option>
+                <option id="productOptionThree"></option>
+                <option id="productOptionFour"></option>
+              </div>
+      
+              <span id="amountOrderProduct"></span>
+              <input id="numberOrderProduct" type="number" min="1" max="10"></br>
+              <a href="" id="linkButtonAddCart">
+                <span id="buttonAddCart"></span> 
+              </a>
+              <a href="./_oriteddiesarticles.html" id="linkButtonContinuedBuy">
+                <span id="buttonContinuedBuy"></span>
+              </a>
+              <a href="" id="linkButtonBuyProduct">
+                <span id="buttonBuyProduct"></span>
+              </a>
+            </div>
+          </article>
+        </section>
 
-        <form method="POST" action="traitement.php">
-          <fieldset id="blocFormCardProduct">
-            <p class="blocColorsCardProduct">
-                <label for="colors">Choisissez une couleur </label></br>
-                <select name="colors" id="colorsOption">
-                  <option value="red">red</option>
-                  <option value="blue">blue</option>
-                  <option value="green">green</option>
-                  <option value="yellow">yellow</option>
-                </select>
-            </p></br>
-
-            <p class="blocAmountCardProduct">
-              <label for="number">Quantité </label></br>
-              <input type="number" min="1" max="20" required/>
-            </p></br>
-
-            <input type="submit" value="Ajouter au panier" id="blocButtonCardProduct">
-
-          </fieldset> 
-        </form>
-      </section>
-    </template>
+        <p id="informationPriceCardProduct"></p>
+      </template>
   </main>
 
   <footer>

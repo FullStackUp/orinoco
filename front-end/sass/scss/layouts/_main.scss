@@ -6,31 +6,39 @@
   padding: 0;
 }
 
-main {
+/*#mainPage {
   margin: 0;
   padding: 0;
-  .blocMainAll {
+  .blocMainPage {
     max-width: 1345px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
+}*/
+
+#mainPage {
+  margin: 0;
+  padding: 0;
+  max-width: 1345px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .blocImgOriBook {
   height: 29rem;
-  width: 100%;
   margin-top: 11rem;
 }
 
 .blocImgOriTextil {
   height: 20rem;
-  width: 100%;
   margin-top: -11rem;
 }
 
 img {
   height: 15rem;
-  width: 100%;
+  width: 384px;
   cursor: pointer;
 }
 

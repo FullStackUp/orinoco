@@ -2,13 +2,18 @@
 Debut _oriteddyarticles.html
 *****************************/
 
-#blocPageTeddies{
+#mainArticlesTeddies{
   text-align: center;
-}
-
-#titlePageTeddies{
-  font-family: 'Finger Paint',cursive, sans-serif; 
-  margin-top: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 136px;
+  max-width: 1345px;
+  background-color: lighten($color: $color-primary, $amount: 45);
+  height: 190rem;
+  #titlePageTeddies{
+    font-family: 'Finger Paint',cursive, sans-serif; 
+    padding-top: 190px;
+  }
 }
 
 #blocSectionArticles {
@@ -72,3 +77,178 @@ Debut _oriteddyarticles.html
 /****************************
 Fin _oriteddyarticles.html
 *****************************/
+
+/****************************
+Debut _oriteddyproduct.html
+*****************************/
+#mainProductTeddy{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 136px;
+  max-width: 1345px;
+  height: 130rem;
+  background-color: lighten($color: $color-primary, $amount: 45);
+  #titlePageTeddy{
+    font-family: 'Finger Paint',cursive, sans-serif;
+    padding-top: 190px;
+  }
+}
+
+#blocCardProduct{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blocHeaderCardProduct{
+  margin-top: 16rem;
+  background-color: lighten($color: $color-primary, $amount: 30);
+  width: 384px;
+  border: 1px solid;
+  img{
+    width: 100%;
+    height: 360px;
+    cursor: zoom-in;
+  }
+  #titleCardProduct{
+    font-size: 30px;
+    padding: 5%;
+  }
+}
+
+#blocDetailedProduct{
+   /*row(rang) / column (col) */
+  display: grid;
+  grid-template: repeat(9, 80px) / repeat(4, 100px);
+  border: 3px solid $color-card;
+  background-color: darken($color-card, $amount: 5);
+  width: 400px;
+  height: 720px;
+  border: 1px solid;
+  margin-top: 5rem;
+  #noteOpinionCustomer{
+  /*debut row / debut col / fin row / fin col */
+    grid-area: 1 / 1 / 1 / 3;
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darken($color: $color-instagram, $amount: 20);
+  }
+  #numberOpinionCustomer{
+    grid-area: 1 / 3 / 1 / -1 ;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: underline;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #descriptionCardProduct{
+    grid-area: 2 / 1 / 2 / -1;
+    font-size: 20px;
+  }
+  #priceCardProduct{
+    grid-area: 3 / 1 / 3 / -1;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #titleColorsOption{
+    grid-area: 4 / 1 / 4 / -1;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #productColorsOption{
+  grid-area: 5 / 1 / 5 / -1;
+  display: grid;
+  grid-template: 50px/ repeat(4, 1fr);
+  width: 400px;
+  }
+  #amountOrderProduct{
+    grid-area: 6 / 1 / 6 / 3;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #numberOrderProduct{
+    grid-area: 6 / 3 / 6 / -1;
+    width: 60px;
+    margin: 24px;
+    padding: 3px;
+  }
+  #linkButtonAddCart{
+    grid-area: 7 / 1 / 7 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: lightskyblue;
+    width: 398px;
+    #buttonAddCart{
+      font-size: 20px;
+      color:black;
+    }
+  }
+  #linkButtonContinuedBuy{
+    grid-area: 8 / 1 / 8 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: lightpink;
+    width: 398px;
+    #buttonContinuedBuy{
+      font-size: 20px;
+      color:black;
+    }
+  }
+  #linkButtonBuyProduct{
+    grid-area: 9 / 1 / 9 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: lightgreen;
+    width: 398px;
+    height: 77px;
+    #buttonBuyProduct{
+      font-size: 20px;
+      color:black;
+    }
+  }
+}
+
+#productOptionOne{
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+#productOptionTwo{
+  @extend #productOptionOne;
+}
+
+#productOptionThree{
+  @extend #productOptionOne;
+}
+
+#productOptionFour{
+  @extend #productOptionOne;
+}
+
+/****************************
+Fin _oriteddyproduct.html
+*****************************/
+
