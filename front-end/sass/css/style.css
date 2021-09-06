@@ -244,7 +244,6 @@ img {
 
 footer {
   background-color: black;
-  /*margin-top: 20rem;*/
   height: 16rem;
 }
 footer .blocFooterAll {
@@ -335,7 +334,7 @@ footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: -2px;
+  left: -3px;
   top: -3px;
 }
 .iconeInstagram .fa-instagram:hover {
@@ -598,7 +597,7 @@ Debut _oriteddyproduct.html
   margin-top: 16rem;
   background-color: #fbcd8d;
   width: 384px;
-  border: 1px solid;
+  /*border: 1px solid;*/
 }
 #blocHeaderCardProduct img {
   width: 100%;
@@ -617,7 +616,7 @@ Debut _oriteddyproduct.html
   border: 3px solid #f1f1f1;
   background-color: #e4e4e4;
   width: 400px;
-  height: 720px;
+  height: 750px;
   border: 1px solid;
   margin-top: 5rem;
 }
@@ -659,6 +658,13 @@ Debut _oriteddyproduct.html
   justify-content: center;
   align-items: center;
 }
+#blocDetailedProduct #productOptionOne, #blocDetailedProduct #productOptionFour, #blocDetailedProduct #productOptionThree, #blocDetailedProduct #productOptionTwo {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-left: 20px;
+}
 #blocDetailedProduct #productColorsOption {
   grid-area: 5/1/5/-1;
   display: grid;
@@ -678,53 +684,62 @@ Debut _oriteddyproduct.html
   margin: 24px;
   padding: 3px;
 }
-#blocDetailedProduct #linkButtonAddCart {
+#blocDetailedProduct #blocButtonAddCart {
   grid-area: 7/1/7/-1;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  background-color: lightskyblue;
-  width: 398px;
 }
-#blocDetailedProduct #linkButtonAddCart #buttonAddCart {
+#blocDetailedProduct #blocButtonAddCart #buttonAddCart {
+  text-decoration: none;
   font-size: 20px;
   color: black;
+  background-color: #87cefa;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #098ddf;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#blocDetailedProduct #linkButtonContinuedBuy {
+#blocDetailedProduct #blocButtonContinuedBuy {
   grid-area: 8/1/8/-1;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  background-color: lightpink;
-  width: 398px;
 }
-#blocDetailedProduct #linkButtonContinuedBuy #buttonContinuedBuy {
+#blocDetailedProduct #blocButtonContinuedBuy #buttonContinuedBuy {
+  text-decoration: none;
   font-size: 20px;
   color: black;
+  background-color: #ffb6c1;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #ff1d3f;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#blocDetailedProduct #linkButtonBuyProduct {
+#blocDetailedProduct #blocButtonBuyProduct {
   grid-area: 9/1/9/-1;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  background-color: lightgreen;
-  width: 398px;
-  height: 77px;
 }
-#blocDetailedProduct #linkButtonBuyProduct #buttonBuyProduct {
+#blocDetailedProduct #blocButtonBuyProduct #buttonBuyProduct {
+  text-decoration: none;
   font-size: 20px;
   color: black;
-}
-
-#productOptionOne, #productOptionFour, #productOptionThree, #productOptionTwo {
+  background-color: #90ee90;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #1ec71e;
   border-radius: 50px;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /****************************

@@ -47,7 +47,7 @@ function transferProduct(productDetailed){
   cloneBlocTemplateProduct.getElementById("productOptionThree").style.backgroundColor = productDetailed.colors[2];
   cloneBlocTemplateProduct.getElementById("productOptionFour").style.backgroundColor = productDetailed.colors[3];
 
-  cloneBlocTemplateProduct.getElementById("amountOrderProduct").textContent = "Quantité disirée :";
+  cloneBlocTemplateProduct.getElementById("amountOrderProduct").textContent = "Quantité désirée :";
   cloneBlocTemplateProduct.getElementById("buttonAddCart").textContent = "Ajouter au panier";
   cloneBlocTemplateProduct.getElementById("buttonContinuedBuy").textContent = "Continuer vos achats";
   cloneBlocTemplateProduct.getElementById("buttonBuyProduct").textContent = "Acheter ce produit";

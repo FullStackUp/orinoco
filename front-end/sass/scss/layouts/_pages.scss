@@ -107,7 +107,7 @@ Debut _oriteddyproduct.html
   margin-top: 16rem;
   background-color: lighten($color: $color-primary, $amount: 30);
   width: 384px;
-  border: 1px solid;
+  /*border: 1px solid;*/
   img{
     width: 100%;
     height: 360px;
@@ -126,7 +126,7 @@ Debut _oriteddyproduct.html
   border: 3px solid $color-card;
   background-color: darken($color-card, $amount: 5);
   width: 400px;
-  height: 720px;
+  height: 750px;
   border: 1px solid;
   margin-top: 5rem;
   #noteOpinionCustomer{
@@ -167,6 +167,25 @@ Debut _oriteddyproduct.html
     justify-content: center;
     align-items: center;
   }
+  #productOptionOne{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  #productOptionTwo{
+    @extend #productOptionOne;
+  }
+  
+  #productOptionThree{
+    @extend #productOptionOne;
+  }
+  
+  #productOptionFour{
+    @extend #productOptionOne;
+  }
   #productColorsOption{
   grid-area: 5 / 1 / 5 / -1;
   display: grid;
@@ -186,68 +205,64 @@ Debut _oriteddyproduct.html
     margin: 24px;
     padding: 3px;
   }
-  #linkButtonAddCart{
+  #blocButtonAddCart{
     grid-area: 7 / 1 / 7 / -1;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    background-color: lightskyblue;
-    width: 398px;
     #buttonAddCart{
+      text-decoration: none;
       font-size: 20px;
       color:black;
+      background-color: $color-buttonOne;
+      width: 210px;
+      height: 40px;
+      border: 3px solid darken($color: $color-buttonOne, $amount: 30);
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
-  #linkButtonContinuedBuy{
+  #blocButtonContinuedBuy{
     grid-area: 8 / 1 / 8 / -1;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    background-color: lightpink;
-    width: 398px;
     #buttonContinuedBuy{
+      text-decoration: none;
       font-size: 20px;
       color:black;
+      background-color: $color-buttonTwo;
+      width: 210px;
+      height: 40px;
+      border: 3px solid darken($color: $color-buttonTwo, $amount: 30);
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
-  #linkButtonBuyProduct{
+  #blocButtonBuyProduct{
     grid-area: 9 / 1 / 9 / -1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: lightgreen;
-    width: 398px;
-    height: 77px;
+    align-items: center; 
     #buttonBuyProduct{
+      text-decoration: none;
       font-size: 20px;
       color:black;
+      background-color: $color-buttonThree;
+      width: 210px;
+      height: 40px;
+      border: 3px solid darken($color: $color-buttonThree, $amount: 30);
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
-
-#productOptionOne{
-  border-radius: 50px;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  margin-left: 20px;
-}
-
-#productOptionTwo{
-  @extend #productOptionOne;
-}
-
-#productOptionThree{
-  @extend #productOptionOne;
-}
-
-#productOptionFour{
-  @extend #productOptionOne;
-}
-
 /****************************
 Fin _oriteddyproduct.html
 *****************************/
