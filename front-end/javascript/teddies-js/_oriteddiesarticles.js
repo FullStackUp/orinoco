@@ -6,6 +6,8 @@ async function main() {//function en async pour pouvoir excuter un await
   for (article of articles) {//une boucle of pour prendre tous les produits(articles)
     displayProduct(article);
   }
+
+  console.log(articles);
 }
 
 function getArticles() {

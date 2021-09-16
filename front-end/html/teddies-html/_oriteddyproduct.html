@@ -55,7 +55,7 @@
             <span class="textHeaderUser">Identifiant</span>
             <span class="iconeHeaderUser"><i class="far fa-user"></i></span>
           </a>
-          <a href="#" class="blocLinkHeaderBasket">
+          <a href="../_oribasket.html" class="blocLinkHeaderBasket">
             <span class="textHeaderBasket">Panier</span>
             <span class="iconeHeaderBasket"><i class="fas fa-shopping-basket"></i></span>
           </a>
@@ -91,28 +91,33 @@
                 <li><i class="far fa-star"></i></li>
               </ul>
               <span id="numberOpinionCustomer"></span>
-              <p id="descriptionCardProduct"></p>
-          
+              <p id="descriptionNumberCardProduct"></p>
+              
+              <p id="descriptionPriceCardProduct"></p>
               <span id="priceCardProduct"></span>
-              <p id="titleColorsOption"></p>
-              <div id="productColorsOption">
-                <option id="productOptionOne"></option>
-                <option id="productOptionTwo"></option>
-                <option id="productOptionThree"></option>
-                <option id="productOptionFour"></option>
-              </div>
+              <label for="productColorsOption" id="descriptionProductColorsOption"></label>
+              
+              <form id="blocProductColorsOption">
+                <select name="productColorsOption" id="productColorsOption">
+                  <option value="" id="productOptionOne" class="btnColors"></option>
+                  <option value="" id="productOptionTwo" class="btnColors"></option>
+                  <option value="" id="productOptionThree" class="btnColors"></option>
+                  <option value="" id="productOptionFour" class="btnColors"></option>
+                </select>
+              </form>
       
-              <span id="amountOrderProduct"></span>
+              <label for="numberOrderProduct" id="amountOrderProduct"></label>
               <input id="numberOrderProduct" type="number" min="1" max="10"></br>
-              <div id="blocButtonAddCart">
-                <button id="buttonAddCart"></button> 
+              
+              <div id="blocButtonAddBasket">
+                <button id="buttonAddBasket"></button> 
               </div>
+              <div onclick="window.location.href = '../_oribasket.html';" id="blocButtonSeeBasket">
+                <button id="buttonSeeBasket"></button>
+              </div> 
               <div onclick="window.location.href = './_oriteddiesarticles.html';" id="blocButtonContinuedBuy">
                 <button id="buttonContinuedBuy"></button>
               </div>
-              <div id="blocButtonBuyProduct">
-                  <button id="buttonBuyProduct"></button>
-              </div> 
           </div>
           </article>
         </section>
@@ -180,5 +185,6 @@
   </footer>
 
 <script src="/front-end/javascript/teddies-js/_oriteddyproduct.js"></script>
+<script src="/front-end/javascript/_oribasket.js"></script>
 </body>
 </html>
