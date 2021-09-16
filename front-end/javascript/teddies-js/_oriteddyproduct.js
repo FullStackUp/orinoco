@@ -7,7 +7,6 @@ async function main (){
     basketUser(productDetailed)
 }
 
-
 function getProductId(){
    return new URL(location.href).searchParams.get("id")//permet de recuperer l'Id d'un produit parmis des articles 
 }
@@ -64,49 +63,47 @@ function transferProduct(productDetailed){
   document.getElementById("mainProductTeddy").appendChild(cloneBlocTemplateProduct);//fait apparaître le elements en visuel
 };
 
-
 //Panier = inspiré du YouTubeur e-genieclimatique
 
 //Ajout un produit chosit dans le panier
 function basketUser (productDetailed) {
-  //selectionne le bouton ajouter l'article au panier
-  const SendBasket = document.querySelector("#buttonAddBasket");
-  //ecoute le bouton et l'envoie au panier
-  SendBasket.addEventListener("click", (event) => {
+    //selectionne le bouton ajouter l'article au panier
+    const SendBasket = document.querySelector("#buttonAddBasket");
+    //ecoute le bouton et l'envoie au panier
+    SendBasket.addEventListener("click", (event) => {
     event.preventDefault();
     
-  //stock un produit selectionné dans le localStorage
-  let productsSaveLocalStorage = JSON.parse(localStorage.getItem("productDetailed"));
-  //console.log(productsSaveLocalStorage);
-  let moreItem = localStorage.length;
+    //récuperer des valeur du des données API pour le produit envoye au panier en fonction de son numéro d'id.
+    let optionProduct = {
+      productName: productDetailed.name, 
+      productColors: productDetailed.colors,
+      productId: productDetailed._id,
+      quantity: productDetailed.quantite,
+      productPrice: productDetailed.price / 100 + ",00" +"€",
+    }
 
-  if(productsSaveLocalStorage){
-    productsSaveLocalStorage.push(optionProduct);
-    localStorage.setItem(productDetailed._id, JSON.stringify(productsSaveLocalStorage));
-    
-    console.log(productsSaveLocalStorage);
-    alert("Le produit a été ajouté au panier")
-
-  }
-  else{
-    productsSaveLocalStorage = [];
-    productsSaveLocalStorage.push(optionProduct);
-    localStorage[productDetailed._id + moreItem] = productDetailed.name + " " + `${productDetailed.price / 100 + ",00" +"€"}`; //ajoute le même produit autant de fois.
+    //stock un produit selectionné dans le localStorage
+    let productsSaveLocalStorage = JSON.parse(localStorage.getItem("userOrder"));
 
     console.log(productsSaveLocalStorage);
-    alert("Le produit a été ajouté au panier")
-  }
-  })
 
-  //récuperer des valeur du formulaire pour le produit envoye au panier
-  let optionProduct = {
-    productName: productDetailed.name, 
-    productColors: productDetailed.colors,
-    productId: productDetailed._id,
-    quantity: productDetailed.quantite,
-    productPrice: productDetailed.price / 100 + ",00" +"€",
-    };
-   //console.log(optionProduct);
+    if(productsSaveLocalStorage){
+      productsSaveLocalStorage.push(optionProduct);
+      localStorage.setItem("userOrder", JSON.stringify(productsSaveLocalStorage));
+
+      alert("Le produit a été ajouté au panier");
+    }
+
+    else{
+      productsSaveLocalStorage = [];
+      productsSaveLocalStorage.push(optionProduct);
+      localStorage.setItem("userOrder", JSON.stringify(productsSaveLocalStorage));
+
+      alert("Le produit a été ajouté au panier")
+      console.log(productsSaveLocalStorage);
+    }
+  });
+
 
    //permert de selectionner une options (afficher que sur la console log)
    let elt = document.getElementById('productColorsOption');
@@ -129,4 +126,4 @@ function basketUser (productDetailed) {
     if (z === undefined) {
     document.getElementById("productOptionFour").style.display = "none";
     }  
-  }
+}

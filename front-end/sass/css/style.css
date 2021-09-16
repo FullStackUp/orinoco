@@ -759,5 +759,10 @@ Debut _oriteddyproduct.html
 /****************************
 Fin _oriteddyproduct.html
 *****************************/
+#mainOriBasket {
+  margin-top: 136px;
+  height: 70rem;
+  background-color: #fdedd7;
+}
 
 /*# sourceMappingURL=style.css.map */
