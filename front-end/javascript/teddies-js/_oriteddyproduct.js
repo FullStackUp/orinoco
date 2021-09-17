@@ -75,20 +75,22 @@ function basketUser (productDetailed) {
     
     //récuperer des valeur du des données API pour le produit envoye au panier en fonction de son numéro d'id.
     let optionProduct = {
-      productName: productDetailed.name, 
-      productColors: productDetailed.colors,
-      productId: productDetailed._id,
-      quantity: productDetailed.quantite,
-      productPrice: productDetailed.price / 100 + ",00" +"€",
+      Nom : productDetailed.name, 
+      Prix : productDetailed.price / 100 + ",00" +"€",
+      id : productDetailed._id,
+      Couleur : productDetailed.colors,
+      quantité : productDetailed.quantite,
     }
 
-    //stock un produit selectionné dans le localStorage
+    //déclaration de la variable "productsSaveLocalStorage" pour pouvoir stocker la key et value dans le localStorage
+    
+    // "JSON.parse" permet de convertir les objets javascript du localstorage en JSON pour une meilleur visuel
+
     let productsSaveLocalStorage = JSON.parse(localStorage.getItem("userOrder"));
-
-    console.log(productsSaveLocalStorage);
-
+    
     if(productsSaveLocalStorage){
       productsSaveLocalStorage.push(optionProduct);
+      //transforme en format JSON et l'envoie dans le Key du localStorage
       localStorage.setItem("userOrder", JSON.stringify(productsSaveLocalStorage));
 
       alert("Le produit a été ajouté au panier");
