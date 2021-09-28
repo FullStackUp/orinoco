@@ -1,6 +1,6 @@
 #mainOriBasket{
     margin-top: 136px;
-    height: 100vh;
+    height: 100rem;
     background-color: lighten($color: $color-primary, $amount: 45);
 }
 
@@ -30,4 +30,162 @@
 #emptyBasket{/*injecté dans le JavaScript*/
     font-size: 25px;
     font-weight: bold;
+}
+
+/*******------- Debut formulaire -------*******/
+
+#blocFormOrder{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightsalmon;
+    border: 2px solid;
+    display:grid;
+    /*row(rang) / column (col) */
+    grid-template: repeat(8, 80px) / repeat(4, 99px);
+}
+
+#titleBlocFormOrder{
+    background-color: lightseagreen;
+    /*debut row / debut col / fin row / fin col */
+    grid-area: 1 / 1 / 2 / -1;
+    height: 70px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#firstNameBlocFormOrder {
+    background-color: lightsteelblue;
+    height: 80px;
+    width: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    #labelFirstNameFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 2 / 1 / 3 / 3; 
+    }
+    #firstNameFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 2 / 3 / 3 / -1;
+        font-size: 20px;
+    }
+}
+
+#nameBlocFormOrder{
+    background-color: lightgreen;
+    height: 80px;
+    width: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    #labelNameFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 3 / 1 / 4 / 3 ;
+        font-size: 20px;
+    }
+    #nameFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 3 / 3 / 4 / -1 ; 
+        font-size: 20px;
+    }
+}
+
+#addressBlocFormOrder{
+    background-color: lightcoral;
+    height: 80px;
+    width: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    #labelAddressFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 4 / 1 / 5 / 3 ;
+        font-size: 20px;
+    }
+    #addressFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 4 / 3 / 5 / -1 ;
+        font-size: 20px;
+        height: 30px;
+    }
+}
+
+#cityBlocFormOrder{
+    background-color: lightsteelblue;
+    height: 80px;
+    width: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    #labelCityFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 5 / 1 / 6 / 3 ;
+        font-size: 20px;
+    }
+    #cityFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 5 / 3 / 6 / -1 ;
+        font-size: 20px;
+    }
+}
+
+#postalCodeBlocFormOrder{
+    background-color: lightgreen;
+    height: 80px;
+    width: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    #labelPostalCodeFormOrder{
+        /*debut row / debut col / fin row / fin col */
+         grid-area: 6 / 1 / 7 / 3 ;
+         font-size: 20px;
+    }
+    #postalCodeFormOrder{
+         /*debut row / debut col / fin row / fin col */
+         grid-area: 6 / 3 / 7 / -1 ;
+         font-size: 20px;
+    }
+}
+
+#emailBlocFormOrder{
+    background-color: lightblue;
+    height: 80px;
+    width: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    #labelEmailFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 7 / 1 / 8 / 3 ;
+        font-size: 20px;
+    }
+    #emailFormOrder{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 7 / 3 / 8 / -1;
+        font-size: 20px;
+    }
+}
+
+#btnSendFormOrder{
+    background-color: lightsteelblue;
+    height: 80px;
+    width: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*debut row / debut col / fin row / fin col */
+    grid-area: 8 / 1 / 9 / -1 ;
+    font-size: 20px;
 }

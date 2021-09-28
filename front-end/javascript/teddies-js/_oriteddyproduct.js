@@ -56,7 +56,7 @@ function transferProduct(productDetailed){
   cloneBlocTemplateProduct.getElementById("amountOrderProduct").textContent = "Quantité désirée :";
   cloneBlocTemplateProduct.getElementById("buttonAddBasket").textContent = "Ajouter au panier";
   cloneBlocTemplateProduct.getElementById("buttonSeeBasket").textContent = "Voir mon panier";
-  cloneBlocTemplateProduct.getElementById("buttonContinuedBuy").textContent = "Continuer vos achats";
+  cloneBlocTemplateProduct.getElementById("buttonContinuedBuy").textContent = "Continuer mes achats";
   //Fin blocDetailedProduct
 
   cloneBlocTemplateProduct.getElementById("informationPriceCardProduct").textContent = "*tous les prix incluent la TVA."
@@ -76,7 +76,7 @@ function basketUser (productDetailed) {
     //récuperer des valeur du des données API pour le produit envoye au panier en fonction de son numéro d'id.
     let optionProduct = {
       Nom : productDetailed.name, 
-      Prix : productDetailed.price / 100 + ",00" +"€",
+      Prix : productDetailed.price /100,
       id : productDetailed._id,
       Couleur : productDetailed.colors,
       quantité : productDetailed.quantite,
