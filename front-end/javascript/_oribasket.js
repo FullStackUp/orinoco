@@ -57,10 +57,7 @@ for (let l = 0; l < buttonDelete.length; l++){
         console.log("idButtonDelete");
         console.log(idButtonDelete);
 
-        /*avec la methode filter je selectionne les élements à garder 
-        et je supprime l'élement où le bouton supprimer (buttonDelete) a été cliqué*/
-        //productsSaveLocalStorage = productsSaveLocalStorage.filter( el => el.id !== idButtonDelete);
-        //console.log(productsSaveLocalStorage);
+        //supprime un article
         productsSaveLocalStorage.splice(l, 1);
 
         //on envoie le variable dans le LocalStorage
@@ -68,7 +65,7 @@ for (let l = 0; l < buttonDelete.length; l++){
         localStorage.setItem("userOrder", JSON.stringify(productsSaveLocalStorage));
 
         //alert pour avertir que le produit à été supprimer et rechargement de la page
-        alert("ce produit à été supprimer et les autres articles avec le même id")
+        alert("vous avez supprimé un article de votre panier")
         window.location.href = "_oribasket.html";
     } )
 }
@@ -80,20 +77,26 @@ for (let l = 0; l < buttonDelete.length; l++){
 //Déclaration de la variable pour mettre les prix issues du panier dedans
 let totalPriceBasket = [];
 
-//aller chercher les prix dans le panier
+/*aller chercher les prix dans le panier 
+masque le formulaire s'il n'y pas de produit selectionée
+masque le prix total s'il n'y pas de produit selectionné*/
+if(productsSaveLocalStorage === null || productsSaveLocalStorage == 0){
+  
+} else {
 for (let m=0; m < productsSaveLocalStorage.length; m++){
     let priceProductsBasket = productsSaveLocalStorage[m].Prix;
 
     //mettre les prix dans la variable totalPriceBasket
     totalPriceBasket.push(priceProductsBasket)
 
-    console.log(totalPriceBasket);
+    //console.log(totalPriceBasket);
+  }
 }
 
 //additionner les prix du tableau variable "totalPriceBasket" avec la methode "reduce".
 const reducer = (accumulator, currentValue) => accumulator +currentValue
 const totalPriceFinal = totalPriceBasket.reduce(reducer,0);
-console.log(totalPriceFinal)
+//console.log(totalPriceFinal)
 
 //Le code HTML du prix total à afficher
 const displayPriceHtml = `
@@ -104,13 +107,6 @@ blocProductBasket.insertAdjacentHTML("beforeend", displayPriceHtml);
 
 //Affiche le prix en euros dans le console log
 console.log(new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(totalPriceFinal));
-
-//masque le prix total s'il n'y pas de produit selectionné
-if(productsSaveLocalStorage === null || productsSaveLocalStorage == 0 ){
-    const noDisplayPrice = document.querySelector("#displayPriceHtml").style.display ="none";
-    //console.log("masque le prix")
-    //console.log(noDisplayPrice);
-}
 
 //*******------- Fin prix total du panier -------*******//
 
@@ -126,33 +122,33 @@ const displayFormHtml = () => {
       <h2 id="titleBlocFormOrder">Remplissez le formulaire pour valider votre commande</h2>
       <form>
         <div id="firstNameBlocFormOrder">
-          <label for="firstNameFormOrder" id="labelFirstNameFormOrder"></label> Prénom : </label>
-          <input type="text" id="firstNameFormOrder" name="Prénom" required>
+          <label for="firstName" id="labelFirstName"></label> Prénom : </label>
+          <input type="text" id="firstName" name="Prénom" required></br>
+          <span id="firstNameMissing"></span>
         </div>
 
-        <div id="nameBlocFormOrder">
-          <label for="nameFormOrder" id="labelNameFormOrder"> Nom : </label>
-          <input type="text" id="nameFormOrder" name="Nom" required>
+        <div id="lastNameBlocFormOrder">
+          <label for="lastName" id="labelLastName"> Nom : </label>
+          <input type="text" id="lastName" name="Nom" required></br>
+          <span id="lastNameMissing"></span>
         </div>    
 
         <div id="addressBlocFormOrder">
-          <label for="addressFormOrder" id="labelAddressFormOrder"> Adresse : </label>
-          <input id="addressFormOrder" name="Adresse" required>
+          <label for="address" id="labelAddress"> Adresse : </label>
+          <input id="address" name="Adresse" required></br>
+          <span id="addressMissing"></span>
         </div>
 
         <div id="cityBlocFormOrder">
-          <label for="cityFormOrder" id="labelCityFormOrder"> Ville : </label>
-          <input type="text" id="cityFormOrder" name="Ville" required>
-        </div>
-
-        <div id="postalCodeBlocFormOrder">
-          <label for="postalCodeFormOrder" id="labelPostalCodeFormOrder"> Code Postal : </label>
-          <input type="text" id="postalCodeFormOrder" name="CodePostal" required>
+          <label for="city" id="labelCity"> Ville : </label>
+          <input type="text" id="city" name="Ville" required></br>
+          <span id="cityMissing"></span>
         </div>
 
         <div id="emailBlocFormOrder">
-          <label for="emailFormOrder" id="labelEmailFormOrder"> E-mail : </label>
-          <input type="text" id="emailFormOrder" name="Email" required>
+          <label for="email" id="labelEmail"> E-mail : </label>
+          <input type="text" id="email" name="Email" required></br>
+          <span id="emailMissing"></span>
         </div>
 
         <div id="btnSendFormBlocFormOrder">
@@ -171,6 +167,17 @@ positionForm.insertAdjacentHTML("afterend", structureForm);
 //afficher le formulaire
 displayFormHtml();
 
+/*masque le prix total s'il n'y pas de produit selectionné
+masque le formulaire s'il n'y pas de produit selectionée*/
+if(productsSaveLocalStorage === null || productsSaveLocalStorage == 0 ){
+  const noDisplayPrice = document.querySelector("#displayPriceHtml").style.display ="none";
+  //console.log("masque le prix")
+  //console.log(noDisplayPrice);
+  const noDisplayForm = document.querySelector("#blocFormOrder").style.display ="none";
+  //console.log("masque le formulaire")
+  //console.log(noDisplayForm);
+} 
+
 //selection du bouton envoyer formulaire
 const btnSendFormOrder = document.querySelector("#btnSendFormOrder")
 
@@ -179,134 +186,142 @@ btnSendFormOrder.addEventListener("click", (e)=>{
 //pour stopper le comportement par defaut
 e.preventDefault();
 
-//création (déinition) d'une classe pour fabriquer l'objet où iront les values du formulaire
-class form{
-  constructor(){
-    this.Prenom = document.querySelector("#firstNameFormOrder").value;
-    this.Nom = document.querySelector("#nameFormOrder").value;
-    this.Adresse = document.querySelector("#addressFormOrder").value;
-    this.Ville = document.querySelector("#cityFormOrder").value;
-    this.CodePostal = document.querySelector("#postalCodeFormOrder").value;
-    this.Email = document.querySelector("#emailFormOrder").value;
+  //création (déinition) d'une classe pour fabriquer l'objet où iront les values du formulaire
+  class form{
+    constructor(){
+      this.Prenom = document.querySelector("#firstName").value;
+      this.Nom = document.querySelector("#lastName").value;
+      this.Adresse = document.querySelector("#address").value;
+      this.Ville = document.querySelector("#city").value;
+      this.Email = document.querySelector("#email").value;
+    }
   }
-}
 
-//appel de l'instance de classe formulaire (form) pour créer l'objet "formValue"
-const formValue = new form("Ville");
+  //appel de l'instance de classe formulaire (form) pour créer l'objet "formValue"
+  const formValue = new form("Ville");
 
-console.log("formulaire");
-console.log(formValue);
+//console.log("formulaire");
+//console.log(formValue);
 
-//gestion des champs du formulaire (pour la validation) en contrôlant les données tapé par l'utilisateur
-const textAlert = (value) => {
-  return `${value}: les chiffres et les symbole ne sont pas autorisées \n Ne pas dépaseer 20 caractères et minimun 3 caractères`; 
-}
-
-const regExOnlyLetter = (value) => {//regualar expression(expression)
+  //gestion des champs du formulaire (pour la validation) en contrôlant les données tapé par l'utilisateur
+  const regExOnlyLetter = (value) => {//regualar expression(expression)
   return /^[A-Za-z\s-]{3,20}$/.test(value);
-}
-
-const regExAddress = (value) => {
-  return /^[A-Za-z0-9\s]{5,50}$/.test(value);
-}
-
-const regExPostalCode = (value) =>{
-  return /^[0-9]{5}$/.test(value);
-}
-
-const regExEmail = (value) =>{
-  return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value);
-}
-
-function firstNameControle(){
-  //controle de la validation du prénom
-  const theFirstName = formValue.Prenom;
-  if (regExOnlyLetter(theFirstName)) {
-    return true;
-  } else {
-    alert(textAlert("Prénom"));
-    return false;
-  }
-};
-
-function nameControle() {
-  //controle de la validation du nom
-  const theName = formValue.Nom;
-  if (regExOnlyLetter(theName)) {
-    return true;
-  } else {
-    alert(textAlert("Nom"));
-    return false;
-  }
-};
-
-function addressControle() {
-  const theAddress = formValue.Adresse;
-  if(regExAddress(theAddress)){
-    return true;
-  } else {
-    alert("Adresse : ne pas mettre des ponctuation ou autre mais uniquement des chiffres et/ou lettres (minimun 5 caractères")
-  }
-}
-
-function cityControle() {
-  //controle de la validation de la ville
-  const theCity = formValue.Ville;
-  if (regExOnlyLetter(theCity)) {
-    return true;
-  } else {
-    alert(textAlert("Ville"));
-    return false;
-  }
-};
-
-function postalCodeControle() {
-  //controle de la validation de la ville
-  const thePostalCode = formValue.CodePostal;
-  if (regExPostalCode(thePostalCode)) {
-    return true;
-  } else {
-    alert("CodePostal : veillez entrer les 5 chiffres de votre code postal");
-    return false;
-  }
-};
-
-function emailControle() {
-  //controle de la validation de la ville
-  const theEmail = formValue.Email;
-  if (regExEmail(theEmail)) {
-    return true;
-  } else {
-    alert("Email: veillez entrer un email valide");
-    return false;
-  }
-};
-
-if (firstNameControle() , nameControle() , addressControle(), cityControle(), postalCodeControle(), emailControle()){
-  //Mettre l'objet "formValue" dans le localStorage(évite d'avoir des key different)
-  localStorage.setItem("formValue", JSON.stringify(formValue));
-  } else{
-  alert("Veuillez bien remplir le formulaire en respectant les caractères avant de confirmer votre commande")
   }
 
-//mettre les values dans un formulaire et mettre les produits dans un objet à envoyer
-const toSendForm = {
+  const regExAddress = (value) => {
+    return /^[A-Za-z0-9\s]{5,50}$/.test(value);
+  }
+
+  const regExEmail = (value) =>{
+    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value);
+  }
+
+  function firstNameControle(){
+    //controle de la validation du prénom
+    const theFirstName = formValue.Prenom;
+    if (regExOnlyLetter(theFirstName)) {
+      document.querySelector("#firstNameMissing").textContent ="";
+      return true;
+    } else {
+      document.querySelector("#firstNameMissing").textContent ="veuillez entrer un prénom valide";
+      return false;
+    }
+  };
+
+  function lastNameControle() {
+    //controle de la validation du nom
+    const theLastName = formValue.Nom;
+    if (regExOnlyLetter(theLastName)) {
+      document.querySelector("#lastNameMissing").textContent ="";
+      return true;
+    } else {
+      document.querySelector("#lastNameMissing").textContent ="veuillez entrer un nom valide";
+      return false;
+    }
+  };
+
+  function addressControle() {
+    const theAddress = formValue.Adresse;
+    if(regExAddress(theAddress)){
+      document.querySelector("#addressMissing").textContent ="";
+      return true;
+    } else {
+      document.querySelector("#addressMissing").textContent ="veuillez entrer une adresse valide";
+      return false;
+    }
+  }
+
+  function cityControle() {
+    //controle de la validation de la ville
+    const theCity = formValue.Ville;
+    if (regExOnlyLetter(theCity)) {
+      document.querySelector("#cityMissing").textContent ="";
+      return true;
+    } else {
+      document.querySelector("#cityMissing").textContent ="veuillez entrer une ville valide";
+      return false;
+    }
+  };
+
+  function emailControle() {
+    //controle de la validation de la ville
+    const theEmail = formValue.Email;
+    if (regExEmail(theEmail)) {
+      document.querySelector("#emailMissing").textContent ="";
+      return true;
+    } else {
+      document.querySelector("#emailMissing").textContent ="veuillez entrer un email valide";
+      return false;
+    }
+  };
+
+  if (firstNameControle() , lastNameControle() , addressControle(), cityControle(), emailControle()){
+    //Mettre l'objet "formValue" dans le localStorage(évite d'avoir des key different)
+    localStorage.setItem("formValue", JSON.stringify(formValue));
+    } else{
+    alert("Veuillez bien remplir le formulaire sans utiliser des caractères spéciaux avant de confirmer votre commande")
+    }
+
+  //mettre les values dans un formulaire et mettre les produits dans un objet à envoyer
+  const toSendForm = {
     productsSaveLocalStorage, 
     formValue
-}
+  }
 
-console.log("à envoyer")
-console.log(toSendForm);
+  ////en plus//
 
-//Envoie de l'objet "tosendForm" vers le serveur
-const promise01 = fetch(https://)
+  //console.log("à envoyer")
+  //console.log(toSendForm);
 
+
+  const order = {
+    contact: {
+      firstName: document.querySelector("#firstName").value,
+      lastName: document.querySelector("#lastName").value,
+      address: document.querySelector("#address").value,
+      city: document.querySelector("#city").value,
+      email: document.querySelector("#email").value,
+    },
+  }
+
+
+  const requestOptions = {
+    method: 'POST',
+    body: JSON.stringify(order),
+    headers: { 'Content-Type': 'application/json' },
+  }
+
+  fetch("http://127.0.0.1:3000/api/teddies/order", requestOptions)
+    .then((response) => {return response.json()
+      //console.log(response);
+    })
+    /*.then((json) => {
+      console.log(json)
+    })*/
+    .catch((error) => {
+      //return response.status(500).json(new Error(error))
+      console.log(error);
+      //alert("error")
+    })
 });
-
-//masque le formulaire s'il n'y pas de produit selectionée
-if(productsSaveLocalStorage === null || productsSaveLocalStorage == 0 ){
-    const noDisplayForm = document.querySelector("#blocFormOrder").style.display ="none";
-    console.log("masque le formulaire")
-    console.log(noDisplayForm);
-}
-//*******------- Fin Formulaire de la commande --------*******//
+//*******------- Fin Formulaire de la commande ------*/

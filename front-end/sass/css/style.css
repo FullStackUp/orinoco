@@ -491,6 +491,41 @@ footer ul li {
   display: none;
 }
 
+#blocConfirmationOrder {
+  border: 1px solid black;
+  margin-top: 20rem;
+  height: 250px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#blocConfirmationOrder h2 {
+  font-size: 25px;
+  text-align: center;
+  background-color: #77b5fe;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocConfirmationOrder p:nth-child(1) {
+  color: red;
+  font-weight: 900;
+  font-size: 20px;
+}
+#blocConfirmationOrder p {
+  text-align: center;
+  font-size: 20px;
+}
+
+#blocResumeOrder {
+  margin-top: 10px;
+}
+
+.gras {
+  font-weight: 900;
+}
+
 /****************************
 Debut _oriteddyarticles.html
 *****************************/
@@ -804,7 +839,7 @@ Fin _oriteddyproduct.html
   border: 2px solid;
   display: grid;
   /*row(rang) / column (col) */
-  grid-template: repeat(8, 80px)/repeat(4, 99px);
+  grid-template: repeat(8, 70px)/repeat(4, 99px);
 }
 
 #titleBlocFormOrder {
@@ -823,134 +858,104 @@ Fin _oriteddyproduct.html
   background-color: lightsteelblue;
   height: 80px;
   width: 396px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-size: 20px;
+  padding-top: 25px;
 }
-#firstNameBlocFormOrder #labelFirstNameFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 2/1/3/3;
-}
-#firstNameBlocFormOrder #firstNameFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 2/3/3/-1;
+#firstNameBlocFormOrder #firstName {
   font-size: 20px;
 }
+#firstNameBlocFormOrder #firstNameMissing {
+  color: red;
+  font-size: 16px;
+}
 
-#nameBlocFormOrder {
+#lastNameBlocFormOrder {
   background-color: lightgreen;
   height: 80px;
   width: 396px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding-top: 25px;
 }
-#nameBlocFormOrder #labelNameFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 3/1/4/3;
+#lastNameBlocFormOrder #labelLastName {
   font-size: 20px;
 }
-#nameBlocFormOrder #nameFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 3/3/4/-1;
+#lastNameBlocFormOrder #lastName {
   font-size: 20px;
+}
+#lastNameBlocFormOrder #lastNameMissing {
+  color: red;
+  font-size: 16px;
 }
 
 #addressBlocFormOrder {
   background-color: lightcoral;
   height: 80px;
   width: 396px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding-top: 25px;
 }
-#addressBlocFormOrder #labelAddressFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 4/1/5/3;
+#addressBlocFormOrder #labelAddress {
   font-size: 20px;
 }
-#addressBlocFormOrder #addressFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 4/3/5/-1;
+#addressBlocFormOrder #address {
   font-size: 20px;
   height: 30px;
+}
+#addressBlocFormOrder #addressMissing {
+  color: red;
+  font-size: 16px;
 }
 
 #cityBlocFormOrder {
   background-color: lightsteelblue;
   height: 80px;
   width: 396px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding-top: 25px;
 }
-#cityBlocFormOrder #labelCityFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 5/1/6/3;
+#cityBlocFormOrder #labelCity {
   font-size: 20px;
 }
-#cityBlocFormOrder #cityFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 5/3/6/-1;
+#cityBlocFormOrder #city {
   font-size: 20px;
 }
-
-#postalCodeBlocFormOrder {
-  background-color: lightgreen;
-  height: 80px;
-  width: 396px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#postalCodeBlocFormOrder #labelPostalCodeFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 6/1/7/3;
-  font-size: 20px;
-}
-#postalCodeBlocFormOrder #postalCodeFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 6/3/7/-1;
-  font-size: 20px;
+#cityBlocFormOrder #cityMissing {
+  color: red;
+  font-size: 16px;
 }
 
 #emailBlocFormOrder {
   background-color: lightblue;
   height: 80px;
   width: 396px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  padding-top: 25px;
 }
-#emailBlocFormOrder #labelEmailFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 7/1/8/3;
+#emailBlocFormOrder #labelEmail {
   font-size: 20px;
 }
-#emailBlocFormOrder #emailFormOrder {
-  /*debut row / debut col / fin row / fin col */
-  grid-area: 7/3/8/-1;
+#emailBlocFormOrder #email {
   font-size: 20px;
+}
+#emailBlocFormOrder #emailMissing {
+  color: red;
+  font-size: 16px;
+}
+
+#btnSendFormBlocFormOrder {
+  padding-left: 50px;
+  padding-top: 20px;
 }
 
 #btnSendFormOrder {
   background-color: lightsteelblue;
-  height: 80px;
-  width: 396px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   /*debut row / debut col / fin row / fin col */
   grid-area: 8/1/9/-1;
   font-size: 20px;
+  border-radius: 25px;
+  height: 40px;
+  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
