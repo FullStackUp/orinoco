@@ -1,7 +1,6 @@
 //déclaration de la variable "productsSaveLocalStorage" pour pouvoir stocker la key et value dans le localStorage
 
 // "JSON.parse" permet de convertir les objets javascript du localstorage en JSON pour une meilleur visuel
-
 let productsSaveLocalStorage = JSON.parse(localStorage.getItem("userOrder"));
 //console.log(productsSaveLocalStorage);
 
@@ -21,24 +20,23 @@ const emptyBasket = `
     </div> ` ;
     positionProductBasket.innerHTML = emptyBasket;
 } else {//si le panier n'es pas vide : afficher les produits qui sont stocké dans le LocalStorage
-
-        for(k = 0; k < productsSaveLocalStorage.length; k++ ){
+        for (p = 0; p < productsSaveLocalStorage.length; p++ ){
 
             structureProductBasket = structureProductBasket + 
             `<div id="blocRecapOrder">
-                <div>${productsSaveLocalStorage[k].Nom}</div> 
-                <div>${productsSaveLocalStorage[k].Prix},00 € <button class="buttonDelete"> supprimer </button></div>
+                <div>${productsSaveLocalStorage[p].Nom}</div> 
+                <div>${productsSaveLocalStorage[p].Prix},00 € <button class="buttonDelete"> supprimer </button></div>
             </div>`; 
             /* !!! Le "Nom" et le "Prix" écrit de cette façon (N et P Majuscule) correspont 
             au "Nom" et "Prix" du LocalStorage et non du back-end et c'est moi qui l'ai definie 
             de cette façon dans le "_oriteddyproduct.js" dans la variable "optionProduct" !!!*/
-        } 
+        };
         
-        if(k == productsSaveLocalStorage.length) {
+        if(p == productsSaveLocalStorage.length) {
          //injection HTML dans la page panier
          positionProductBasket.innerHTML = structureProductBasket;
         }
-    }
+      };
 
 //*******------- Fin Affichage des produits dans le panier -------*******//
 
@@ -46,7 +44,7 @@ const emptyBasket = `
 
 //selection des boutons supprimer
 let buttonDelete = document.querySelectorAll(".buttonDelete");
-console.log(buttonDelete);
+//console.log(buttonDelete);
 
 for (let l = 0; l < buttonDelete.length; l++){
     buttonDelete[l].addEventListener("click" , (event) =>{
@@ -104,9 +102,6 @@ const displayPriceHtml = `
 
 //injection du html dans la page panieraprès le dernier enfant
 blocProductBasket.insertAdjacentHTML("beforeend", displayPriceHtml);
-
-//Affiche le prix en euros dans le console log
-console.log(new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(totalPriceFinal));
 
 //*******------- Fin prix total du panier -------*******//
 
@@ -182,27 +177,25 @@ if(productsSaveLocalStorage === null || productsSaveLocalStorage == 0 ){
 const btnSendFormOrder = document.querySelector("#btnSendFormOrder")
 
 //AddEveTListerner
-btnSendFormOrder.addEventListener("click", (e)=>{
+btnSendFormOrder.addEventListener("click", (e) => {
 //pour stopper le comportement par defaut
 e.preventDefault();
+    const firstNameForm = document.querySelector("#firstName").value;
+    const lastNameForm = document.querySelector("#lastName").value;
+    const addressForm = document.querySelector("#address").value;
+    const cityForm = document.querySelector("#city").value;
+    const emailForm = document.querySelector("#email").value;
 
-  //création (déinition) d'une classe pour fabriquer l'objet où iront les values du formulaire
-  class form{
-    constructor(){
-      this.Prenom = document.querySelector("#firstName").value;
-      this.Nom = document.querySelector("#lastName").value;
-      this.Adresse = document.querySelector("#address").value;
-      this.Ville = document.querySelector("#city").value;
-      this.Email = document.querySelector("#email").value;
-    }
-  }
-
-  //appel de l'instance de classe formulaire (form) pour créer l'objet "formValue"
-  const formValue = new form("Ville");
-
-//console.log("formulaire");
-//console.log(formValue);
-
+    const order = {
+      contact: {
+      firstName : firstNameForm,
+      lastName : lastNameForm,
+      address : addressForm,
+      city : cityForm,
+      email : emailForm 
+      },
+      products : [productsSaveLocalStorage],
+    };
   //gestion des champs du formulaire (pour la validation) en contrôlant les données tapé par l'utilisateur
   const regExOnlyLetter = (value) => {//regualar expression(expression)
   return /^[A-Za-z\s-]{3,20}$/.test(value);
@@ -218,8 +211,7 @@ e.preventDefault();
 
   function firstNameControle(){
     //controle de la validation du prénom
-    const theFirstName = formValue.Prenom;
-    if (regExOnlyLetter(theFirstName)) {
+    if (regExOnlyLetter(firstNameForm)) {
       document.querySelector("#firstNameMissing").textContent ="";
       return true;
     } else {
@@ -230,8 +222,7 @@ e.preventDefault();
 
   function lastNameControle() {
     //controle de la validation du nom
-    const theLastName = formValue.Nom;
-    if (regExOnlyLetter(theLastName)) {
+    if (regExOnlyLetter(lastNameForm)) {
       document.querySelector("#lastNameMissing").textContent ="";
       return true;
     } else {
@@ -241,8 +232,8 @@ e.preventDefault();
   };
 
   function addressControle() {
-    const theAddress = formValue.Adresse;
-    if(regExAddress(theAddress)){
+    //controle de la validation de l'adresse
+    if(regExAddress(addressForm)){
       document.querySelector("#addressMissing").textContent ="";
       return true;
     } else {
@@ -253,8 +244,7 @@ e.preventDefault();
 
   function cityControle() {
     //controle de la validation de la ville
-    const theCity = formValue.Ville;
-    if (regExOnlyLetter(theCity)) {
+    if (regExOnlyLetter(cityForm)) {
       document.querySelector("#cityMissing").textContent ="";
       return true;
     } else {
@@ -265,8 +255,7 @@ e.preventDefault();
 
   function emailControle() {
     //controle de la validation de la ville
-    const theEmail = formValue.Email;
-    if (regExEmail(theEmail)) {
+    if (regExEmail(emailForm)) {
       document.querySelector("#emailMissing").textContent ="";
       return true;
     } else {
@@ -276,52 +265,31 @@ e.preventDefault();
   };
 
   if (firstNameControle() , lastNameControle() , addressControle(), cityControle(), emailControle()){
-    //Mettre l'objet "formValue" dans le localStorage(évite d'avoir des key different)
-    localStorage.setItem("formValue", JSON.stringify(formValue));
-    } else{
-    alert("Veuillez bien remplir le formulaire sans utiliser des caractères spéciaux avant de confirmer votre commande")
-    }
+    //Mettre l'objet "order" dans le localStorage(évite d'avoir des key different)
+    localStorage.setItem("order", JSON.stringify(order));
+  } else {
+        alert("Veuillez bien remplir le formulaire sans utiliser des caractères spéciaux avant de confirmer votre commande")
+      }
+
 
   //mettre les values dans un formulaire et mettre les produits dans un objet à envoyer
-  const toSendForm = {
-    productsSaveLocalStorage, 
-    formValue
-  }
-
-  ////en plus//
-
-  //console.log("à envoyer")
-  //console.log(toSendForm);
-
-
-  const order = {
-    contact: {
-      firstName: document.querySelector("#firstName").value,
-      lastName: document.querySelector("#lastName").value,
-      address: document.querySelector("#address").value,
-      city: document.querySelector("#city").value,
-      email: document.querySelector("#email").value,
-    },
-  }
-
+  console.log(order);
 
   const requestOptions = {
     method: 'POST',
     body: JSON.stringify(order),
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
   }
 
-  fetch("http://127.0.0.1:3000/api/teddies/order", requestOptions)
-    .then((response) => {return response.json()
-      //console.log(response);
-    })
-    /*.then((json) => {
+  fetch(`"http://localhost:3000'/api/teddies/order"`, requestOptions)
+    .then((response) => response.json())
+    .then((json) => {
       console.log(json)
-    })*/
-    .catch((error) => {
-      //return response.status(500).json(new Error(error))
-      console.log(error);
-      //alert("error")
     })
+    .catch((error) => {
+      alert(error)
+    });
 });
+
+
 //*******------- Fin Formulaire de la commande ------*/

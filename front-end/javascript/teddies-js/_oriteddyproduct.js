@@ -61,6 +61,8 @@ function transferProduct(productDetailed){
 
   cloneBlocTemplateProduct.getElementById("informationPriceCardProduct").textContent = "*tous les prix incluent la TVA."
   document.getElementById("mainProductTeddy").appendChild(cloneBlocTemplateProduct);//fait apparaître le elements en visuel
+
+  console.log(productDetailed);
 };
 
 //Panier = inspiré du YouTubeur e-genieclimatique
@@ -105,7 +107,6 @@ function basketUser (productDetailed) {
       console.log(productsSaveLocalStorage);
     }
   });
-
 
    //permert de selectionner une options (afficher que sur la console log)
    let elt = document.getElementById('productColorsOption');
