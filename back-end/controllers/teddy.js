@@ -47,6 +47,7 @@ exports.getOneTeddy = (req, res, next) => {
  *
  */
 exports.orderTeddies = (req, res, next) => {
+
   if (!req.body.contact ||
     !req.body.contact.firstName ||
     !req.body.contact.lastName ||
@@ -54,15 +55,15 @@ exports.orderTeddies = (req, res, next) => {
     !req.body.contact.city ||
     !req.body.contact.email ||
     !req.body.products) {
-    return res.status(400).send(new Error('Bad request!'));
+    return res.status(400).send(new Error('Bad request!!!'));
   }
   let queries = [];
-  for (let productId of req.body.products) {
+  for (let product of req.body.products) { // remplacement de "productId" par "product"
     const queryPromise = new Promise((resolve, reject) => {
-      Teddy.findById(productId).then(
+      Teddy.findById(product.id).then( // le backend attendait un id mais dans le front-end c'est un objet donc remplacement de "productId" par "product.id"
         (teddy) => {
           if (!teddy) {
-            reject('Camera not found: ' + productId);
+            reject('Camera not found: ' + product.id);// modification de "productId" par "product.id"
           }
           teddy.imageUrl = req.protocol + '://' + req.get('host') + '/images/' + teddy.imageUrl;
           resolve(teddy);
@@ -89,4 +90,5 @@ exports.orderTeddies = (req, res, next) => {
       return res.status(500).json(new Error(error));
     }
   );
+  
 };

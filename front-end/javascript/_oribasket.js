@@ -194,7 +194,7 @@ e.preventDefault();
       city : cityForm,
       email : emailForm 
       },
-      products : [productsSaveLocalStorage],
+      products : productsSaveLocalStorage,
     };
   //gestion des champs du formulaire (pour la validation) en contrôlant les données tapé par l'utilisateur
   const regExOnlyLetter = (value) => {//regualar expression(expression)
@@ -273,23 +273,28 @@ e.preventDefault();
 
 
   //mettre les values dans un formulaire et mettre les produits dans un objet à envoyer
-  console.log(order);
+  //console.log(order);
 
   const requestOptions = {
     method: 'POST',
     body: JSON.stringify(order),
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    headers: { 'Content-Type': 'application/json; charset=UTF-8',
+                        'Accept': 'application/json'
+	},
   }
 
-  fetch(`"http://localhost:3000'/api/teddies/order"`, requestOptions)
+
+  fetch("http://localhost:3000/api/teddies/order", requestOptions)
     .then((response) => response.json())
     .then((json) => {
       console.log(json)
+	  alert("id de la commande : " + json.orderId) ; // alerte montrant comment récupérer l'id de la commande
     })
     .catch((error) => {
       alert(error)
     });
 });
+
 
 
 //*******------- Fin Formulaire de la commande ------*/
