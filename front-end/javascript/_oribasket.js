@@ -267,6 +267,8 @@ e.preventDefault();
   if (firstNameControle() , lastNameControle() , addressControle(), cityControle(), emailControle()){
     //Mettre l'objet "order" dans le localStorage(évite d'avoir des key different)
     localStorage.setItem("order", JSON.stringify(order));
+    //Enregistrer le prix total dans le localStorage
+    localStorage.setItem("totalPriceFinal", JSON.stringify(totalPriceFinal));
   } else {
         alert("Veuillez bien remplir le formulaire sans utiliser des caractères spéciaux avant de confirmer votre commande")
       }
@@ -288,13 +290,20 @@ e.preventDefault();
     .then((response) => response.json())
     .then((json) => {
       console.log(json)
-	  alert("id de la commande : " + json.orderId) ; // alerte montrant comment récupérer l'id de la commande
+	    //alert("id de la commande : " + json.orderId) ; // alerte montrant comment récupérer l'id de la commande
+      console.log(json.orderId);
+      //Enregistrer l'id dans le localStorage
+      localStorage.setItem("responseId", json.orderId);
     })
     .catch((error) => {
       alert(error)
     });
+
+    //si le formulaire n'est pas remplit correctement l'utilsateur ne verra pas la page de confirmation
+    if (firstNameControle() , lastNameControle() , addressControle(), cityControle(), emailControle()){
+      window.location = "../html/_confirmation.html"//aller à la page de confirmation
+      } else {
+      window.location = "../html/_oribasket.html"//reste dans la page panier
+    }
 });
-
-
-
 //*******------- Fin Formulaire de la commande ------*/

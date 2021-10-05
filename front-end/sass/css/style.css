@@ -509,7 +509,7 @@ footer ul li {
   align-items: center;
 }
 #blocConfirmationOrder p:nth-child(1) {
-  color: red;
+  color: green;
   font-weight: 900;
   font-size: 20px;
 }
@@ -522,7 +522,7 @@ footer ul li {
   margin-top: 10px;
 }
 
-.gras {
+#idCommand, #priceTotalCommand, #thanks {
   font-weight: 900;
 }
 
