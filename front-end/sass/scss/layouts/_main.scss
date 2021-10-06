@@ -6,24 +6,13 @@
   padding: 0;
 }
 
-/*#mainPage {
-  margin: 0;
-  padding: 0;
-  .blocMainPage {
-    max-width: 1345px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}*/
-
 #mainPage {
   margin: 0;
   padding: 0;
-  max-width: 1345px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: -42px;
 }
 
 .blocImgOriBook {
@@ -31,15 +20,24 @@
   margin-top: 11rem;
 }
 
+.blocImgOriBook img {
+  cursor: pointer;
+  margin-top: 32px;
+}
+
 .blocImgOriTextil {
   height: 20rem;
   margin-top: -11rem;
 }
 
-img {
+.blocImgOriTextil img{
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+img{
   height: 15rem;
   width: 384px;
-  cursor: pointer;
 }
 
 .welcomeSection {
@@ -56,10 +54,9 @@ img {
   color: black;
   .oriTeddiesSection {
     margin-top: 32px;
-    border: 2px solid $color-secondary;
-    background-color: lighten($color: $color-secondary, $amount: 25);
     a {
       text-decoration: none;
+      color: black;
     }
   }
 }
@@ -71,10 +68,9 @@ img {
   color: black;
   .oriCamerasSection {
     margin-top: 32px;
-    border: 2px solid $color-secondary;
-    background-color: lighten($color: $color-secondary, $amount: 25);
     a {
       text-decoration: none;
+      color: black;
     }
   }
 }
@@ -86,10 +82,9 @@ img {
   color: black;
   .oriFurnituresSection {
     margin-top: 32px;
-    border: 2px solid $color-secondary;
-    background-color: lighten($color: $color-secondary, $amount: 25);
     a {
       text-decoration: none;
+      color: black;
     }
   }
 }

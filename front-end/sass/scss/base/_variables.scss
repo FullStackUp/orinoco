@@ -1,13 +1,23 @@
 $color-primary: #e68a09;
 $color-secondary: #8f5bfe;
+
 $color-facebook: #0065fc;
 $color-twitter: #77b5fe;
 $color-instagram: #ffe436;
+
 $color-card: #f1f1f1;
+
 $color-buttonOne:#90ee90;
 $color-buttonTwo: #87cefa;
 $color-buttonThree: #ffb6c1;
+
+
 $color-iconeLogo: linear-gradient($color-primary, $color-secondary);
 $color-iconeFacebook: linear-gradient($color-facebook, #5dade2);
 $color-iconeInstagram: linear-gradient($color-instagram, $color-secondary);
 $color-iconeTwitter: linear-gradient($color-twitter, #00ffff);
+
+$tablet: "only screen and (min-width: 768px)";
+$tablet-up: "only screen and (min-width: 980px)";
+$laptop: "only screen and (min-width: 1100px)";
+$pc: "only screen and (min-width: 1345px)";

@@ -1,0 +1,48 @@
+@media #{$tablet} {
+
+    #mainPage {
+        background-image: url("/front-end/image/WallpaperProducts.jpg");
+        background-attachment: fixed;
+    }
+
+    .titleOriTeddies{
+        background-color: lighten($color: #a1a38e, $amount: 20);
+        width: 385px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .titleOriCameras{
+        background-color: lighten($color: #835e44, $amount: 40);
+        width: 385px ;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    .titleOriFurnitures{
+        background-color: whitesmoke;
+        width: 385px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer div.blocFooterAll{
+        max-width: initial;
+    }
+    
+    footer div.linksSupportFooter{
+        justify-content: space-evenly;
+    }
+    
+    footer div.linksSupportFooter ul{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer div.reseauxSociauxFooter ul{
+        padding-top: 30px;
+    }
+}

@@ -18,7 +18,7 @@
   justify-content: space-evenly;
 }
 
-.linkSupportFooter {
+.linksSupportFooter {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -45,6 +45,52 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #mainPage {
+    background-image: url("/front-end/image/WallpaperProducts.jpg");
+    background-attachment: fixed;
+  }
+
+  .titleOriTeddies {
+    background-color: #d0d1c6;
+    width: 385px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .titleOriCameras {
+    background-color: #dac7b9;
+    width: 385px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .titleOriFurnitures {
+    background-color: whitesmoke;
+    width: 385px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer div.blocFooterAll {
+    max-width: initial;
+  }
+
+  footer div.linksSupportFooter {
+    justify-content: space-evenly;
+  }
+
+  footer div.linksSupportFooter ul {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer div.reseauxSociauxFooter ul {
+    padding-top: 30px;
   }
 }
 body {
@@ -156,23 +202,13 @@ body {
   padding: 0;
 }
 
-/*#mainPage {
-  margin: 0;
-  padding: 0;
-  .blocMainPage {
-    max-width: 1345px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}*/
 #mainPage {
   margin: 0;
   padding: 0;
-  max-width: 1345px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: -42px;
 }
 
 .blocImgOriBook {
@@ -180,15 +216,24 @@ body {
   margin-top: 11rem;
 }
 
+.blocImgOriBook img {
+  cursor: pointer;
+  margin-top: 32px;
+}
+
 .blocImgOriTextil {
   height: 20rem;
   margin-top: -11rem;
 }
 
+.blocImgOriTextil img {
+  cursor: pointer;
+  margin-top: 30px;
+}
+
 img {
   height: 15rem;
   width: 384px;
-  cursor: pointer;
 }
 
 .welcomeSection {
@@ -206,11 +251,10 @@ img {
 }
 .oriTeddiesCards .oriTeddiesSection {
   margin-top: 32px;
-  border: 2px solid #8f5bfe;
-  background-color: #e6daff;
 }
 .oriTeddiesCards .oriTeddiesSection a {
   text-decoration: none;
+  color: black;
 }
 
 .oriCamerasCards {
@@ -221,11 +265,10 @@ img {
 }
 .oriCamerasCards .oriCamerasSection {
   margin-top: 32px;
-  border: 2px solid #8f5bfe;
-  background-color: #e6daff;
 }
 .oriCamerasCards .oriCamerasSection a {
   text-decoration: none;
+  color: black;
 }
 
 .oriFurnituresCards {
@@ -236,11 +279,10 @@ img {
 }
 .oriFurnituresCards .oriFurnituresSection {
   margin-top: 32px;
-  border: 2px solid #8f5bfe;
-  background-color: #e6daff;
 }
 .oriFurnituresCards .oriFurnituresSection a {
   text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -259,7 +301,7 @@ footer ul li {
   list-style-type: none;
 }
 
-.linkSupportFooter a {
+.linksSupportFooter a {
   text-decoration: none;
   font-size: 20px;
   color: white;
@@ -267,7 +309,7 @@ footer ul li {
   transition: background-size 0.5s;
 }
 
-.linkSupportFooter a:hover {
+.linksSupportFooter a:hover {
   background-size: 100% 100%;
 }
 
@@ -432,6 +474,7 @@ footer ul li {
 }
 #wrapHeaderMenu .blocHeaderMenu .blocWrapTitle {
   border-bottom: 2px solid #e68a09;
+  padding-top: 10px;
 }
 #wrapHeaderMenu .blocHeaderMenu .titleWrapLogo {
   margin-left: 16px;
@@ -523,6 +566,7 @@ footer ul li {
 }
 
 #idCommand, #priceTotalCommand, #thanks {
+  /*vient du JavaScript de façon dynamique*/
   font-weight: 900;
 }
 
@@ -562,6 +606,7 @@ Debut _oriteddyarticles.html
 
 #imageCardArticle {
   width: 100%;
+  height: 15rem;
 }
 
 .detailsCardArticle {
