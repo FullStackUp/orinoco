@@ -1,30 +1,8 @@
 @media #{$tablet} {
 
     #mainPage {
-        background-image: url("/front-end/image/WallpaperProducts.jpg");
+        background-image: url("/front-end/image/backgroundTabletAndMore.jpg");
         background-attachment: fixed;
-    }
-
-    .titleOriTeddies{
-        background-color: lighten($color: #a1a38e, $amount: 20);
-        width: 385px ;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .titleOriCameras{
-        background-color: lighten($color: #835e44, $amount: 40);
-        width: 385px ;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-    
-    .titleOriFurnitures{
-        background-color: whitesmoke;
-        width: 385px ;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     footer div.blocFooterAll{
@@ -45,4 +23,103 @@
     footer div.reseauxSociauxFooter ul{
         padding-top: 30px;
     }
+}
+
+@media #{$tablet-up} {
+
+    .blocOriBookTextil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 10rem;
+    }
+
+    .blocOriTextil {
+        margin-top: 22rem;
+    }
+
+    .blocOriBook img {
+        height: 18rem;
+        width: 415px;
+    }
+    
+    .blocOriTextil img {
+        height: 18rem;
+        width: 415px;
+    }
+
+    .blocOriTeddiesCamerasFurnitures{
+        justify-content: center;
+        display: grid;
+        /*row(rang) / column (col) */
+        grid-template: repeat(2, 250px) / 400px 100px 400px;
+    }
+
+    .oriTeddiesCards{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 1 / 1 / 2 / 2;
+        a h2.titleOriTeddies{
+            margin-right: 15px;
+         }
+         img{
+             margin-right: 15px;
+         }  
+    }
+
+    .oriCamerasCards{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 1 / 2 / 3 / -1;
+        a h2.titleOriCameras{
+           margin-left: 115px;
+        }
+        img{
+            margin-left: 115px;
+        }    
+    }
+
+    .oriFurnituresCards{
+        /*debut row / debut col / fin row / fin col */
+        grid-area: 2 / 1 / 3 / -1;
+        margin-top: 100px;
+        .oriFurnituresSection .titleOriFurnitures{
+            width: 900px;
+        }
+        img{
+            width: 900px;
+            height: 30rem;
+        }
+    }
+
+    section.welcomeSection{
+        margin-top: 30rem;
+    }
+
+}
+
+@media #{$laptop} {
+
+    .blocOriBook img {
+        height: 20rem;
+        width: 465px;
+    }
+
+    .blocOriTextil img {
+        height: 20rem;
+        width: 465px;
+    }
+
+}
+
+@media #{$pc} {
+
+    .blocOriBook img {
+        height: 23rem;
+        width: 515px;
+    }
+
+    .blocOriTextil img {
+        height: 23rem;
+        width: 515px;
+    }
+
 }
