@@ -41,10 +41,12 @@ img{
 }
 
 .welcomeSection {
-  border: 2px solid $color-primary;
-  background-color: lighten($color: $color-primary, $amount: 40);
   text-align: center;
   margin-top: 32px;
+  height: 15rem;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .oriTeddiesCards {
@@ -106,6 +108,15 @@ img{
 .titleOriFurnitures{
   background-color: whitesmoke;
   width: 385px ;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bioSection {
+  text-align: center;
+  margin-top: 32px;
+  height: 213px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
 }

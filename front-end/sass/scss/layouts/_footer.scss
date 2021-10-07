@@ -32,6 +32,12 @@ footer {
   background-size: 100% 100%;
 }
 
+.reseauxSociauxFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .reseauxSociauxFooter ul {
   li {
     border: 3px solid white;

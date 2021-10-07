@@ -3,8 +3,25 @@
     #mainPage {
         background-image: url("/front-end/image/backgroundTabletAndMore.jpg");
         background-attachment: fixed;
+        height: 135rem;
     }
 
+    .welcomeSection, .bioSection {
+            margin-top: 0px;
+            width: 600px;
+            background-color: azure;
+            border-radius: 15px;
+            h2{
+              background-image: url("/front-end/image/texture-paper.png");
+              text-shadow: whitesmoke 1px 0 10px;
+            }
+            p{
+              background-image: url("/front-end/image/texture-paper.png");
+              text-shadow: whitesmoke 1px 0 10px;
+              font-size: 20px;
+            }
+    }
+    
     footer div.blocFooterAll{
         max-width: initial;
     }
@@ -27,11 +44,54 @@
 
 @media #{$tablet-up} {
 
+    header#header {
+        height: 65px;
+    }
+
+    #wrapHeaderMenu div.blocHeaderMenu .fa-bars{
+        top: 17px;
+        left: 10px;
+    }
+
+    #header div.blocHeaderLogoUserBasket .blocHeaderLogo{
+        margin-left: 50px;
+    }
+
+    #header div.blocHeaderSearch input{
+        height: 40px;
+        width: 50%;
+        margin-top: -53px;
+        margin-left: -32px;
+    }
+
+    #header div.blocHeaderSearch .iconeHeaderSearch{
+        height: 40px;
+        margin-top: -53px;
+    }
+
+
+    #mainPage {
+        height: 200rem;
+    }
+
+
+    div.welcomeSection{
+        margin-top: 12rem;
+        height: 181px;
+        width: 800px;
+        h2{
+            font-size: 36px;
+        }
+        p{
+            font-size: 24px;
+        }
+    }
+
     .blocOriBookTextil{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 10rem;
+        margin-top: 105px;
     }
 
     .blocOriTextil {
@@ -53,6 +113,7 @@
         display: grid;
         /*row(rang) / column (col) */
         grid-template: repeat(2, 250px) / 400px 100px 400px;
+        margin-top: 24rem;
     }
 
     .oriTeddiesCards{
@@ -90,8 +151,16 @@
         }
     }
 
-    section.welcomeSection{
-        margin-top: 30rem;
+    div.bioSection{
+        margin-top: 45rem;
+        height: 181px;
+        width: 800px;
+        h2{
+            font-size: 36px;
+        }
+        p{
+            font-size: 24px;
+        }
     }
 
 }

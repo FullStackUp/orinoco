@@ -51,6 +51,23 @@
   #mainPage {
     background-image: url("/front-end/image/backgroundTabletAndMore.jpg");
     background-attachment: fixed;
+    height: 135rem;
+  }
+
+  .welcomeSection, .bioSection {
+    margin-top: 0px;
+    width: 600px;
+    background-color: azure;
+    border-radius: 15px;
+  }
+  .welcomeSection h2, .bioSection h2 {
+    background-image: url("/front-end/image/texture-paper.png");
+    text-shadow: whitesmoke 1px 0 10px;
+  }
+  .welcomeSection p, .bioSection p {
+    background-image: url("/front-end/image/texture-paper.png");
+    text-shadow: whitesmoke 1px 0 10px;
+    font-size: 20px;
   }
 
   footer div.blocFooterAll {
@@ -73,11 +90,52 @@
   }
 }
 @media only screen and (min-width: 980px) {
+  header#header {
+    height: 65px;
+  }
+
+  #wrapHeaderMenu div.blocHeaderMenu .fa-bars {
+    top: 17px;
+    left: 10px;
+  }
+
+  #header div.blocHeaderLogoUserBasket .blocHeaderLogo {
+    margin-left: 50px;
+  }
+
+  #header div.blocHeaderSearch input {
+    height: 40px;
+    width: 50%;
+    margin-top: -53px;
+    margin-left: -32px;
+  }
+
+  #header div.blocHeaderSearch .iconeHeaderSearch {
+    height: 40px;
+    margin-top: -53px;
+  }
+
+  #mainPage {
+    height: 200rem;
+  }
+
+  div.welcomeSection {
+    margin-top: 12rem;
+    height: 181px;
+    width: 800px;
+  }
+  div.welcomeSection h2 {
+    font-size: 36px;
+  }
+  div.welcomeSection p {
+    font-size: 24px;
+  }
+
   .blocOriBookTextil {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 10rem;
+    margin-top: 105px;
   }
 
   .blocOriTextil {
@@ -99,6 +157,7 @@
     display: grid;
     /*row(rang) / column (col) */
     grid-template: repeat(2, 250px)/400px 100px 400px;
+    margin-top: 24rem;
   }
 
   .oriTeddiesCards {
@@ -136,8 +195,16 @@
     height: 30rem;
   }
 
-  section.welcomeSection {
-    margin-top: 30rem;
+  div.bioSection {
+    margin-top: 45rem;
+    height: 181px;
+    width: 800px;
+  }
+  div.bioSection h2 {
+    font-size: 36px;
+  }
+  div.bioSection p {
+    font-size: 24px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -174,8 +241,8 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 2px solid #8f5bfe;
-  background-color: #f0e9ff;
+  border-bottom: 4px solid gray;
+  background-color: lightgray;
 }
 #header a {
   text-decoration: none;
@@ -221,7 +288,7 @@ body {
 }
 #header .blocLinkHeaderUser .iconeHeaderUser {
   font-size: 20px;
-  color: #a074fe;
+  color: green;
   border-radius: 10px;
   padding: 5px;
 }
@@ -241,7 +308,7 @@ body {
   width: 60%;
   font-size: 16px;
   border: none;
-  background-color: #fbcd8d;
+  background-color: whitesmoke;
   border-radius: 10px 0px 0px 10px;
   padding: 16px;
 }
@@ -257,7 +324,7 @@ body {
   justify-content: center;
   align-content: center;
   font-size: 18px;
-  background-color: #b28efe;
+  background-color: lightslategrey;
 }
 #header .blocHeaderSearch .iconeHeaderSearch:hover {
   cursor: pointer;
@@ -306,10 +373,12 @@ img {
 }
 
 .welcomeSection {
-  border: 2px solid #e68a09;
-  background-color: #fce3bf;
   text-align: center;
   margin-top: 32px;
+  height: 15rem;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .oriTeddiesCards {
@@ -375,6 +444,15 @@ img {
   margin-right: auto;
 }
 
+.bioSection {
+  text-align: center;
+  margin-top: 32px;
+  height: 213px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   background-color: black;
   height: 16rem;
@@ -401,6 +479,12 @@ footer ul li {
 
 .linksSupportFooter a:hover {
   background-size: 100% 100%;
+}
+
+.reseauxSociauxFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .reseauxSociauxFooter ul li {
@@ -641,7 +725,7 @@ footer ul li {
   justify-content: center;
   align-items: center;
 }
-#blocConfirmationOrder p:nth-child(1) {
+#blocConfirmationOrder p.pValid {
   color: green;
   font-weight: 900;
   font-size: 20px;
@@ -658,6 +742,10 @@ footer ul li {
 #idCommand, #priceTotalCommand, #thanks {
   /*vient du JavaScript de façon dynamique*/
   font-weight: 900;
+}
+
+#footerConfirmation {
+  margin-top: 210px;
 }
 
 /****************************
