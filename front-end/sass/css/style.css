@@ -32,7 +32,7 @@
     font-size: 40px;
   }
 
-  h2.titleSectionOriArticles {
+  h2#titleSectionOriArticles {
     color: #f1f1f1;
     margin-top: 6rem;
     text-shadow: black 1px 0px 10px;
@@ -165,7 +165,7 @@
     font-size: 24px;
   }
 
-  h2.titleSectionOriArticles {
+  h2#titleSectionOriArticles {
     font-size: 50px;
     margin-top: 15rem;
   }
@@ -242,7 +242,7 @@
     margin-top: 10rem;
   }
 
-  h2.titleSectionOriArticles {
+  h2#titleSectionOriArticles {
     margin-top: 15rem;
   }
 
@@ -468,11 +468,11 @@ img {
   margin-right: auto;
 }
 
-.titleSectionOriArticles {
+#titleSectionOriArticles {
   margin-top: 2rem;
   font-size: 30px;
 }
-.titleSectionOriArticles .titleOriArticles {
+#titleSectionOriArticles .titleOriArticles {
   font-family: "Finger Paint", cursive, sans-serif;
 }
 
@@ -849,7 +849,7 @@ footer ul li {
   align-items: center;
 }
 #blocConfirmationOrder p.pValid {
-  color: #844f05;
+  color: #148414;
   font-weight: 900;
   font-size: 20px;
 }

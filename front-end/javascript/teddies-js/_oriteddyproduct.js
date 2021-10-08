@@ -108,8 +108,8 @@ function basketUser (productDetailed) {
 
 
     //limitation du notre de produit dans le panier
-    if(productsSaveLocalStorage.length >= 4){
-      alert("Action Impossible car votre panier est plein , veuillez passer votre commande ou enlever des articles de votre panier par suppression");
+    if(productsSaveLocalStorage.length >= 5){
+      alert("l'ajout n'a pas pu être réalisé car vous avez atteint le nombre maximum de produit dans votre panier , veuillez passer votre commande ou enlever des articles de votre panier par suppression");
       window.location = "/front-end/html/_oribasket.html";
     } 
   

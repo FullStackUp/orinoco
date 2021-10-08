@@ -15,7 +15,7 @@
         font-size: 40px;
     }
 
-    h2.titleSectionOriArticles{
+    h2#titleSectionOriArticles{
         color: $color-card;
         margin-top: 6rem;
         text-shadow: darken($color: $color-secondary, $amount: 100) 1px 0px 10px;
@@ -151,7 +151,7 @@
         }
     }
 
-    h2.titleSectionOriArticles{
+    h2#titleSectionOriArticles{
         font-size: 50px;
         margin-top: 15rem;
     }
@@ -231,7 +231,7 @@
 
     }
 
-    h2.titleSectionOriArticles{
+    h2#titleSectionOriArticles{
         margin-top: 15rem;
     }
 

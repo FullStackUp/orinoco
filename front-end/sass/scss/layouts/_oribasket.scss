@@ -25,9 +25,8 @@
     background-color: $color-quatenary;
     display: grid;
     text-align: center;
-    
-    
 }
+
 .blocRecapOrder{/*depuis le _oribasket.js*/
     display: flex;
     flex-direction: row;
@@ -85,6 +84,7 @@
 #thanksAdd a{
     color: darken($color: $color-twitter, $amount: 20) ;
 }
+
 
 /*******------- Debut formulaire -------*******/
 
