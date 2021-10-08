@@ -1,6 +1,5 @@
 footer {
   background-color: black;
-  height: 16rem;
   .blocFooterAll {
     max-width: 600px;
     margin-left: auto;
@@ -12,6 +11,12 @@ footer {
   ul li {
     list-style-type: none;
   }
+}
+
+.linksSupportFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .linksSupportFooter a {
@@ -39,6 +44,9 @@ footer {
 }
 
 .reseauxSociauxFooter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   li {
     border: 3px solid white;
     border-radius: 50%;

@@ -1,35 +1,4 @@
 @charset "UTF-8";
-.blocHeaderLogoUserBasket {
-  display: flex;
-  justify-content: space-between;
-}
-.blocHeaderLogoUserBasket .blocLinkHeaderLogo {
-  justify-content: center;
-  align-content: center;
-}
-.blocHeaderLogoUserBasket .blocHeaderUserBasket {
-  display: flex;
-}
-
-.blocWrapOriItems {
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.linksSupportFooter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.reseauxSociauxFooter ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
 @keyframes icone-full {
   0% {
     opacity: 0;
@@ -48,10 +17,26 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  #mainPage {
+  /*-------Debut index.html-------*/
+  main#mainPage {
     background-image: url("/front-end/image/backgroundTabletAndMore.jpg");
     background-attachment: fixed;
-    height: 135rem;
+    height: 166rem;
+  }
+
+  h2.titleSectionOriNews {
+    margin-top: 160px;
+    padding-top: 6rem;
+    color: white;
+    text-shadow: black 1px 0px 10px;
+    font-size: 40px;
+  }
+
+  h2.titleSectionOriArticles {
+    color: white;
+    margin-top: 6rem;
+    text-shadow: black 1px 0px 10px;
+    font-size: 40px;
   }
 
   .welcomeSection, .bioSection {
@@ -61,13 +46,19 @@
     border-radius: 15px;
   }
   .welcomeSection h2, .bioSection h2 {
-    background-image: url("/front-end/image/texture-paper.png");
+    background-image: url("/front-end/image/parchmentBackground.jpg");
     text-shadow: whitesmoke 1px 0 10px;
+    font-style: italic;
   }
   .welcomeSection p, .bioSection p {
-    background-image: url("/front-end/image/texture-paper.png");
+    background-image: url("/front-end/image/parchmentBackground.jpg");
     text-shadow: whitesmoke 1px 0 10px;
     font-size: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    margin-top: 0rem;
   }
 
   footer div.blocFooterAll {
@@ -88,8 +79,25 @@
   footer div.reseauxSociauxFooter ul {
     padding-top: 30px;
   }
+
+  /*-------Fin index.html-------*/
+  /*-------Debut _oriteddiesarticles.html-------*/
+  main#mainArticlesTeddies {
+    background-image: url("/front-end/image/backgroundTeddies.jpg");
+    background-attachment: fixed;
+  }
+
+  /*-------Fin _oriteddiesarticles.html-------*/
+  /*-------Debut _oriteddyproduct.html-------*/
+  main#mainProductTeddy {
+    background-image: url("/front-end/image/backgroundTeddy.jpg");
+    background-attachment: fixed;
+  }
+
+  /*-------Fin _oriteddyproduct.html-------*/
 }
 @media only screen and (min-width: 980px) {
+  /*-------Debut index.html-------*/
   header#header {
     height: 65px;
   }
@@ -115,8 +123,34 @@
     margin-top: -53px;
   }
 
-  #mainPage {
-    height: 200rem;
+  main#mainPage {
+    height: 205rem;
+  }
+
+  h2.titleSectionOriNews {
+    margin-top: 108px;
+    font-size: 50px;
+  }
+
+  .blocOriBookTextil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 105px;
+  }
+
+  .blocOriTextil {
+    margin-top: 14rem;
+  }
+
+  .blocOriBook img {
+    height: 20rem;
+    width: 450px;
+  }
+
+  .blocOriTextil img {
+    height: 20rem;
+    width: 450px;
   }
 
   div.welcomeSection {
@@ -131,25 +165,9 @@
     font-size: 24px;
   }
 
-  .blocOriBookTextil {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 105px;
-  }
-
-  .blocOriTextil {
-    margin-top: 22rem;
-  }
-
-  .blocOriBook img {
-    height: 18rem;
-    width: 415px;
-  }
-
-  .blocOriTextil img {
-    height: 18rem;
-    width: 415px;
+  h2.titleSectionOriArticles {
+    font-size: 50px;
+    margin-top: 15rem;
   }
 
   .blocOriTeddiesCamerasFurnitures {
@@ -157,17 +175,18 @@
     display: grid;
     /*row(rang) / column (col) */
     grid-template: repeat(2, 250px)/400px 100px 400px;
-    margin-top: 24rem;
+    margin-top: 12rem;
   }
 
-  .oriTeddiesCards {
+  div.oriTeddiesCards {
     /*debut row / debut col / fin row / fin col */
     grid-area: 1/1/2/2;
+    margin-top: 0px;
   }
-  .oriTeddiesCards a h2.titleOriTeddies {
+  div.oriTeddiesCards a h2.titleOriTeddies {
     margin-right: 15px;
   }
-  .oriTeddiesCards img {
+  div.oriTeddiesCards img {
     margin-right: 15px;
   }
 
@@ -206,28 +225,57 @@
   div.bioSection p {
     font-size: 24px;
   }
-}
-@media only screen and (min-width: 1100px) {
-  .blocOriBook img {
-    height: 20rem;
-    width: 465px;
-  }
 
-  .blocOriTextil img {
-    height: 20rem;
-    width: 465px;
-  }
+  /*-------Fin index.html-------*/
 }
 @media only screen and (min-width: 1345px) {
-  .blocOriBook img {
-    height: 23rem;
-    width: 515px;
+  /*-------Debut index.html-------*/
+  main#mainPage {
+    height: 166rem;
   }
 
-  .blocOriTextil img {
-    height: 23rem;
-    width: 515px;
+  div.blocOriBookTextil {
+    margin-top: 130px;
   }
+
+  div.welcomeSection {
+    margin-top: 10rem;
+  }
+
+  h2.titleSectionOriArticles {
+    margin-top: 15rem;
+  }
+
+  .blocOriTeddiesCamerasFurnitures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+  }
+
+  .oriCamerasCards a h2.titleOriCameras {
+    margin-left: 0px;
+  }
+  .oriCamerasCards img {
+    margin-left: 0px;
+  }
+
+  .oriFurnituresCards {
+    margin-top: 0px;
+  }
+  .oriFurnituresCards .oriFurnituresSection .titleOriFurnitures {
+    width: 384px;
+  }
+  .oriFurnituresCards img {
+    height: 15rem;
+    width: 384px;
+  }
+
+  div.bioSection {
+    margin-top: 17rem;
+  }
+
+  /*-------Fin index.html-------*/
 }
 body {
   margin: 0;
@@ -237,7 +285,6 @@ body {
 
 #header {
   min-width: 375px;
-  height: 135px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -257,6 +304,8 @@ body {
   height: 4rem;
   align-items: center;
   padding-right: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 #header .blocHeaderLogoUserBasket .blocHeaderLogo {
   margin-left: 5px;
@@ -267,6 +316,8 @@ body {
 }
 #header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo {
   margin-left: 5px;
+  justify-content: center;
+  align-content: center;
 }
 #header .blocHeaderLogoUserBasket .blocHeaderLogo .blocLinkHeaderLogo .logoHeaderOrinoco {
   font-family: "Finger Paint", cursive, sans-serif;
@@ -280,22 +331,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#header .blocLinkHeaderUser {
+#header .blocHeaderUserBasket {
+  display: flex;
   padding-right: 1rem;
 }
-#header .blocLinkHeaderUser .textHeaderUser {
+#header .blocHeaderUserBasket .textHeaderUser {
   font-size: 20px;
 }
-#header .blocLinkHeaderUser .iconeHeaderUser {
+#header .blocHeaderUserBasket .iconeHeaderUser {
   font-size: 20px;
   color: green;
   border-radius: 10px;
   padding: 5px;
 }
-#header .textHeaderBasket {
+#header .blocHeaderUserBasket .textHeaderBasket {
   font-size: 20px;
 }
-#header .iconeHeaderBasket {
+#header .blocHeaderUserBasket .iconeHeaderBasket {
   font-size: 20px;
   color: #844f05;
 }
@@ -345,11 +397,27 @@ body {
   margin-right: auto;
   text-align: center;
   margin-top: -42px;
+  height: 147rem;
+}
+
+.blocMainPage {
+  min-width: 400px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleSectionOriNews {
+  margin-top: 215px;
+  font-size: 30px;
+}
+.titleSectionOriNews .titleOriNews {
+  font-family: "Finger Paint", cursive, sans-serif;
 }
 
 .blocImgOriBook {
   height: 29rem;
-  margin-top: 11rem;
+  margin-top: 3rem;
 }
 
 .blocImgOriBook img {
@@ -381,11 +449,20 @@ img {
   margin-right: auto;
 }
 
+.titleSectionOriArticles {
+  margin-top: 2rem;
+  font-size: 30px;
+}
+.titleSectionOriArticles .titleOriArticles {
+  font-family: "Finger Paint", cursive, sans-serif;
+}
+
 .oriTeddiesCards {
   font-family: "Finger Paint", cursive, sans-serif;
   text-align: center;
   text-decoration: none;
   color: black;
+  margin-top: 6rem;
 }
 .oriTeddiesCards .oriTeddiesSection {
   margin-top: 32px;
@@ -451,11 +528,11 @@ img {
   width: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4rem;
 }
 
 footer {
   background-color: black;
-  height: 16rem;
 }
 footer .blocFooterAll {
   max-width: 600px;
@@ -467,6 +544,12 @@ footer ul {
 }
 footer ul li {
   list-style-type: none;
+}
+
+.linksSupportFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .linksSupportFooter a {
@@ -487,6 +570,11 @@ footer ul li {
   justify-content: space-evenly;
 }
 
+.reseauxSociauxFooter ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .reseauxSociauxFooter ul li {
   border: 3px solid white;
   border-radius: 50%;
@@ -676,6 +764,13 @@ footer ul li {
   -webkit-text-fill-color: transparent;
 }
 
+.blocWrapOriItems {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures {
   font-family: "Finger Paint", cursive, sans-serif;
   border: 2px solid #e68a09;
@@ -708,11 +803,20 @@ footer ul li {
   display: none;
 }
 
+#mainConfirmation {
+  height: 100rem;
+  background-color: #e8e8e8;
+  padding-top: 35rem;
+}
+
 #blocConfirmationOrder {
   border: 1px solid black;
-  margin-top: 20rem;
+  margin-top: 7px;
   height: 250px;
-  width: 95%;
+  width: 70%;
+  background-color: white;
+  min-width: 400px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -745,7 +849,7 @@ footer ul li {
 }
 
 #footerConfirmation {
-  margin-top: 210px;
+  margin-top: 0px;
 }
 
 /****************************
@@ -755,19 +859,33 @@ Debut _oriteddyarticles.html
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 136px;
-  max-width: 1345px;
-  background-color: #fdedd7;
-  height: 190rem;
+  margin-top: 90px;
+  height: 200rem;
+}
+#mainArticlesTeddies .blocMainArticlesTeddies {
+  padding-top: 9rem;
+  min-width: 400px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #mainArticlesTeddies #titlePageTeddies {
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 190px;
+  padding-top: 7px;
+  background-color: burlywood;
+  width: 400px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#blocSectionArticles {
+.blocSectionArticles {
   padding-top: 15rem;
   margin-bottom: -8rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
 }
 
 #blocCardArticle {
@@ -775,6 +893,7 @@ Debut _oriteddyarticles.html
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 9rem;
 }
 
 #linkCardArticle {
@@ -790,7 +909,7 @@ Debut _oriteddyarticles.html
 .detailsCardArticle {
   display: grid;
   /*row(rang) / column (col) */
-  grid-template: 1fr 1fr/repeat(2, 1fr);
+  grid-template: 1fr 1fr 1fr/repeat(2, 1fr);
   background-color: #fbcd8d;
   padding-top: 10px;
   padding-left: 5px;
@@ -804,6 +923,9 @@ Debut _oriteddyarticles.html
   border: 3px solid #e68a09;
   background-color: #f1f1f1;
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #priceCardArticle {
@@ -819,7 +941,18 @@ Debut _oriteddyarticles.html
   height: 50px;
   width: 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row-reverse;
+}
+
+.buyCardArticle {
+  grid-area: 3/1/3/-1;
+  font-size: 25px;
+  border: 3px solid #e68a09;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -834,14 +967,32 @@ Debut _oriteddyproduct.html
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 136px;
-  max-width: 1345px;
+  margin-top: 66px;
+  padding-top: 7rem;
   height: 130rem;
-  background-color: #fdedd7;
+  background-color: #e8e8e8;
+}
+#mainProductTeddy .blocMainProductTeddy {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
 }
 #mainProductTeddy #titlePageTeddy {
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 190px;
+  padding-top: 7px;
+  background-color: burlywood;
+  width: 400px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#blocSectionProduct {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
 }
 
 #blocCardProduct {
@@ -870,11 +1021,11 @@ Debut _oriteddyproduct.html
 #blocDetailedProduct {
   /*row(rang) / column (col) */
   display: grid;
-  grid-template: repeat(8, 80px)/repeat(4, 100px);
+  grid-template: repeat(9, 80px)/repeat(4, 100px);
   border: 3px solid #f1f1f1;
-  background-color: #e4e4e4;
+  background-color: white;
   width: 400px;
-  height: 665px;
+  height: 720px;
   border: 1px solid;
   margin-top: 5rem;
 }
@@ -1014,51 +1165,112 @@ Debut _oriteddyproduct.html
   justify-content: center;
   align-items: center;
 }
+#blocDetailedProduct #informationPriceCardProduct {
+  grid-area: 9/1/9/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /****************************
 Fin _oriteddyproduct.html
 *****************************/
 #mainOriBasket {
-  margin-top: 136px;
+  padding-top: 200px;
   height: 100rem;
-  background-color: #fdedd7;
+  background-color: #e8e8e8;
+}
+
+.blocMainOriBasket {
+  min-width: 400px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #titlePageOribasket {
   text-align: center;
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  background-color: darkcyan;
+  background-color: burlywood;
+  width: 400px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #blocProductBasket {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
   width: 400px;
-  height: 400px;
-  background-color: chocolate;
+  height: auto;
+  background-color: whitesmoke;
+  display: grid;
+  text-align: center;
+}
+
+.blocRecapOrder {
+  /*depuis le _oribasket.js*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   border: 1px solid black;
-  padding: 40px;
+}
+
+.blocRecapOrder img {
+  /*depuis le _oribasket.js*/
+  height: 60px;
+  width: 60px;
+}
+
+.nameBlocRecapOrder {
+  /*depuis le _oribasket.js*/
+  font-size: 25px;
+}
+
+.priceBlocRecapOrder {
+  /*depuis le _oribasket.js*/
+  font-size: 20px;
+}
+
+.buttonDelete {
+  /*depuis le _oribasket.js*/
+  font-size: 20px;
+}
+
+.buttonDelete:hover {
+  cursor: pointer;
+}
+
+#displayPriceHtml {
+  height: 62px;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#totalDisplayPriceHtml {
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 #emptyBasket {
-  /*injecté dans le JavaScript*/
+  /*depuis le _oribasket.js*/
   font-size: 25px;
   font-weight: bold;
 }
 
 /*******------- Debut formulaire -------*******/
 #blocFormOrder {
+  /*depuis le _oribasket.js*/
   width: 400px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: lightsalmon;
+  background-color: whitesmoke;
   border: 2px solid;
   display: grid;
   /*row(rang) / column (col) */
@@ -1066,7 +1278,8 @@ Fin _oriteddyproduct.html
 }
 
 #titleBlocFormOrder {
-  background-color: lightseagreen;
+  /*depuis le _oribasket.js*/
+  background-color: #77b5fe;
   /*debut row / debut col / fin row / fin col */
   grid-area: 1/1/2/-1;
   height: 70px;
@@ -1078,7 +1291,8 @@ Fin _oriteddyproduct.html
 }
 
 #firstNameBlocFormOrder {
-  background-color: lightsteelblue;
+  /*depuis le _oribasket.js*/
+  background-color: lightgrey;
   height: 80px;
   width: 396px;
   text-align: center;
@@ -1094,7 +1308,8 @@ Fin _oriteddyproduct.html
 }
 
 #lastNameBlocFormOrder {
-  background-color: lightgreen;
+  /*depuis le _oribasket.js*/
+  background-color: whitesmoke;
   height: 80px;
   width: 396px;
   text-align: center;
@@ -1112,7 +1327,8 @@ Fin _oriteddyproduct.html
 }
 
 #addressBlocFormOrder {
-  background-color: lightcoral;
+  /*depuis le _oribasket.js*/
+  background-color: lightgrey;
   height: 80px;
   width: 396px;
   text-align: center;
@@ -1131,7 +1347,8 @@ Fin _oriteddyproduct.html
 }
 
 #cityBlocFormOrder {
-  background-color: lightsteelblue;
+  /*depuis le _oribasket.js*/
+  background-color: whitesmoke;
   height: 80px;
   width: 396px;
   text-align: center;
@@ -1149,7 +1366,8 @@ Fin _oriteddyproduct.html
 }
 
 #emailBlocFormOrder {
-  background-color: lightblue;
+  /*depuis le _oribasket.js*/
+  background-color: lightgrey;
   height: 80px;
   width: 396px;
   text-align: center;
@@ -1167,12 +1385,14 @@ Fin _oriteddyproduct.html
 }
 
 #btnSendFormBlocFormOrder {
+  /*depuis le _oribasket.js*/
   padding-left: 50px;
   padding-top: 20px;
 }
 
 #btnSendFormOrder {
-  background-color: lightsteelblue;
+  /*depuis le _oribasket.js*/
+  background-color: lightgrey;
   /*debut row / debut col / fin row / fin col */
   grid-area: 8/1/9/-1;
   font-size: 20px;

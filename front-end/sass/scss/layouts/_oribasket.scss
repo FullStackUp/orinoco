@@ -1,52 +1,99 @@
 #mainOriBasket{
-    margin-top: 136px;
+    padding-top: 200px;
     height: 100rem;
-    background-color: lighten($color: $color-primary, $amount: 45);
+    background-color: #e8e8e8;
+}
+
+.blocMainOriBasket{
+    @include minMaxWidth;
+    @include center;
 }
 
 #titlePageOribasket{
     text-align: center;
     font-family: 'Finger Paint',cursive, sans-serif; 
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    background-color: darkcyan;
+    background-color: burlywood;
+    width: 400px;
+    font-size: 30px;
+    @include center;
 }
 
 #blocProductBasket{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    @include center;
     margin-top: 5rem;
     width: 400px;
-    height: 400px;
-    background-color: chocolate;
+    height: auto;
+    background-color: whitesmoke;
+    display: grid;
+    text-align: center;
+    
+    
+}
+.blocRecapOrder{/*depuis le _oribasket.js*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     border: 1px solid black;
-    padding: 40px;
+
 }
 
-#emptyBasket{/*injecté dans le JavaScript*/
+.blocRecapOrder img{/*depuis le _oribasket.js*/
+    height: 60px; 
+    width: 60px;
+}
+
+.nameBlocRecapOrder{/*depuis le _oribasket.js*/
+    font-size: 25px;
+}
+
+.priceBlocRecapOrder{/*depuis le _oribasket.js*/
+    font-size: 20px;
+}
+
+.buttonDelete{/*depuis le _oribasket.js*/
+    font-size: 20px;
+}
+
+.buttonDelete:hover{
+    cursor: pointer;
+}
+
+#displayPriceHtml{
+    height:62px;
+    font-size: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#totalDisplayPriceHtml{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#emptyBasket{/*depuis le _oribasket.js*/
     font-size: 25px;
     font-weight: bold;
 }
 
 /*******------- Debut formulaire -------*******/
 
-#blocFormOrder{
+#blocFormOrder{/*depuis le _oribasket.js*/
     width: 400px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    background-color: lightsalmon;
+    background-color: whitesmoke;
     border: 2px solid;
     display:grid;
     /*row(rang) / column (col) */
     grid-template: repeat(8, 70px) / repeat(4, 99px);
 }
 
-#titleBlocFormOrder{
-    background-color: lightseagreen;
+#titleBlocFormOrder{/*depuis le _oribasket.js*/
+    background-color: $color-twitter;
     /*debut row / debut col / fin row / fin col */
     grid-area: 1 / 1 / 2 / -1;
     height: 70px;
@@ -56,8 +103,8 @@
     align-items: center;
     text-align: center;
 }
-#firstNameBlocFormOrder {
-    background-color: lightsteelblue;
+#firstNameBlocFormOrder {/*depuis le _oribasket.js*/
+    background-color: lightgrey;
     height: 80px;
     width: 396px;
 
@@ -73,8 +120,8 @@
     }
 }
 
-#lastNameBlocFormOrder{
-    background-color: lightgreen;
+#lastNameBlocFormOrder{/*depuis le _oribasket.js*/
+    background-color: whitesmoke;
     height: 80px;
     width: 396px;
     text-align: center;
@@ -91,8 +138,8 @@
     }
 }
 
-#addressBlocFormOrder{
-    background-color: lightcoral;
+#addressBlocFormOrder{/*depuis le _oribasket.js*/
+    background-color: lightgrey;
     height: 80px;
     width: 396px;
     text-align: center;
@@ -110,8 +157,8 @@
     }
 }
 
-#cityBlocFormOrder{
-    background-color: lightsteelblue;
+#cityBlocFormOrder{/*depuis le _oribasket.js*/
+    background-color: whitesmoke;
     height: 80px;
     width: 396px;
     text-align: center;
@@ -129,8 +176,8 @@
 
 }
 
-#emailBlocFormOrder{
-    background-color: lightblue;
+#emailBlocFormOrder{/*depuis le _oribasket.js*/
+    background-color:lightgrey;
     height: 80px;
     width: 396px;
     text-align: center;
@@ -147,13 +194,13 @@
     }
 }
 
-#btnSendFormBlocFormOrder{
+#btnSendFormBlocFormOrder{/*depuis le _oribasket.js*/
     padding-left: 50px;
     padding-top: 20px;
 }
 
-#btnSendFormOrder{
-    background-color: lightsteelblue;
+#btnSendFormOrder{/*depuis le _oribasket.js*/
+    background-color: lightgrey;
     /*debut row / debut col / fin row / fin col */
     grid-area: 8 / 1 / 9 / -1 ;
     font-size: 20px;

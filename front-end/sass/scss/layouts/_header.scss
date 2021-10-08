@@ -6,7 +6,6 @@ body{
 
 #header{
   min-width: 375px;
-  height: 135px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -25,6 +24,8 @@ body{
     height: 4rem;
     align-items: center;
     padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
     .blocHeaderLogo{
       margin-left: 5px;
       display: flex;
@@ -33,6 +34,8 @@ body{
       }
       .blocLinkHeaderLogo{
         margin-left: 5px;
+        justify-content: center;
+        align-content: center;
         .logoHeaderOrinoco{
           font-family: 'Finger Paint',cursive, sans-serif;
           font-size: 25px;
@@ -48,7 +51,11 @@ body{
       }
     }      
   }
-  .blocLinkHeaderUser{
+
+  .blocHeaderUserBasket{
+    display: flex;
+    .blocLinkHeaderUser{
+    }
     padding-right: 1rem;
     .textHeaderUser{
       font-size: 20px;
@@ -59,14 +66,15 @@ body{
       border-radius: 10px;
       padding: 5px;
     }
-  }
-  .textHeaderBasket{
+    .textHeaderBasket{
     font-size: 20px;
-  }
-  .iconeHeaderBasket{
+    }
+    .iconeHeaderBasket{
     font-size: 20px;
     color: darken($color: $color-primary, $amount: 20%);
+    }
   }
+  
   .blocHeaderSearch{
     display: flex;
     justify-content: center;

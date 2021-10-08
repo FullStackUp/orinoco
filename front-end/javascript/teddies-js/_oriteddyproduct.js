@@ -82,6 +82,7 @@ function basketUser (productDetailed) {
       id : productDetailed._id,
       Couleur : productDetailed.colors,
       quantité : productDetailed.quantite,
+      Image : productDetailed.imageUrl,
     }
 
     //déclaration de la variable "productsSaveLocalStorage" pour pouvoir stocker la key et value dans le localStorage
@@ -96,9 +97,7 @@ function basketUser (productDetailed) {
       localStorage.setItem("userOrder", JSON.stringify(productsSaveLocalStorage));
 
       alert("Le produit a été ajouté au panier");
-    }
-
-    else{
+    } else{
       productsSaveLocalStorage = [];
       productsSaveLocalStorage.push(optionProduct);
       localStorage.setItem("userOrder", JSON.stringify(productsSaveLocalStorage));
@@ -106,6 +105,14 @@ function basketUser (productDetailed) {
       alert("Le produit a été ajouté au panier")
       console.log(productsSaveLocalStorage);
     }
+
+
+    //limitation du notre de produit dans le panier
+    if(productsSaveLocalStorage.length >= 4){
+      alert("Action Impossible car votre panier est plein , veuillez passer votre commande ou enlever des articles de votre panier par suppression");
+      window.location = "/front-end/html/_oribasket.html";
+    } 
+  
   });
 
    //permert de selectionner une options (afficher que sur la console log)
@@ -129,4 +136,4 @@ function basketUser (productDetailed) {
     if (z === undefined) {
     document.getElementById("productOptionFour").style.display = "none";
     }  
-}
+};

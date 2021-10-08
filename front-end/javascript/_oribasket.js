@@ -15,7 +15,7 @@ let structureProductBasket = [];
 if(productsSaveLocalStorage === null || productsSaveLocalStorage == 0 ){
 const emptyBasket = `
     <div id="emptyBasket">
-        <div> Votre panier est vide. </div></br>
+        <div> Votre panier est vide.</div>
         <a href="./index.html"> Merci d'ajouter des articles.</a>
     </div> ` ;
     positionProductBasket.innerHTML = emptyBasket;
@@ -23,9 +23,11 @@ const emptyBasket = `
         for (p = 0; p < productsSaveLocalStorage.length; p++ ){
 
             structureProductBasket = structureProductBasket + 
-            `<div id="blocRecapOrder">
-                <div>${productsSaveLocalStorage[p].Nom}</div> 
-                <div>${productsSaveLocalStorage[p].Prix},00 € <button class="buttonDelete"> supprimer </button></div>
+            `<div class="blocRecapOrder">
+                <image src="${productsSaveLocalStorage[p].Image}"></image> 
+                <div class="nameBlocRecapOrder">${productsSaveLocalStorage[p].Nom}</div> 
+                <div class="priceBlocRecapOrder">${productsSaveLocalStorage[p].Prix},00 €</div>
+                <div class="buttonDelete"><i class="far fa-trash-alt"></i></div>
             </div>`; 
             /* !!! Le "Nom" et le "Prix" écrit de cette façon (N et P Majuscule) correspont 
             au "Nom" et "Prix" du LocalStorage et non du back-end et c'est moi qui l'ai definie 
@@ -98,7 +100,7 @@ const totalPriceFinal = totalPriceBasket.reduce(reducer,0);
 
 //Le code HTML du prix total à afficher
 const displayPriceHtml = `
-<div id="displayPriceHtml"> Le prix total est : ${totalPriceFinal},00 € </div>`;
+<div id="displayPriceHtml"> Le prix total est de :  <span id="totalDisplayPriceHtml"> ${totalPriceFinal},00 € </span></div>`;
 
 //injection du html dans la page panieraprès le dernier enfant
 blocProductBasket.insertAdjacentHTML("beforeend", displayPriceHtml);

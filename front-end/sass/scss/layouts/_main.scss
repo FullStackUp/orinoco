@@ -9,15 +9,28 @@
 #mainPage {
   margin: 0;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
   text-align: center;
   margin-top: -42px;
+  height: 147rem;
+}
+
+.blocMainPage{
+  @include minMaxWidth;
+  @include center;
+}
+
+.titleSectionOriNews{
+  margin-top: 215px;
+  font-size: 30px;
+  .titleOriNews{
+    font-family: 'Finger Paint',cursive, sans-serif;
+  }
 }
 
 .blocImgOriBook {
   height: 29rem;
-  margin-top: 11rem;
+  margin-top: 3rem;
 }
 
 .blocImgOriBook img {
@@ -49,11 +62,20 @@ img{
   margin-right: auto;
 }
 
+.titleSectionOriArticles{
+  margin-top: 2rem;
+  font-size: 30px;
+  .titleOriArticles{
+    font-family: 'Finger Paint',cursive, sans-serif;
+  }
+}
+
 .oriTeddiesCards {
   font-family: 'Finger Paint',cursive, sans-serif;
   text-align: center;
   text-decoration: none;
   color: black;
+  margin-top: 6rem;
   .oriTeddiesSection {
     margin-top: 32px;
     a {
@@ -119,4 +141,5 @@ img{
   width: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4rem;
 }

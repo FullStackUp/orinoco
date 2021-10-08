@@ -69,6 +69,13 @@
       }
     }
   }
+  
+.blocWrapOriItems{
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 .wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures{
     font-family: 'Finger Paint',cursive, sans-serif; 

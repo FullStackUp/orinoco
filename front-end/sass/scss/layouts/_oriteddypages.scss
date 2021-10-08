@@ -4,28 +4,37 @@ Debut _oriteddyarticles.html
 
 #mainArticlesTeddies{
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 136px;
-  max-width: 1345px;
-  background-color: lighten($color: $color-primary, $amount: 45);
-  height: 190rem;
+  @include center;
+  margin-top: 90px;
+  height: 200rem;
+  .blocMainArticlesTeddies{
+    padding-top: 9rem;
+    @include minMaxWidth;
+    @include center;
+  }
   #titlePageTeddies{
     font-family: 'Finger Paint',cursive, sans-serif; 
-    padding-top: 190px;
+    padding-top: 7px;
+    background-color: burlywood;
+    width: 400px;
+    font-size: 30px;
+    @include center;
+
   }
 }
 
-#blocSectionArticles {
+.blocSectionArticles {
   padding-top: 15rem;
   margin-bottom: -8rem;
+  @include center;
+  @include minMaxWidth;
 }
 
 #blocCardArticle{
   border: 3px solid $color-primary;
   width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
+  margin-top: 9rem;
 }
 
 #linkCardArticle {
@@ -41,7 +50,7 @@ Debut _oriteddyarticles.html
 .detailsCardArticle {
   display: grid;
   /*row(rang) / column (col) */
-  grid-template: 1fr 1fr / repeat(2, 1fr);
+  grid-template: 1fr 1fr 1fr/ repeat(2, 1fr);
   background-color: lighten($color: $color-primary, $amount: 30);
   padding-top: 10px;
   padding-left: 5px;
@@ -55,6 +64,9 @@ Debut _oriteddyarticles.html
   border: 3px solid $color-primary;
   background-color: $color-card;
   padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #priceCardArticle {
@@ -69,8 +81,17 @@ Debut _oriteddyarticles.html
   border-radius: 50px;
   height: 50px;
   width: 50px;
-  display: flex;
+  @include Flex-JustifyContentCenter-AlignItemsCenter;
   flex-direction: row-reverse;
+}
+
+.buyCardArticle{
+  grid-area: 3 / 1 / 3 / -1;
+  font-size: 25px;
+  border: 3px solid $color-primary;
+  border-radius: 25px;
+  background-color: $color-card;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -84,21 +105,32 @@ Debut _oriteddyproduct.html
 *****************************/
 #mainProductTeddy{
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 136px;
-  max-width: 1345px;
+  @include center;
+  margin-top: 66px;
+  padding-top: 7rem;
   height: 130rem;
-  background-color: lighten($color: $color-primary, $amount: 45);
+  background-color: darken($color: whitesmoke, $amount: 5);
+  .blocMainProductTeddy{
+    @include center;
+    @include minMaxWidth;
+  }
   #titlePageTeddy{
     font-family: 'Finger Paint',cursive, sans-serif;
-    padding-top: 190px;
+    padding-top: 7px;
+    background-color: burlywood;
+    width: 400px;
+    font-size: 30px;
+    @include center;
   }
 }
 
+#blocSectionProduct{
+  @include center;
+  @include minMaxWidth;
+}
+
 #blocCardProduct{
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,11 +154,11 @@ Debut _oriteddyproduct.html
 #blocDetailedProduct{
    /*row(rang) / column (col) */
   display: grid;
-  grid-template: repeat(8, 80px) / repeat(4, 100px);
+  grid-template: repeat(9, 80px) / repeat(4, 100px);
   border: 3px solid $color-card;
-  background-color: darken($color-card, $amount: 5);
+  background-color: white;
   width: 400px;
-  height: 665px;
+  height: 720px;
   border: 1px solid;
   margin-top: 5rem;
   #noteOpinionCustomer{
@@ -134,9 +166,7 @@ Debut _oriteddyproduct.html
     grid-area: 1 / 1 / 1 / 3;
     font-size: 18px;
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
     color: darken($color: $color-instagram, $amount: 20);
   }
   #numberOpinionCustomer{
@@ -144,9 +174,7 @@ Debut _oriteddyproduct.html
     font-size: 18px;
     cursor: pointer;
     text-decoration: underline;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
   #descriptionNumberCardProduct{
     grid-area: 2 / 1 / 2 / -1;
@@ -155,40 +183,30 @@ Debut _oriteddyproduct.html
   #descriptionPriceCardProduct{
     grid-area: 3 / 1 / 3 / 3;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
   #priceCardProduct{
     grid-area: 3 / 2 / 3 / -1;
     font-size: 20px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
   #descriptionProductColorsOption{
     grid-area: 4 / 1 / 4 / 3;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
   
   #blocProductColorsOption{
     grid-area: 4 / 3 / 4 / -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
     padding-right: 16px;
   }
 
   #descriptionProductColorsOption{
     grid-area: 4 / 1 / 4 / 3  ;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
 
   #productColorsOption{
@@ -200,9 +218,7 @@ Debut _oriteddyproduct.html
   #amountOrderProduct{
     grid-area: 5 / 1 / 5 / 3;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
   #numberOrderProduct{
     grid-area: 5 / 3 / 5 / -1;
@@ -213,9 +229,7 @@ Debut _oriteddyproduct.html
   }
   #blocButtonAddBasket{
     grid-area: 6 / 1 / 6 / -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
     #buttonAddBasket{
       text-decoration: none;
       font-size: 20px;
@@ -225,17 +239,13 @@ Debut _oriteddyproduct.html
       height: 40px;
       border: 3px solid darken($color: $color-buttonOne, $amount: 30);
       border-radius: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include Flex-JustifyContentCenter-AlignItemsCenter;
     }
   }
 
   #blocButtonSeeBasket{
     grid-area: 7 / 1 / 7 / -1;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
     #buttonSeeBasket{
       text-decoration: none;
       font-size: 20px;
@@ -245,16 +255,12 @@ Debut _oriteddyproduct.html
       height: 40px;
       border: 3px solid darken($color: $color-buttonTwo, $amount: 30);
       border-radius: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include Flex-JustifyContentCenter-AlignItemsCenter;
     }
   }
   #blocButtonContinuedBuy{
     grid-area: 8 / 1 / 8 / -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
     #buttonContinuedBuy{
       text-decoration: none;
       font-size: 20px;
@@ -264,12 +270,16 @@ Debut _oriteddyproduct.html
       height: 40px;
       border: 3px solid darken($color: $color-buttonThree, $amount: 30);
       border-radius: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include Flex-JustifyContentCenter-AlignItemsCenter;
     }
   }
+
+  #informationPriceCardProduct{
+    grid-area: 9 / 1 / 9 / -1;
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
+  }
 }
+
 /****************************
 Fin _oriteddyproduct.html
 *****************************/
