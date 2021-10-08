@@ -15,10 +15,12 @@ let structureProductBasket = [];
 if(productsSaveLocalStorage === null || productsSaveLocalStorage == 0 ){
 const emptyBasket = `
     <div id="emptyBasket">
-        <div> Votre panier est vide.</div>
-        <a href="./index.html"> Merci d'ajouter des articles.</a>
+        <div> Votre panier est <span id="alertColor">vide</span> <i class="far fa-sad-tear"></i>.</div></br>
+        <div id="thanksAdd"> Merci </i> d'ajouter des articles en <i class="far fa-hand-point-down"></i> </br></br>
+        <div> <i class="far fa-hand-point-right"></i> <a href="./index.html"> cliquant ici </a>.</div>
     </div> ` ;
     positionProductBasket.innerHTML = emptyBasket;
+    document.getElementById("blocProductBasket").style.backgroundColor = "#e7e7e7";//quant il n'y pas de produit dans le panier le panier prend le même backgroundColor que la page 
 } else {//si le panier n'es pas vide : afficher les produits qui sont stocké dans le LocalStorage
         for (p = 0; p < productsSaveLocalStorage.length; p++ ){
 

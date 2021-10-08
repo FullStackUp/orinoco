@@ -6,7 +6,7 @@
     transition: transform .2s cubic-bezier(.25, .1, .25, 1);
     position: absolute;
     .blocHeaderMenu {
-      background-color: lighten($color: $color-primary, $amount: 46);
+      background-color: darken($color: $color-secondary, $amount: 100);
       height: 509px;
       width: 213px;
       display:inline-block;
@@ -26,7 +26,7 @@
         align-items: center;
       }
       .xWrapCercle{
-        border: 2px solid $color-primary;
+        border: 2px solid darken($color: $color-buttonThree, $amount: 35);
         border-radius: 25px;
         height: 25px;
         width: 25px;
@@ -36,20 +36,20 @@
         margin-left: 11rem;
         margin-top: -5px;
         margin-bottom: -2rem;
-        background-color: lighten($color: $color-primary, $amount: 30);
+        background-color: $color-card;
       }
       .blocWrapTitle{
-        border-bottom: 2px solid $color-primary;
+        border-bottom: 2px solid $color-quatenary;
         padding-top: 10px;
       }
       .titleWrapLogo{
         margin-left: 16px;
         padding-bottom: 16px;
         font-size: 25px;
-        color: lighten($color: $color-primary, $amount: 45);
+        color: $color-quatenary;
       }
       .navHeaderMenu{
-        background-color: black;
+        background-color: darken($color: $color-secondary, $amount: 100);
         height: 100%;
         width: 100%
       }
@@ -79,9 +79,9 @@
 
 .wrapOriTeddies, .wrapOriCameras, .wrapOriFurnitures{
     font-family: 'Finger Paint',cursive, sans-serif; 
-    border: 2px solid $color-primary;
+    border: 3px solid $color-quinquenary;
     border-radius: 25px;
-    background-color: lighten($color: $color-primary, $amount: 30);
+    background-color: $color-tertiary;
     font-size: 20px;
     padding-right: 16px;
     padding-left: 16px;

@@ -10,31 +10,31 @@
     h2.titleSectionOriNews{
         margin-top: 160px;
         padding-top: 6rem;
-        color: white;
-        text-shadow: black 1px 0px 10px;
+        color: $color-card;
+        text-shadow: darken($color: $color-secondary, $amount: 100) 1px 0px 10px;
         font-size: 40px;
     }
 
     h2.titleSectionOriArticles{
-        color: white;
+        color: $color-card;
         margin-top: 6rem;
-        text-shadow: black 1px 0px 10px;
+        text-shadow: darken($color: $color-secondary, $amount: 100) 1px 0px 10px;
         font-size: 40px;
     }
 
     .welcomeSection, .bioSection {
             margin-top: 0px;
             width: 600px;
-            background-color: azure;
+            background-color: lighten($color: $color-buttonTwo, $amount: 30);
             border-radius: 15px;
             h2{
               background-image: url("/front-end/image/parchmentBackground.jpg");
-              text-shadow: whitesmoke 1px 0 10px;
+              text-shadow: $color-quatenary 1px 0 10px;
               font-style: italic;
             }
             p{
               background-image: url("/front-end/image/parchmentBackground.jpg");
-              text-shadow: whitesmoke 1px 0 10px;
+              text-shadow: $color-quatenary 1px 0 10px;
               font-size: 20px;
               font-style: italic;
             }
@@ -266,5 +266,24 @@
         margin-top: 17rem;
     }
     /*-------Fin index.html-------*/
+
+    /*-------Debut _oribasket.html-------*/
+    #mainOriBasket{
+        padding-top: 20rem;
+    }
+
+    .blocMainOriBasket{
+        display: flex;
+        margin-top: 7rem;
+    }
+
+    div#blocFormOrder{
+        margin-top: 0px;
+    }
+
+    div#emptyBasket{
+        margin-top: 5rem;
+    }
+    /*-------Fin _oribasket.html-------*/
 
 }

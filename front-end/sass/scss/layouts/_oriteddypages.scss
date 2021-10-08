@@ -15,7 +15,7 @@ Debut _oriteddyarticles.html
   #titlePageTeddies{
     font-family: 'Finger Paint',cursive, sans-serif; 
     padding-top: 7px;
-    background-color: burlywood;
+    background-color: $color-six;
     width: 400px;
     font-size: 30px;
     @include center;
@@ -39,7 +39,7 @@ Debut _oriteddyarticles.html
 
 #linkCardArticle {
   text-decoration: none;
-  color: black;
+  color: darken($color: $color-secondary, $amount: 100);
 }
 
 #imageCardArticle {
@@ -117,7 +117,7 @@ Debut _oriteddyproduct.html
   #titlePageTeddy{
     font-family: 'Finger Paint',cursive, sans-serif;
     padding-top: 7px;
-    background-color: burlywood;
+    background-color: $color-six;
     width: 400px;
     font-size: 30px;
     @include center;
@@ -156,7 +156,7 @@ Debut _oriteddyproduct.html
   display: grid;
   grid-template: repeat(9, 80px) / repeat(4, 100px);
   border: 3px solid $color-card;
-  background-color: white;
+  background-color: $color-card;
   width: 400px;
   height: 720px;
   border: 1px solid;
@@ -233,7 +233,7 @@ Debut _oriteddyproduct.html
     #buttonAddBasket{
       text-decoration: none;
       font-size: 20px;
-      color:black;
+      color:darken($color: $color-secondary, $amount: 100);
       background-color: $color-buttonOne;
       width: 210px;
       height: 40px;
@@ -249,7 +249,7 @@ Debut _oriteddyproduct.html
     #buttonSeeBasket{
       text-decoration: none;
       font-size: 20px;
-      color:black;
+      color:darken($color: $color-secondary, $amount: 100);
       background-color: $color-buttonTwo;
       width: 210px;
       height: 40px;
@@ -264,7 +264,7 @@ Debut _oriteddyproduct.html
     #buttonContinuedBuy{
       text-decoration: none;
       font-size: 20px;
-      color:black;
+      color:darken($color: $color-secondary, $amount: 100);
       background-color: $color-buttonThree;
       width: 210px;
       height: 40px;

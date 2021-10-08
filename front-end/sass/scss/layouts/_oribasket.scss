@@ -1,7 +1,7 @@
 #mainOriBasket{
     padding-top: 200px;
     height: 100rem;
-    background-color: #e8e8e8;
+    background-color: lighten($color: $color-tertiary, $amount: 8);
 }
 
 .blocMainOriBasket{
@@ -12,7 +12,7 @@
 #titlePageOribasket{
     text-align: center;
     font-family: 'Finger Paint',cursive, sans-serif; 
-    background-color: burlywood;
+    background-color: $color-six;
     width: 400px;
     font-size: 30px;
     @include center;
@@ -20,10 +20,9 @@
 
 #blocProductBasket{
     @include center;
-    margin-top: 5rem;
     width: 400px;
     height: auto;
-    background-color: whitesmoke;
+    background-color: $color-quatenary;
     display: grid;
     text-align: center;
     
@@ -34,7 +33,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid darken($color: $color-secondary, $amount: 100);
 
 }
 
@@ -60,9 +59,8 @@
 }
 
 #displayPriceHtml{
-    height:62px;
     font-size: 20px;
-    border: 1px solid black;
+    border: 1px solid darken($color: $color-secondary, $amount: 100);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +74,16 @@
 #emptyBasket{/*depuis le _oribasket.js*/
     font-size: 25px;
     font-weight: bold;
+    margin-top: 12rem;
+    @include center;
+}
+
+#alertColor{/*depuis le _oribasket.js*/
+    color: darken($color: $color-buttonThree, $amount: 35);
+}
+
+#thanksAdd a{
+    color: darken($color: $color-twitter, $amount: 20) ;
 }
 
 /*******------- Debut formulaire -------*******/
@@ -85,7 +93,7 @@
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    background-color: whitesmoke;
+    background-color: $color-quatenary;
     border: 2px solid;
     display:grid;
     /*row(rang) / column (col) */
@@ -104,7 +112,7 @@
     text-align: center;
 }
 #firstNameBlocFormOrder {/*depuis le _oribasket.js*/
-    background-color: lightgrey;
+    background-color: $color-tertiary;
     height: 80px;
     width: 396px;
 
@@ -115,13 +123,13 @@
         font-size: 20px;
     }
     #firstNameMissing{
-        color: red;
+        color: darken($color: $color-buttonThree, $amount: 35);
         font-size: 16px;
     }
 }
 
 #lastNameBlocFormOrder{/*depuis le _oribasket.js*/
-    background-color: whitesmoke;
+    background-color: $color-quatenary;
     height: 80px;
     width: 396px;
     text-align: center;
@@ -133,13 +141,13 @@
         font-size: 20px;
     }
     #lastNameMissing{
-        color: red;
+        color: darken($color: $color-buttonThree, $amount: 35);
         font-size: 16px;
     }
 }
 
 #addressBlocFormOrder{/*depuis le _oribasket.js*/
-    background-color: lightgrey;
+    background-color: $color-tertiary;
     height: 80px;
     width: 396px;
     text-align: center;
@@ -152,13 +160,13 @@
         height: 30px;
     }
     #addressMissing{
-        color: red;
+        color: darken($color: $color-buttonThree, $amount: 35);
         font-size: 16px;
     }
 }
 
 #cityBlocFormOrder{/*depuis le _oribasket.js*/
-    background-color: whitesmoke;
+    background-color: $color-quatenary;
     height: 80px;
     width: 396px;
     text-align: center;
@@ -170,14 +178,14 @@
         font-size: 20px;
     }
     #cityMissing{
-        color: red;
+        color: darken($color: $color-buttonThree, $amount: 35);
         font-size: 16px;
     }
 
 }
 
 #emailBlocFormOrder{/*depuis le _oribasket.js*/
-    background-color:lightgrey;
+    background-color:$color-tertiary;
     height: 80px;
     width: 396px;
     text-align: center;
@@ -189,7 +197,7 @@
         font-size: 20px;
     }
     #emailMissing{
-        color: red;
+        color: darken($color: $color-buttonThree, $amount: 35);
         font-size: 16px;
     }
 }
@@ -200,7 +208,7 @@
 }
 
 #btnSendFormOrder{/*depuis le _oribasket.js*/
-    background-color: lightgrey;
+    background-color: $color-tertiary;
     /*debut row / debut col / fin row / fin col */
     grid-area: 8 / 1 / 9 / -1 ;
     font-size: 20px;
