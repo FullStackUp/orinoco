@@ -9,3 +9,10 @@
  //Mettre l'id et le prix total de façon dynamique dans le HTML de la page de confirmation
  document.getElementById("idCommand").innerHTML = responseId;
  document.getElementById("priceTotalCommand").innerHTML = totalPriceFinal + " " + "€";
+
+// On vide le localStorage pour recommencer plus tard le processus d'achat
+localStorage.clear(); 
+// redige à l'acceuil après 10 secondes
+window.setTimeout(function() {
+    window.location.href = '../html/index.html';
+}, 10000);

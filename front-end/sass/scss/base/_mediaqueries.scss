@@ -78,6 +78,34 @@
         background-attachment: fixed;
     }
     /*-------Fin _oriteddyproduct.html-------*/
+
+    /*-------Debut _oricamerasarticles.html-------*/
+    main#mainArticlesCameras {
+        background-image: url("/front-end/image/backgroundCameras.jpg");
+        background-attachment: fixed;
+    }
+    /*-------Fin _oricamerasarticles.html-------*/
+
+    /*-------Debut _oricamerasproduct.html-------*/
+    main#mainProductCamera{
+        background-image: url("/front-end/image/backgroundCameraProduct.jpg");
+        background-attachment: fixed;
+    }
+    /*-------Fin _oricamerasproduct.html-------*/
+
+     /*-------Debut _oricamerasarticles.html-------*/
+     main#mainArticlesFurnitures {
+        background-image: url("/front-end/image/backgroundFurnitures.jpg");
+        background-attachment: fixed;
+    }
+    /*-------Fin _oricamerasarticles.html-------*/
+
+    /*-------Debut _oricamerasproduct.html-------*/
+    main#mainProductFurniture{
+        background-image: url("/front-end/image/backgroundFurnitureProduct.webp");
+        background-attachment: fixed;
+    }
+    /*-------Fin _oricamerasproduct.html-------*/
 }
 
 @media #{$tablet-up} {
@@ -275,6 +303,28 @@
     .blocMainOriBasket{
         display: flex;
         margin-top: 7rem;
+    }
+
+    div.blocRecapOrder{/*depuis le _oribasket.js*/
+        padding : 10px;
+    
+    }
+
+    div.nameBlocRecapOrder{/*depuis le _oribasket.js*/
+        font-size: 20px;
+    }
+    
+    div.priceBlocRecapOrder{/*depuis le _oribasket.js*/
+        font-size: 20px;
+    }
+    
+    div.buttonDelete{/*depuis le _oribasket.js*/
+        font-size: 20px;
+    }
+
+    div.blocRecapOrder img{/*depuis le _oribasket.js*/
+        height: 75px; 
+        width: 75px;
     }
 
     div#blocFormOrder{

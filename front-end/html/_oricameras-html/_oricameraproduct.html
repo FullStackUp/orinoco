@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../sass/css/style.css">
+    <link rel="stylesheet" href="../../sass/css/style.css">
     <script src="https://kit.fontawesome.com/4dfeac96bc.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../image/favicon.ico">
-    <title> OriBasket </title>
+    <link rel="icon" type="image/x-icon" href="/front-end/image/favicon.ico">
+    <title> OriCamera </title>
 </head>
 
 <body>
-  
   <header id="header">
     <div id="wrapHeaderMenu">
       <div class="blocHeaderMenu">
@@ -22,7 +21,7 @@
           <a href="#wrapHeaderMenu" id="open"><i class="fas fa-bars"></i></a>
           <div class="xWrapCercle"><a href="#" id="close">×</a></div>
           <div class="blocWrapTitle">
-            <a href="./index.html" class="titleWrapLogo">
+            <a href="../index.html" class="titleWrapLogo">
               Parcourir
               <span class="iconeHeaderCart">
                 <i class="fas fa-shopping-cart"></i>
@@ -31,9 +30,9 @@
             </a>
           </div>
           <div class="blocWrapOriItems">
-            <a href="./teddies-html/_oriteddiesarticles.html"><span class="wrapOriTeddies">OriTeddies</span> </a>
-            <a href="../html/_oricameras-html/_oricamerasarticles.html"><span class="wrapOriCameras">OriCameras</span></a>
-            <a href="../html/_orifurnitures-html/_orifurnituresarticles.html"><span class="wrapOriFurnitures">OriFurnitures</span></a>
+            <a href="./_oriteddiesarticles.html"><span class="wrapOriTeddies">OriTeddies</span> </a>
+            <a href="../index.html"><span class="wrapOriCameras">OriCameras</span></a>
+            <a href="../index.html"><span class="wrapOriFurnitures">OriFurnitures</span></a>
           </div>
         </nav>
       </div>
@@ -42,7 +41,7 @@
     <div class="blocHeaderAll">
       <div class="blocHeaderLogoUserBasket">
         <div class="blocHeaderLogo">
-          <a href="./index.html" class="blocLinkHeaderLogo">
+          <a href="../index.html" class="blocLinkHeaderLogo">
             <h1 class="iconeHeaderCart">
               <i class="fas fa-shopping-cart"></i>
               <span class="logoHeaderOrinoco">Orinoco</span>
@@ -55,7 +54,7 @@
             <span class="textHeaderUser">Identifiant</span>
             <span class="iconeHeaderUser"><i class="far fa-user"></i></span>
           </a>
-          <a href="./_oribasket.html" class="blocLinkHeaderBasket">
+          <a href="../_oribasket.html" class="blocLinkHeaderBasket">
             <span class="textHeaderBasket">Panier</span>
             <span class="iconeHeaderBasket"><i class="fas fa-shopping-basket"></i></span>
           </a>
@@ -69,14 +68,64 @@
     </div>
   </header>
 
-  <main id="mainOriBasket">
-    <h2 id="titlePageOribasket"> Votre OriBasket </h2>
-    <div class="blocMainOriBasket">
-      <!-- les produits-->
-      <div id="blocProductBasket">
-        <h2>Les produits selectionnées : </h2>
+  <main id="mainProductCamera">
+    <div class="blocMainProductCamera">
+      <h2 id="titlePageCamera"> OriCamera : Produit Détaillé</h2>
+      <template id="blocTemplateProductCamera">
+        <section id="blocSectionProductCamera">
+          <article id="blocCardProductCamera">
+
+            <div id="blocHeaderCardProductCamera">
+              <figure id="figureCardProductCamera">
+                <img src="" id="imageCardProductCamera">
+              </figure>
+              <h2 id="titleCardProductCamera"></h2>
+            </div>
+
+            <div id="blocDetailedProductCamera">
+              <ul id="noteOpinionCustomerCamera">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+              </ul>
+              <span id="numberOpinionCustomerCamera"></span>
+              <p id="descriptionNumberCardProductCamera"></p>
+              
+              <p id="descriptionPriceCardProductCamera"></p>
+              <span id="priceCardProductCamera"></span>
+              <label for="productLensesOptionCamera" id="descriptionProductLensesOptionCamera"></label>
+              
+              <form id="blocProductLensesOptionCamera">
+                <select name="productLensesOptionCamera" id="productLensesOptionCamera">
+                  <option value="" id="productOptionOneCamera" class="btnLensesCamera">1:</option>
+                  <option value="" id="productOptionTwoCamera" class="btnLensesCamera">2:</option>
+                  <option value="" id="productOptionThreeCamera" class="btnLensesCamera">3:</option>
+                  <option value="" id="productOptionFourCamera" class="btnLensesCamera">4:</option>
+                </select>
+              </form>
+      
+              <label for="numberOrderProductCamera" id="amountOrderProductCamera"></label>
+              <input id="numberOrderProductCamera" type="number" min="1" max="10">
+              
+              <div id="blocButtonAddBasketCamera">
+                <button id="buttonAddBasketCamera"></button> 
+              </div>
+              <div onclick="window.location.href = '../_oribasket.html';" id="blocButtonSeeBasketCamera">
+                <button id="buttonSeeBasketCamera"></button>
+              </div> 
+              <div onclick="window.location.href = './_oricamerasarticles.html';" id="blocButtonContinuedBuyCamera">
+                <button id="buttonContinuedBuyCamera"></button>
+              </div>
+              <p id="informationPriceCardProductCamera"></p>
+          </div>
+          
+          </article>
+        </section>
+
         
-      </div>
+      </template>
     </div>
   </main>
 
@@ -84,7 +133,7 @@
     <div class="blocFooterAll">
       <div class="linksSupportFooter">
         <ul>
-          <li><a href="./teddies-html/_oriteddiesarticles.html">Retour</a></li>
+          <li><a href="./_oriteddiesarticles.html">Retour</a></li>
           <li><a href="#">Service client</a></li>
           <li><a href="#">Aide</a></li>
         </ul>
@@ -135,6 +184,6 @@
     </div>
   </footer>
 
-  <script src="../javascript/_oribasket.js"></script>
+  <script src="../../javascript/_oricameras-js/_oricameraproduct.js"></script>
 </body>
 </html>

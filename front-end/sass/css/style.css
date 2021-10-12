@@ -95,6 +95,34 @@
   }
 
   /*-------Fin _oriteddyproduct.html-------*/
+  /*-------Debut _oricamerasarticles.html-------*/
+  main#mainArticlesCameras {
+    background-image: url("/front-end/image/backgroundCameras.jpg");
+    background-attachment: fixed;
+  }
+
+  /*-------Fin _oricamerasarticles.html-------*/
+  /*-------Debut _oricamerasproduct.html-------*/
+  main#mainProductCamera {
+    background-image: url("/front-end/image/backgroundCameraProduct.jpg");
+    background-attachment: fixed;
+  }
+
+  /*-------Fin _oricamerasproduct.html-------*/
+  /*-------Debut _oricamerasarticles.html-------*/
+  main#mainArticlesFurnitures {
+    background-image: url("/front-end/image/backgroundFurnitures.jpg");
+    background-attachment: fixed;
+  }
+
+  /*-------Fin _oricamerasarticles.html-------*/
+  /*-------Debut _oricamerasproduct.html-------*/
+  main#mainProductFurniture {
+    background-image: url("/front-end/image/backgroundFurnitureProduct.webp");
+    background-attachment: fixed;
+  }
+
+  /*-------Fin _oricamerasproduct.html-------*/
 }
 @media only screen and (min-width: 980px) {
   /*-------Debut index.html-------*/
@@ -284,6 +312,32 @@
   .blocMainOriBasket {
     display: flex;
     margin-top: 7rem;
+  }
+
+  div.blocRecapOrder {
+    /*depuis le _oribasket.js*/
+    padding: 10px;
+  }
+
+  div.nameBlocRecapOrder {
+    /*depuis le _oribasket.js*/
+    font-size: 20px;
+  }
+
+  div.priceBlocRecapOrder {
+    /*depuis le _oribasket.js*/
+    font-size: 20px;
+  }
+
+  div.buttonDelete {
+    /*depuis le _oribasket.js*/
+    font-size: 20px;
+  }
+
+  div.blocRecapOrder img {
+    /*depuis le _oribasket.js*/
+    height: 75px;
+    width: 75px;
   }
 
   div#blocFormOrder {
@@ -825,7 +879,7 @@ footer ul li {
 #mainConfirmation {
   height: 100rem;
   background-color: #e7e7e7;
-  padding-top: 35rem;
+  padding-top: 20rem;
 }
 
 #blocConfirmationOrder {
@@ -899,7 +953,7 @@ Debut _oriteddyarticles.html
 }
 
 .blocSectionArticles {
-  padding-top: 15rem;
+  padding-top: 7rem;
   margin-bottom: -8rem;
   margin-left: auto;
   margin-right: auto;
@@ -1194,6 +1248,654 @@ Debut _oriteddyproduct.html
 /****************************
 Fin _oriteddyproduct.html
 *****************************/
+/****************************
+Debut _oricamerasarticles.html
+*****************************/
+#mainArticlesCameras {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  height: 200rem;
+}
+#mainArticlesCameras .blocMainArticlesCameras {
+  padding-top: 9rem;
+  min-width: 400px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mainArticlesCameras #titlePageCameras {
+  font-family: "Finger Paint", cursive, sans-serif;
+  padding-top: 7px;
+  background-color: #d3d3d3;
+  width: 400px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blocSectionArticlesCameras {
+  padding-top: 7rem;
+  margin-bottom: -8rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
+}
+
+#blocCardArticleCameras {
+  border: 3px solid #778899;
+  width: 350px;
+  height: 409px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9rem;
+}
+
+#linkCardArticleCameras {
+  text-decoration: none;
+  color: black;
+}
+
+#imageCardArticleCameras {
+  width: 100%;
+  height: 15rem;
+}
+
+.detailsCardArticleCameras {
+  display: grid;
+  /*row(rang) / column (col) */
+  grid-template: 1fr 1fr 1fr/repeat(2, 1fr);
+  background-color: #d3d3d3;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 16px;
+  margin-top: -4px;
+}
+
+#titleCardArticleCameras {
+  grid-area: 1/1/1/-1;
+  font-size: 25px;
+  border: 3px solid #778899;
+  background-color: #f1f1f1;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#priceCardArticleCameras {
+  /*debut row / debut col / fin row / fin col */
+  grid-area: 2/3/2/-1;
+  font-size: 20px;
+  margin-right: 4px;
+  margin-top: -5px;
+  padding-left: 3px;
+  border: 3px solid #778899;
+  background-color: #f1f1f1;
+  border-radius: 18px;
+  height: 50px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.buyCardArticleCameras {
+  grid-area: 3/1/3/-1;
+  font-size: 25px;
+  border: 3px solid #778899;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************************
+Fin _oricamerasarticles.html
+*****************************/
+/****************************
+Debut _oricamerasproduct.html
+*****************************/
+#mainProductCamera {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 66px;
+  padding-top: 7rem;
+  height: 130rem;
+  background-color: #e8e8e8;
+}
+#mainProductCamera .blocMainProductCamera {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
+}
+#mainProductCamera #titlePageCamera {
+  font-family: "Finger Paint", cursive, sans-serif;
+  padding-top: 7px;
+  background-color: #d3d3d3;
+  width: 400px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#blocSectionProductCamera {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
+}
+
+#blocCardProductCamera {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blocHeaderCardProductCamera {
+  margin-top: 16rem;
+  background-color: #d3d3d3;
+  width: 384px;
+}
+#blocHeaderCardProductCamera img {
+  width: 100%;
+  height: 360px;
+  cursor: zoom-in;
+}
+#blocHeaderCardProductCamera #titleCardProductCamera {
+  font-size: 30px;
+  padding: 5%;
+}
+
+#blocDetailedProductCamera {
+  /*row(rang) / column (col) */
+  display: grid;
+  grid-template: repeat(9, 80px)/repeat(4, 100px);
+  border: 3px solid #f1f1f1;
+  background-color: #f1f1f1;
+  width: 400px;
+  height: 720px;
+  border: 1px solid;
+  margin-top: 5rem;
+}
+#blocDetailedProductCamera #noteOpinionCustomerCamera {
+  /*debut row / debut col / fin row / fin col */
+  grid-area: 1/1/1/3;
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cfb300;
+}
+#blocDetailedProductCamera #numberOpinionCustomerCamera {
+  grid-area: 1/3/1/-1;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #descriptionNumberCardProductCamera {
+  grid-area: 2/1/2/-1;
+  font-size: 20px;
+}
+#blocDetailedProductCamera #descriptionPriceCardProductCamera {
+  grid-area: 3/1/3/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #priceCardProductCamera {
+  grid-area: 3/2/3/-1;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #descriptionProductLensesOptionCamera {
+  grid-area: 4/1/4/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #blocProductLensesOptionCamera {
+  grid-area: 4/3/4/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 16px;
+}
+#blocDetailedProductCamera #descriptionProductLensesOptionCamera {
+  grid-area: 4/1/4/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #productLensesOptionCamera {
+  grid-area: 4/2/4/-1;
+  font-size: 18px;
+  height: 30px;
+  width: 140px;
+}
+#blocDetailedProductCamera #amountOrderProductCamera {
+  grid-area: 5/1/5/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #numberOrderProductCamera {
+  grid-area: 5/3/5/-1;
+  font-size: 18px;
+  width: 60px;
+  margin: 24px;
+  padding: 3px;
+}
+#blocDetailedProductCamera #blocButtonAddBasketCamera {
+  grid-area: 6/1/6/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #blocButtonAddBasketCamera #buttonAddBasketCamera {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: #90ee90;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #1ec71e;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #blocButtonSeeBasketCamera {
+  grid-area: 7/1/7/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #blocButtonSeeBasketCamera #buttonSeeBasketCamera {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: #87cefa;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #098ddf;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #blocButtonContinuedBuyCamera {
+  grid-area: 8/1/8/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #blocButtonContinuedBuyCamera #buttonContinuedBuyCamera {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: #ffb6c1;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #ff1d3f;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductCamera #informationPriceCardProductCamera {
+  grid-area: 9/1/9/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************************
+Fin _oricamerasproduct.html
+*****************************/
+/****************************
+Debut _orifurnituresarticles.html
+*****************************/
+#mainArticlesFurnitures {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  height: 200rem;
+}
+#mainArticlesFurnitures .blocMainArticlesFurnitures {
+  padding-top: 9rem;
+  min-width: 400px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mainArticlesFurnitures #titlePageFurnitures {
+  font-family: "Finger Paint", cursive, sans-serif;
+  padding-top: 7px;
+  background-color: #f5f5f5;
+  width: 400px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blocSectionArticlesFurnitures {
+  padding-top: 7rem;
+  margin-bottom: -8rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
+}
+
+#blocCardArticleFurnitures {
+  border: 3px solid #b5b5b5;
+  width: 400px;
+  height: 409px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9rem;
+}
+
+#linkCardArticleFurnitures {
+  text-decoration: none;
+  color: black;
+}
+
+#imageCardArticleFurnitures {
+  width: 100%;
+  height: 15rem;
+}
+
+.detailsCardArticleFurnitures {
+  display: grid;
+  /*row(rang) / column (col) */
+  grid-template: 1fr 1fr 1fr/repeat(2, 1fr);
+  background-color: #f5f5f5;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 16px;
+  margin-top: -4px;
+}
+
+#titleCardArticleFurnitures {
+  grid-area: 1/1/1/-1;
+  font-size: 25px;
+  border: 3px solid #b5b5b5;
+  background-color: #f1f1f1;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#priceCardArticleFurnitures {
+  /*debut row / debut col / fin row / fin col */
+  grid-area: 2/3/2/-1;
+  font-size: 20px;
+  margin-right: 4px;
+  margin-top: -5px;
+  padding-left: 3px;
+  border: 3px solid #b5b5b5;
+  background-color: #f1f1f1;
+  border-radius: 18px;
+  height: 50px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.buyCardArticleFurnitures {
+  grid-area: 3/1/3/-1;
+  font-size: 25px;
+  border: 3px solid #b5b5b5;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************************
+Fin _orifurnituresarticles.html
+*****************************/
+/****************************
+Debut _orifurnitureproduct.html
+*****************************/
+#mainProductFurniture {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 66px;
+  padding-top: 7rem;
+  height: 130rem;
+  background-color: #e8e8e8;
+}
+#mainProductFurniture .blocMainProductFurniture {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
+}
+#mainProductFurniture #titlePageFurniture {
+  font-family: "Finger Paint", cursive, sans-serif;
+  padding-top: 7px;
+  background-color: #f5f5f5;
+  width: 400px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#blocSectionProductFurniture {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 1400px;
+}
+
+#blocCardProductFurniture {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blocHeaderCardProductFurniture {
+  margin-top: 16rem;
+  background-color: #f5f5f5;
+  width: 384px;
+}
+#blocHeaderCardProductFurniture img {
+  width: 100%;
+  height: 360px;
+  cursor: zoom-in;
+}
+#blocHeaderCardProductFurniture #titleCardProductFurniture {
+  font-size: 30px;
+  padding: 5%;
+}
+
+#blocDetailedProductFurniture {
+  /*row(rang) / column (col) */
+  display: grid;
+  grid-template: repeat(9, 80px)/repeat(4, 100px);
+  border: 3px solid #f1f1f1;
+  background-color: #f1f1f1;
+  width: 400px;
+  height: 720px;
+  border: 1px solid;
+  margin-top: 5rem;
+}
+#blocDetailedProductFurniture #noteOpinionCustomerFurniture {
+  /*debut row / debut col / fin row / fin col */
+  grid-area: 1/1/1/3;
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cfb300;
+}
+#blocDetailedProductFurniture #numberOpinionCustomerFurniture {
+  grid-area: 1/3/1/-1;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #descriptionNumberCardProductFurniture {
+  grid-area: 2/1/2/-1;
+  font-size: 20px;
+}
+#blocDetailedProductFurniture #descriptionPriceCardProductFurniture {
+  grid-area: 3/1/3/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #priceCardProductFurniture {
+  grid-area: 3/2/3/-1;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #descriptionProductVarnishOptionFurniture {
+  grid-area: 4/1/4/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #blocProductVarnishOptionFurniture {
+  grid-area: 4/3/4/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 16px;
+}
+#blocDetailedProductFurniture #descriptionProductVarnishOptionFurniture {
+  grid-area: 4/1/4/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #productVarnishOptionFurniture {
+  grid-area: 4/2/4/-1;
+  font-size: 18px;
+  height: 30px;
+  width: 140px;
+}
+#blocDetailedProductFurniture #amountOrderProductFurniture {
+  grid-area: 5/1/5/3;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #numberOrderProductFurniture {
+  grid-area: 5/3/5/-1;
+  font-size: 18px;
+  width: 60px;
+  margin: 24px;
+  padding: 3px;
+}
+#blocDetailedProductFurniture #blocButtonAddBasketFurniture {
+  grid-area: 6/1/6/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #blocButtonAddBasketFurniture #buttonAddBasketFurniture {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: #90ee90;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #1ec71e;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #blocButtonSeeBasketFurniture {
+  grid-area: 7/1/7/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #blocButtonSeeBasketFurniture #buttonSeeBasketFurniture {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: #87cefa;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #098ddf;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #blocButtonContinuedBuyFurniture {
+  grid-area: 8/1/8/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #blocButtonContinuedBuyFurniture #buttonContinuedBuyFurniture {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: #ffb6c1;
+  width: 210px;
+  height: 40px;
+  border: 3px solid #ff1d3f;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocDetailedProductFurniture #informationPriceCardProductFurniture {
+  grid-area: 9/1/9/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************************
+Fin _orifurnitureproduct.html
+*****************************/
 #mainOriBasket {
   padding-top: 200px;
   height: 100rem;
@@ -1231,30 +1933,33 @@ Fin _oriteddyproduct.html
   /*depuis le _oribasket.js*/
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 5px;
   align-items: center;
   border: 1px solid black;
 }
 
 .blocRecapOrder img {
   /*depuis le _oribasket.js*/
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #77b5fe;
+  border-radius: 10px;
 }
 
 .nameBlocRecapOrder {
   /*depuis le _oribasket.js*/
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .priceBlocRecapOrder {
   /*depuis le _oribasket.js*/
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .buttonDelete {
   /*depuis le _oribasket.js*/
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .buttonDelete:hover {

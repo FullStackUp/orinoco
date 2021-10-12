@@ -57,12 +57,12 @@ exports.orderFurniture = (req, res, next) => {
     return res.status(400).send(new Error('Bad request!'));
   }
   let queries = [];
-  for (let productId of req.body.products) {
+  for (let product of req.body.products) {// remplacement de "productId" par "product"
     const queryPromise = new Promise((resolve, reject) => {
-      Furniture.findById(productId).then(
+      Furniture.findById(product.id).then(// le backend attendait un id mais dans le front-end c'est un objet donc remplacement de "productId" par "product.id"
         (furniture) => {
           if (!furniture) {
-            reject('Camera not found: ' + productId);
+            reject('Camera not found: ' + product.id);// modification de "productId" par "product.id"
           }
           furniture.imageUrl = req.protocol + '://' + req.get('host') + '/images/' + furniture.imageUrl;
           resolve(furniture);

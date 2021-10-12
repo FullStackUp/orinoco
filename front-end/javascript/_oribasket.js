@@ -276,8 +276,6 @@ e.preventDefault();
   } else {
         alert("Veuillez bien remplir le formulaire sans utiliser des caractères spéciaux avant de confirmer votre commande")
       }
-
-
   //mettre les values dans un formulaire et mettre les produits dans un objet à envoyer
   //console.log(order);
 
@@ -288,8 +286,7 @@ e.preventDefault();
                         'Accept': 'application/json'
 	},
   }
-
-
+ 
   fetch("http://localhost:3000/api/teddies/order", requestOptions)
     .then((response) => response.json())
     .then((json) => {
@@ -297,17 +294,16 @@ e.preventDefault();
 	    //alert("id de la commande : " + json.orderId) ; // alerte montrant comment récupérer l'id de la commande
       console.log(json.orderId);
       //Enregistrer l'id dans le localStorage
-      localStorage.setItem("responseId", json.orderId);
+      localStorage.setItem("responseId" , json.orderId);
+      //si le formulaire n'est pas remplit correctement l'utilsateur ne verra pas la page de confirmation
+      if (firstNameControle() , lastNameControle() , addressControle(), cityControle(), emailControle()) {
+          document.location.href = "../html/_confirmation.html"//aller à la page de confirmation
+        } else {
+          document.location.href = "../html/_oribasket.html";//reste dans la page panier
+        }
     })
     .catch((error) => {
       alert(error)
     });
-
-    //si le formulaire n'est pas remplit correctement l'utilsateur ne verra pas la page de confirmation
-    if (firstNameControle() , lastNameControle() , addressControle(), cityControle(), emailControle()){
-      window.location = "../html/_confirmation.html"//aller à la page de confirmation
-      } else {
-      window.location = "../html/_oribasket.html"//reste dans la page panier
-    }
 });
 //*******------- Fin Formulaire de la commande ------*/
