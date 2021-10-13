@@ -4,9 +4,9 @@ Debut _oricamerasarticles.html
 
 #mainArticlesCameras{
     text-align: center;
-    @include center;
     margin-top: 65px;
     height: 200rem;
+    @include center;
     .blocMainArticlesCameras{
       padding-top: 9rem;
       @include minMaxWidth;
@@ -24,18 +24,14 @@ Debut _oricamerasarticles.html
   }
   
   .blocSectionArticlesCameras {
-    padding-top: 7rem;
-    margin-bottom: -8rem;
     @include center;
     @include minMaxWidth;
   }
   
   #blocCardArticleCameras{
-    border: 3px solid $color-quinquenary;
-    width: 350px;
-    height: 409px;
-    @include center;
+    width: 300px;
     margin-top: 9rem;
+    @include center;
   }
   
   #linkCardArticleCameras {
@@ -46,6 +42,9 @@ Debut _oricamerasarticles.html
   #imageCardArticleCameras {
     width: 100%;
     height: 15rem;
+    @include borderColorSolid;
+    @include borderTopRightLeftRadius;
+    @include borderTopLeftRightSolid;
   }
   
   .detailsCardArticleCameras {
@@ -56,18 +55,21 @@ Debut _oricamerasarticles.html
     padding-top: 10px;
     padding-left: 5px;
     padding-bottom: 16px;
-    margin-top: -4px;
+    margin-top: -8px;
+    @include borderColorSolid;
+    @include borderBottomLeftRightRadius;
+    @include borderBottomLeftRightSolid;
   }
   
   #titleCardArticleCameras {
     grid-area: 1 / 1 / 1 / -1;
     font-size: 25px;
-    border: 3px solid $color-quinquenary;
     background-color: $color-card;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include borderColorSolid;
   }
   
   #priceCardArticleCameras {
@@ -77,24 +79,24 @@ Debut _oricamerasarticles.html
     margin-right: 4px;
     margin-top: -5px;
     padding-left: 3px;
-    border: 3px solid $color-quinquenary;
+    flex-direction: row-reverse;
     background-color: $color-card;
     border-radius: 18px;
     height: 50px;
     width: 80px;
+    @include borderColorSolid;
     @include Flex-JustifyContentCenter-AlignItemsCenter;
-    flex-direction: row-reverse;
   }
   
   .buyCardArticleCameras {
     grid-area: 3 / 1 / 3 / -1;
     font-size: 25px;
-    border: 3px solid $color-quinquenary;
     border-radius: 25px;
     background-color: $color-card;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include borderColorSolid;
   }
   
   /****************************
@@ -106,11 +108,11 @@ Debut _oricamerasproduct.html
 *****************************/
 #mainProductCamera{
   text-align: center;
-  @include center;
   margin-top: 66px;
   padding-top: 7rem;
   height: 130rem;
   background-color: darken($color: whitesmoke, $amount: 5);
+  @include center;
   .blocMainProductCamera{
     @include center;
     @include minMaxWidth;
@@ -131,10 +133,10 @@ Debut _oricamerasproduct.html
 }
 
 #blocCardProductCamera{
-  @include center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include center;
 }
 
 #blocHeaderCardProductCamera{
@@ -167,8 +169,8 @@ Debut _oricamerasproduct.html
     grid-area: 1 / 1 / 1 / 3;
     font-size: 18px;
     list-style-type: none;
-    @include Flex-JustifyContentCenter-AlignItemsCenter;
     color: darken($color: $color-instagram, $amount: 20);
+    @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
   #numberOpinionCustomerCamera{
     grid-area: 1 / 3 / 1 / -1 ;

@@ -988,10 +988,10 @@ Debut _oriteddyarticles.html
 *****************************/
 #mainArticlesTeddies {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 90px;
   height: 200rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 #mainArticlesTeddies .blocMainArticlesTeddies {
   padding-top: 9rem;
@@ -1012,19 +1012,19 @@ Debut _oriteddyarticles.html
 
 #welcomeOriteddies {
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 20px;
   text-align: justify;
   font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #pWelcomeOriteddies {
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: justify;
   font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blocSectionArticles {
@@ -1035,11 +1035,10 @@ Debut _oriteddyarticles.html
 }
 
 #blocCardArticle {
-  border: 3px solid #e68a09;
-  width: 280px;
+  width: 300px;
+  margin-top: 9rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 9rem;
 }
 
 #linkCardArticle {
@@ -1050,6 +1049,12 @@ Debut _oriteddyarticles.html
 #imageCardArticle {
   width: 100%;
   height: 15rem;
+  border: 3px solid #778899;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 3px solid #778899;
+  border-top: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 .detailsCardArticle {
@@ -1060,18 +1065,24 @@ Debut _oriteddyarticles.html
   padding-top: 10px;
   padding-left: 5px;
   padding-bottom: 16px;
-  margin-top: -4px;
+  margin-top: -8px;
+  border: 3px solid #778899;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 3px solid #778899;
+  border-bottom: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 #titleCardArticle {
   grid-area: 1/1/1/-1;
   font-size: 25px;
-  border: 3px solid #e68a09;
   background-color: #f1f1f1;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #778899;
 }
 
 #priceCardArticle {
@@ -1081,26 +1092,26 @@ Debut _oriteddyarticles.html
   margin-right: 4px;
   margin-top: -5px;
   padding-left: 3px;
-  border: 3px solid #e68a09;
+  flex-direction: row-reverse;
   background-color: #f1f1f1;
   border-radius: 50px;
   height: 50px;
   width: 50px;
+  border: 3px solid #778899;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
 }
 
 .buyCardArticle {
   grid-area: 3/1/3/-1;
   font-size: 25px;
-  border: 3px solid #e68a09;
   border-radius: 25px;
   background-color: #f1f1f1;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #778899;
 }
 
 /****************************
@@ -1111,12 +1122,12 @@ Debut _oriteddyproduct.html
 *****************************/
 #mainProductTeddy {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 66px;
   padding-top: 7rem;
   height: 130rem;
   background-color: #e8e8e8;
+  margin-left: auto;
+  margin-right: auto;
 }
 #mainProductTeddy .blocMainProductTeddy {
   margin-left: auto;
@@ -1142,11 +1153,11 @@ Debut _oriteddyproduct.html
 }
 
 #blocCardProduct {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #blocHeaderCardProduct {
@@ -1180,10 +1191,10 @@ Debut _oriteddyproduct.html
   grid-area: 1/1/1/3;
   font-size: 18px;
   list-style-type: none;
+  color: #cfb300;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #cfb300;
 }
 #blocDetailedProduct #numberOpinionCustomer {
   grid-area: 1/3/1/-1;
@@ -1326,10 +1337,10 @@ Debut _oricamerasarticles.html
 *****************************/
 #mainArticlesCameras {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 65px;
   height: 200rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 #mainArticlesCameras .blocMainArticlesCameras {
   padding-top: 9rem;
@@ -1349,8 +1360,6 @@ Debut _oricamerasarticles.html
 }
 
 .blocSectionArticlesCameras {
-  padding-top: 7rem;
-  margin-bottom: -8rem;
   margin-left: auto;
   margin-right: auto;
   min-width: 400px;
@@ -1358,12 +1367,10 @@ Debut _oricamerasarticles.html
 }
 
 #blocCardArticleCameras {
-  border: 3px solid #778899;
-  width: 350px;
-  height: 409px;
+  width: 300px;
+  margin-top: 9rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 9rem;
 }
 
 #linkCardArticleCameras {
@@ -1374,6 +1381,12 @@ Debut _oricamerasarticles.html
 #imageCardArticleCameras {
   width: 100%;
   height: 15rem;
+  border: 3px solid #778899;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 3px solid #778899;
+  border-top: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 .detailsCardArticleCameras {
@@ -1384,18 +1397,24 @@ Debut _oricamerasarticles.html
   padding-top: 10px;
   padding-left: 5px;
   padding-bottom: 16px;
-  margin-top: -4px;
+  margin-top: -8px;
+  border: 3px solid #778899;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 3px solid #778899;
+  border-bottom: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 #titleCardArticleCameras {
   grid-area: 1/1/1/-1;
   font-size: 25px;
-  border: 3px solid #778899;
   background-color: #f1f1f1;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #778899;
 }
 
 #priceCardArticleCameras {
@@ -1405,26 +1424,26 @@ Debut _oricamerasarticles.html
   margin-right: 4px;
   margin-top: -5px;
   padding-left: 3px;
-  border: 3px solid #778899;
+  flex-direction: row-reverse;
   background-color: #f1f1f1;
   border-radius: 18px;
   height: 50px;
   width: 80px;
+  border: 3px solid #778899;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
 }
 
 .buyCardArticleCameras {
   grid-area: 3/1/3/-1;
   font-size: 25px;
-  border: 3px solid #778899;
   border-radius: 25px;
   background-color: #f1f1f1;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #778899;
 }
 
 /****************************
@@ -1435,12 +1454,12 @@ Debut _oricamerasproduct.html
 *****************************/
 #mainProductCamera {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 66px;
   padding-top: 7rem;
   height: 130rem;
   background-color: #e8e8e8;
+  margin-left: auto;
+  margin-right: auto;
 }
 #mainProductCamera .blocMainProductCamera {
   margin-left: auto;
@@ -1466,11 +1485,11 @@ Debut _oricamerasproduct.html
 }
 
 #blocCardProductCamera {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #blocHeaderCardProductCamera {
@@ -1504,10 +1523,10 @@ Debut _oricamerasproduct.html
   grid-area: 1/1/1/3;
   font-size: 18px;
   list-style-type: none;
+  color: #cfb300;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #cfb300;
 }
 #blocDetailedProductCamera #numberOpinionCustomerCamera {
   grid-area: 1/3/1/-1;
@@ -1650,10 +1669,10 @@ Debut _orifurnituresarticles.html
 *****************************/
 #mainArticlesFurnitures {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 65px;
   height: 200rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 #mainArticlesFurnitures .blocMainArticlesFurnitures {
   padding-top: 9rem;
@@ -1673,8 +1692,6 @@ Debut _orifurnituresarticles.html
 }
 
 .blocSectionArticlesFurnitures {
-  padding-top: 7rem;
-  margin-bottom: -8rem;
   margin-left: auto;
   margin-right: auto;
   min-width: 400px;
@@ -1682,12 +1699,10 @@ Debut _orifurnituresarticles.html
 }
 
 #blocCardArticleFurnitures {
-  border: 3px solid #b5b5b5;
-  width: 400px;
-  height: 409px;
+  width: 300px;
+  margin-top: 9rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 9rem;
 }
 
 #linkCardArticleFurnitures {
@@ -1698,6 +1713,12 @@ Debut _orifurnituresarticles.html
 #imageCardArticleFurnitures {
   width: 100%;
   height: 15rem;
+  border: 3px solid #778899;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 3px solid #778899;
+  border-top: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 .detailsCardArticleFurnitures {
@@ -1708,18 +1729,24 @@ Debut _orifurnituresarticles.html
   padding-top: 10px;
   padding-left: 5px;
   padding-bottom: 16px;
-  margin-top: -4px;
+  margin-top: -8px;
+  border: 3px solid #778899;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 3px solid #778899;
+  border-bottom: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 #titleCardArticleFurnitures {
   grid-area: 1/1/1/-1;
   font-size: 25px;
-  border: 3px solid #b5b5b5;
   background-color: #f1f1f1;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #778899;
 }
 
 #priceCardArticleFurnitures {
@@ -1729,26 +1756,26 @@ Debut _orifurnituresarticles.html
   margin-right: 4px;
   margin-top: -5px;
   padding-left: 3px;
-  border: 3px solid #b5b5b5;
+  flex-direction: row-reverse;
   background-color: #f1f1f1;
   border-radius: 18px;
   height: 50px;
   width: 80px;
+  border: 3px solid #778899;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
 }
 
 .buyCardArticleFurnitures {
   grid-area: 3/1/3/-1;
   font-size: 25px;
-  border: 3px solid #b5b5b5;
   border-radius: 25px;
   background-color: #f1f1f1;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #778899;
 }
 
 /****************************
