@@ -33,6 +33,7 @@ function transferProduct(productDetailed){
 
   //Debut blocHeaderCardProduct
   cloneBlocTemplateProduct.getElementById("imageCardProductFurniture").src = productDetailed.imageUrl;
+  cloneBlocTemplateProduct.getElementById("imageCardProductFurniture").alt = productDetailed.description;
   cloneBlocTemplateProduct.getElementById("titleCardProductFurniture").textContent = productDetailed.name;
   //Fin blocHeaderCardProduct
 

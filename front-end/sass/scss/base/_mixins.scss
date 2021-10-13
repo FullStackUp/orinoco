@@ -13,3 +13,33 @@
     min-width: 400px;
     max-width: 1400px;  
 }
+
+@mixin borderColorSolid {
+    border: 3px solid $color-quinquenary;
+}
+
+@mixin borderRadiusAll {
+    border-radius: 20px;  
+}
+
+@mixin borderBottomLeftRightRadius {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;    
+}
+
+@mixin borderTopRightLeftRadius {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+@mixin borderTopLeftRightSolid {
+    border-left: 3px solid $color-quinquenary;
+    border-top: 3px solid $color-quinquenary;
+    border-right: 3px solid $color-quinquenary;
+}
+
+@mixin borderBottomLeftRightSolid {
+    border-left: 3px solid $color-quinquenary;
+    border-bottom: 3px solid $color-quinquenary;
+    border-right: 3px solid $color-quinquenary;
+}

@@ -23,9 +23,22 @@ Debut _oriteddyarticles.html
   }
 }
 
+#welcomeOriteddies{
+  width: 400px;
+  @include center;
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 22px;
+}
+
+#pWelcomeOriteddies{
+  width: 400px;
+  @include center;
+  text-align: justify;
+  font-size: 18px;
+}
+
 .blocSectionArticles {
-  padding-top: 7rem;
-  margin-bottom: -8rem;
   @include center;
   @include minMaxWidth;
 }

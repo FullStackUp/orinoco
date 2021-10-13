@@ -12,16 +12,18 @@
   @include center;
   text-align: center;
   margin-top: -42px;
-  height: 147rem;
+  height: 162rem;
+  background-color: lighten($color: $color-tertiary, $amount: 5)  
 }
 
 .blocMainPage{
   @include minMaxWidth;
   @include center;
+  padding-top: 50px;
 }
 
 .titleSectionOriNews{
-  margin-top: 215px;
+  margin-top: 160px;
   font-size: 30px;
   .titleOriNews{
     font-family: 'Finger Paint',cursive, sans-serif;
@@ -36,6 +38,8 @@
 .blocImgOriBook img {
   cursor: pointer;
   margin-top: 32px;
+  @include borderColorSolid;
+  @include borderRadiusAll;
 }
 
 .blocImgOriTextil {
@@ -46,6 +50,8 @@
 .blocImgOriTextil img{
     cursor: pointer;
     margin-top: 30px;
+    @include borderColorSolid;
+    @include borderRadiusAll;
 }
 
 img{
@@ -53,21 +59,31 @@ img{
   width: 384px;
 }
 
-.welcomeSection {
+h2{
+  @include center;
   text-align: center;
+  font-size: 22px;
+}
+
+.welcomeSection {
+  text-align: justify;
   margin-top: 32px;
-  height: 15rem;
+  height: 10rem;
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
+  font-size: 18px;
 }
 
 #titleSectionOriArticles{
-  margin-top: 2rem;
+  margin-top: 7rem;
   font-size: 30px;
   .titleOriArticles{
     font-family: 'Finger Paint',cursive, sans-serif;
   }
+}
+
+.blocOriteddiesCamerasFurnitures{
+  margin-top: -50px;
 }
 
 .oriTeddiesCards {
@@ -116,30 +132,49 @@ img{
 .titleOriTeddies{
   background-color: lighten($color: $color-instagram, $amount: 30);
   width: 385px ;
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
+  @include borderTopRightLeftRadius;
+  @include borderTopLeftRightSolid;
 }
 
 .titleOriCameras{
   background-color: $color-tertiary;
   width: 385px ;
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
+  @include borderTopRightLeftRadius;
+  @include borderTopLeftRightSolid;
 }
 
 .titleOriFurnitures{
   background-color:$color-quatenary;
   width: 385px ;
-  margin-left: auto;
-  margin-right: auto;
+  @include center;
+  @include borderTopRightLeftRadius;
+  @include borderTopLeftRightSolid;
+}
+
+.oriTeddiesSection img {
+  @include borderBottomLeftRightRadius;
+  @include borderBottomLeftRightSolid;
+}
+
+.oriCamerasSection img {
+  @include borderBottomLeftRightRadius;
+  @include borderBottomLeftRightSolid;
+}
+
+.oriFurnituresSection img {
+  @include borderBottomLeftRightRadius;
+  @include borderBottomLeftRightSolid;
 }
 
 .bioSection {
-  text-align: center;
+  text-align: justify;
   margin-top: 32px;
   height: 213px;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
+  font-size: 18px;
 }

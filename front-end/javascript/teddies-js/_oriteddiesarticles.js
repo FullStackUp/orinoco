@@ -31,6 +31,7 @@ function getArticles() {
 
   cloneBlocTemplateArticles.getElementById("linkCardArticle").href += `?id=${article._id}`;//lien en concaténation qui conduit vers la fiche individuelle d'un produit
   cloneBlocTemplateArticles.getElementById("imageCardArticle").src = article.imageUrl;
+  cloneBlocTemplateArticles.getElementById("imageCardArticle").alt = article.description;
   cloneBlocTemplateArticles.getElementById("titleCardArticle").textContent = article.name;
   cloneBlocTemplateArticles.getElementById("priceCardArticle").textContent = article.price / 100 + "€";
 

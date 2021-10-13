@@ -21,7 +21,7 @@
   main#mainPage {
     background-image: url("/front-end/image/backgroundTabletAndMore.jpg");
     background-attachment: fixed;
-    height: 166rem;
+    height: 172rem;
   }
 
   h2.titleSectionOriNews {
@@ -152,7 +152,7 @@
   }
 
   main#mainPage {
-    height: 205rem;
+    height: 210rem;
   }
 
   h2.titleSectionOriNews {
@@ -470,7 +470,8 @@ body {
   margin-right: auto;
   text-align: center;
   margin-top: -42px;
-  height: 147rem;
+  height: 162rem;
+  background-color: #e0e0e0;
 }
 
 .blocMainPage {
@@ -478,10 +479,11 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
 }
 
 .titleSectionOriNews {
-  margin-top: 215px;
+  margin-top: 160px;
   font-size: 30px;
 }
 .titleSectionOriNews .titleOriNews {
@@ -496,6 +498,8 @@ body {
 .blocImgOriBook img {
   cursor: pointer;
   margin-top: 32px;
+  border: 3px solid #778899;
+  border-radius: 20px;
 }
 
 .blocImgOriTextil {
@@ -506,6 +510,8 @@ body {
 .blocImgOriTextil img {
   cursor: pointer;
   margin-top: 30px;
+  border: 3px solid #778899;
+  border-radius: 20px;
 }
 
 img {
@@ -513,21 +519,33 @@ img {
   width: 384px;
 }
 
-.welcomeSection {
+h2 {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  font-size: 22px;
+}
+
+.welcomeSection {
+  text-align: justify;
   margin-top: 32px;
-  height: 15rem;
+  height: 10rem;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 18px;
 }
 
 #titleSectionOriArticles {
-  margin-top: 2rem;
+  margin-top: 7rem;
   font-size: 30px;
 }
 #titleSectionOriArticles .titleOriArticles {
   font-family: "Finger Paint", cursive, sans-serif;
+}
+
+.blocOriteddiesCamerasFurnitures {
+  margin-top: -50px;
 }
 
 .oriTeddiesCards {
@@ -578,6 +596,11 @@ img {
   width: 385px;
   margin-left: auto;
   margin-right: auto;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 3px solid #778899;
+  border-top: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 .titleOriCameras {
@@ -585,6 +608,11 @@ img {
   width: 385px;
   margin-left: auto;
   margin-right: auto;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 3px solid #778899;
+  border-top: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 .titleOriFurnitures {
@@ -592,16 +620,46 @@ img {
   width: 385px;
   margin-left: auto;
   margin-right: auto;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-left: 3px solid #778899;
+  border-top: 3px solid #778899;
+  border-right: 3px solid #778899;
+}
+
+.oriTeddiesSection img {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 3px solid #778899;
+  border-bottom: 3px solid #778899;
+  border-right: 3px solid #778899;
+}
+
+.oriCamerasSection img {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 3px solid #778899;
+  border-bottom: 3px solid #778899;
+  border-right: 3px solid #778899;
+}
+
+.oriFurnituresSection img {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 3px solid #778899;
+  border-bottom: 3px solid #778899;
+  border-right: 3px solid #778899;
 }
 
 .bioSection {
-  text-align: center;
+  text-align: justify;
   margin-top: 32px;
   height: 213px;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
+  font-size: 18px;
 }
 
 footer {
@@ -952,9 +1010,24 @@ Debut _oriteddyarticles.html
   margin-right: auto;
 }
 
+#welcomeOriteddies {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 22px;
+}
+
+#pWelcomeOriteddies {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size: 18px;
+}
+
 .blocSectionArticles {
-  padding-top: 7rem;
-  margin-bottom: -8rem;
   margin-left: auto;
   margin-right: auto;
   min-width: 400px;
