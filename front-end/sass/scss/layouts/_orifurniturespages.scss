@@ -5,7 +5,7 @@ Debut _orifurnituresarticles.html
 #mainArticlesFurnitures{
     text-align: center;
     margin-top: 65px;
-    height: 200rem;
+    height: 172rem;
     @include center;
     .blocMainArticlesFurnitures{
       padding-top: 9rem;
@@ -14,10 +14,12 @@ Debut _orifurnituresarticles.html
     }
     #titlePageFurnitures{
       font-family: 'Finger Paint',cursive, sans-serif; 
-      padding-top: 7px;
+      padding: 5px;
       background-color: $color-quatenary;
-      width: 400px;
+      width: 360px;
       font-size: 30px;
+      border-radius: 10px;
+      @include borderColorSolid;
       @include center;
   
     }
@@ -50,11 +52,10 @@ Debut _orifurnituresarticles.html
   .detailsCardArticleFurnitures {
     display: grid;
     /*row(rang) / column (col) */
-    grid-template: 1fr 1fr 1fr/ repeat(2, 1fr);
+    grid-template: 1fr 16px 1fr / repeat(2, 1fr);
     background-color: $color-quatenary;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-bottom: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-top: -8px;
     @include borderColorSolid;
     @include borderBottomLeftRightRadius;
@@ -62,56 +63,40 @@ Debut _orifurnituresarticles.html
   }
   
   #titleCardArticleFurnitures {
-    grid-area: 1 / 1 / 1 / -1;
-    font-size: 25px;
-    background-color: $color-card;
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: lighten($color: $color-card, $amount: 30);
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
     @include borderColorSolid;
   }
   
   #priceCardArticleFurnitures {
     /*debut row / debut col / fin row / fin col */
-    grid-area: 2 / 3 / 2 / -1;
-    font-size: 20px;
-    margin-right: 4px;
-    margin-top: -5px;
-    padding-left: 3px;
+    grid-area: 3 / 3 / 3 / 4;
     flex-direction: row-reverse;
-    background-color: $color-card;
-    border-radius: 18px;
-    height: 50px;
-    width: 80px;
+    background-color: lighten($color: $color-card, $amount: 30);
+    border-radius: 25px;
+    padding: 5px;
     @include borderColorSolid;
     @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
   
-  .buyCardArticleFurnitures {
-    grid-area: 3 / 1 / 3 / -1;
-    font-size: 25px;
-    border-radius: 25px;
-    background-color: $color-card;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include borderColorSolid;
-  }
-  
-  /****************************
-  Fin _orifurnituresarticles.html
-  *****************************/
+/****************************
+Fin _orifurnituresarticles.html
+*****************************/
 
-  /****************************
+/****************************
 Debut _orifurnitureproduct.html
 *****************************/
 #mainProductFurniture{
   text-align: center;
   @include center;
-  margin-top: 66px;
+  margin-top: 65px;
   padding-top: 7rem;
-  height: 130rem;
+  height: 110rem;
   background-color: darken($color: whitesmoke, $amount: 5);
   .blocMainProductFurniture{
     @include center;
@@ -119,10 +104,12 @@ Debut _orifurnitureproduct.html
   }
   #titlePageFurniture{
     font-family: 'Finger Paint',cursive, sans-serif;
-    padding-top: 7px;
+    padding: 5px;
     background-color: $color-quatenary;
-    width: 400px;
+    width: 360px;
     font-size: 30px;
+    border-radius: 15px;
+    @include borderColorSolid;
     @include center;
   }
 }
@@ -140,13 +127,16 @@ Debut _orifurnitureproduct.html
 }
 
 #blocHeaderCardProductFurniture{
-  margin-top: 16rem;
+  margin-top: 10rem;
   background-color: $color-quatenary;
   width: 384px;
+  border-radius: 10px;/*pas utiliser la mixin car ce n'est pas la même valeur de px*/
   img{
     width: 100%;
     height: 360px;
     cursor: zoom-in;
+    border-top-left-radius: 10px;/*pas utiliser la mixin car ce n'est pas la même valeur de px*/
+    border-top-right-radius: 10px;
   }
   #titleCardProductFurniture{
     font-size: 30px;
@@ -202,13 +192,6 @@ Debut _orifurnitureproduct.html
   
   #blocProductVarnishOptionFurniture{
     grid-area: 4 / 3 / 4 / -1;
-    @include Flex-JustifyContentCenter-AlignItemsCenter;
-    padding-right: 16px;
-  }
-
-  #descriptionProductVarnishOptionFurniture{
-    grid-area: 4 / 1 / 4 / 3  ;
-    font-size: 20px;
     @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
 

@@ -44,7 +44,7 @@ function transferProduct(productDetailed){
   cloneBlocTemplateProduct.getElementById("descriptionPriceCardProductFurniture").textContent = "Prix* unitaire : "
   cloneBlocTemplateProduct.getElementById("priceCardProductFurniture").textContent = productDetailed.price / 100 + ",00" + " " + "€";
 
-  cloneBlocTemplateProduct.getElementById("descriptionProductVarnishOptionFurniture").textContent = "Varnish désirée:";
+  cloneBlocTemplateProduct.getElementById("descriptionProductVarnishOptionFurniture").textContent = "Varnish désirée :";
   cloneBlocTemplateProduct.getElementById("productOptionOneFurniture").value = productDetailed.varnish[0];
   cloneBlocTemplateProduct.getElementById("productOptionTwoFurniture").value= productDetailed.varnish[1];
   cloneBlocTemplateProduct.getElementById("productOptionThreeFurniture").value = productDetailed.varnish[2];

@@ -44,7 +44,7 @@ function transferProduct(productDetailed){
   cloneBlocTemplateProduct.getElementById("descriptionPriceCardProductCamera").textContent = "Prix* unitaire : "
   cloneBlocTemplateProduct.getElementById("priceCardProductCamera").textContent = productDetailed.price / 100 + ",00" + " " + "€";
 
-  cloneBlocTemplateProduct.getElementById("descriptionProductLensesOptionCamera").textContent = "Lenses désirée:";
+  cloneBlocTemplateProduct.getElementById("descriptionProductLensesOptionCamera").textContent = "Lenses désirée :";
   cloneBlocTemplateProduct.getElementById("productOptionOneCamera").value = productDetailed.lenses[0];
   cloneBlocTemplateProduct.getElementById("productOptionTwoCamera").value= productDetailed.lenses[1];
   cloneBlocTemplateProduct.getElementById("productOptionThreeCamera").value = productDetailed.lenses[2];

@@ -35,5 +35,5 @@ function getArticles() {
   cloneBlocTemplateArticles.getElementById("titleCardArticle").textContent = article.name;
   cloneBlocTemplateArticles.getElementById("priceCardArticle").textContent = article.price / 100 + "€";
 
-  document.getElementById("mainArticlesTeddies").appendChild(cloneBlocTemplateArticles);
+  document.getElementById("blocAllArticlesTeddies").appendChild(cloneBlocTemplateArticles);
 }

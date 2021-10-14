@@ -1,11 +1,11 @@
 /****************************
-Debut _oriteddyarticles.html
+Debut _oriteddiesarticles.html
 *****************************/
 
 #mainArticlesTeddies{
   text-align: center;
-  margin-top: 90px;
-  height: 200rem;
+  margin-top: 65px;
+  height: 172rem;
   @include center;
   .blocMainArticlesTeddies{
     padding-top: 9rem;
@@ -14,27 +14,14 @@ Debut _oriteddyarticles.html
   }
   #titlePageTeddies{
     font-family: 'Finger Paint',cursive, sans-serif; 
-    padding-top: 7px;
+    padding: 5px;
     background-color: $color-six;
-    width: 400px;
+    width: 360px;
     font-size: 30px;
+    border-radius: 10px;
+    @include borderColorSolid;
     @include center;
   }
-}
-
-#welcomeOriteddies{
-  width: 400px;
-  margin-top: 20px;
-  text-align: justify;
-  font-size: 22px;
-  @include center;
-}
-
-#pWelcomeOriteddies{
-  width: 400px;
-  text-align: justify;
-  font-size: 18px;
-  @include center;
 }
 
 .blocSectionArticles {
@@ -64,11 +51,10 @@ Debut _oriteddyarticles.html
 .detailsCardArticle {
   display: grid;
   /*row(rang) / column (col) */
-  grid-template: 1fr 1fr 1fr/ repeat(2, 1fr);
+  grid-template: 1fr 16px 1fr / repeat(2, 1fr);
   background-color: lighten($color: $color-primary, $amount: 30);
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: -8px;
   @include borderColorSolid;
   @include borderBottomLeftRightRadius;
@@ -76,45 +62,28 @@ Debut _oriteddyarticles.html
 }
 
 #titleCardArticle {
-  grid-area: 1 / 1 / 1 / -1;
-  font-size: 25px;
-  background-color: $color-card;
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: lighten($color: $color-card, $amount: 30);
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
   @include borderColorSolid;
 }
 
 #priceCardArticle {
   /*debut row / debut col / fin row / fin col */
-  grid-area: 2 / 3 / 2 / -1;
-  font-size: 20px;
-  margin-right: 4px;
-  margin-top: -5px;
-  padding-left: 3px;
+  grid-area: 3 / 3 / 3 / 4;
   flex-direction: row-reverse;
-  background-color: $color-card;
-  border-radius: 50px;
-  height: 50px;
-  width: 50px;
+  background-color: lighten($color: $color-card, $amount: 30);
+  border-radius: 25px;
+  padding: 5px;
   @include borderColorSolid;
   @include Flex-JustifyContentCenter-AlignItemsCenter;
 }
-
-.buyCardArticle{
-  grid-area: 3 / 1 / 3 / -1;
-  font-size: 25px;
-  border-radius: 25px;
-  background-color: $color-card;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include borderColorSolid;
-}
-
 /****************************
-Fin _oriteddyarticles.html
+Fin _oriteddiesarticles.html
 *****************************/
 
 /****************************
@@ -122,9 +91,9 @@ Debut _oriteddyproduct.html
 *****************************/
 #mainProductTeddy{
   text-align: center;
-  margin-top: 66px;
+  margin-top: 65px;
   padding-top: 7rem;
-  height: 130rem;
+  height: 110rem;
   background-color: darken($color: whitesmoke, $amount: 5);
   @include center;
   .blocMainProductTeddy{
@@ -133,10 +102,12 @@ Debut _oriteddyproduct.html
   }
   #titlePageTeddy{
     font-family: 'Finger Paint',cursive, sans-serif;
-    padding-top: 7px;
+    padding: 5px;
     background-color: $color-six;
-    width: 400px;
+    width: 360px;
     font-size: 30px;
+    border-radius: 15px;
+    @include borderColorSolid;
     @include center;
   }
 }
@@ -154,13 +125,16 @@ Debut _oriteddyproduct.html
 }
 
 #blocHeaderCardProduct{
-  margin-top: 16rem;
+  margin-top: 10rem;
   background-color: lighten($color: $color-primary, $amount: 30);
   width: 384px;
+  border-radius: 10px;/*pas utiliser la mixin car ce n'est pas la même valeur de px*/
   img{
     width: 100%;
     height: 360px;
     cursor: zoom-in;
+    border-top-left-radius: 10px;/*pas utiliser la mixin car ce n'est pas la même valeur de px*/
+    border-top-right-radius: 10px;
   }
   #titleCardProduct{
     font-size: 30px;
@@ -217,13 +191,6 @@ Debut _oriteddyproduct.html
   #blocProductColorsOption{
     grid-area: 4 / 3 / 4 / -1;
     @include Flex-JustifyContentCenter-AlignItemsCenter;
-    padding-right: 16px;
-  }
-
-  #descriptionProductColorsOption{
-    grid-area: 4 / 1 / 4 / 3  ;
-    font-size: 20px;
-    @include Flex-JustifyContentCenter-AlignItemsCenter;
   }
 
   #productColorsOption{
@@ -232,6 +199,7 @@ Debut _oriteddyproduct.html
   height: 30px;
   width: 140px;
   }
+
   #amountOrderProduct{
     grid-area: 5 / 1 / 5 / 3;
     font-size: 20px;

@@ -26,17 +26,10 @@
 
   h2.titleSectionOriNews {
     margin-top: 160px;
-    padding-top: 6rem;
-    color: #f1f1f1;
-    text-shadow: black 1px 0px 10px;
-    font-size: 40px;
   }
 
   h2#titleSectionOriArticles {
-    color: #f1f1f1;
     margin-top: 6rem;
-    text-shadow: black 1px 0px 10px;
-    font-size: 40px;
   }
 
   .welcomeSection, .bioSection {
@@ -85,6 +78,26 @@
   main#mainArticlesTeddies {
     background-image: url("/front-end/image/backgroundTeddies.jpg");
     background-attachment: fixed;
+    height: 115rem;
+  }
+
+  #blocAllArticlesTeddies {
+    display: grid;
+    /*row(rang) / column (col) */
+    grid-template: repeat(3, 500px)/1fr 1fr;
+  }
+
+  Section.blocSectionArticles {
+    min-width: initial;
+    max-width: initial;
+  }
+
+  div.detailsCardArticle {
+    padding: 5px;
+  }
+
+  #footerArticlesTeddies {
+    border-top: 3px solid #e68a09;
   }
 
   /*-------Fin _oriteddiesarticles.html-------*/
@@ -99,6 +112,26 @@
   main#mainArticlesCameras {
     background-image: url("/front-end/image/backgroundCameras.jpg");
     background-attachment: fixed;
+    height: 115rem;
+  }
+
+  #blocAllArticlesCameras {
+    display: grid;
+    /*row(rang) / column (col) */
+    grid-template: repeat(3, 500px)/1fr 1fr;
+  }
+
+  Section.blocSectionArticlesCameras {
+    min-width: initial;
+    max-width: initial;
+  }
+
+  div.detailsCardArticleCameras {
+    padding: 5px;
+  }
+
+  #footerArticlesCameras {
+    border-top: 1px solid #d3d3d3;
   }
 
   /*-------Fin _oricamerasarticles.html-------*/
@@ -109,20 +142,40 @@
   }
 
   /*-------Fin _oricamerasproduct.html-------*/
-  /*-------Debut _oricamerasarticles.html-------*/
+  /*-------Debut _orifurnituresarticles.html-------*/
   main#mainArticlesFurnitures {
     background-image: url("/front-end/image/backgroundFurnitures.jpg");
     background-attachment: fixed;
+    height: 115rem;
   }
 
-  /*-------Fin _oricamerasarticles.html-------*/
-  /*-------Debut _oricamerasproduct.html-------*/
+  #blocAllArticlesFurnitures {
+    display: grid;
+    /*row(rang) / column (col) */
+    grid-template: repeat(3, 500px)/1fr 1fr;
+  }
+
+  Section.blocSectionArticlesFurnitures {
+    min-width: initial;
+    max-width: initial;
+  }
+
+  div.detailsCardArticleFurnitures {
+    padding: 5px;
+  }
+
+  #footerArticlesFurnitures {
+    border-top: 1px solid white;
+  }
+
+  /*-------Fin _orifurnituresarticles.html-------*/
+  /*-------Debut _orifurnitureproduct.html-------*/
   main#mainProductFurniture {
     background-image: url("/front-end/image/backgroundFurnitureProduct.webp");
     background-attachment: fixed;
   }
 
-  /*-------Fin _oricamerasproduct.html-------*/
+  /*-------Fin _orifurnitureproduct.html-------*/
 }
 @media only screen and (min-width: 980px) {
   /*-------Debut index.html-------*/
@@ -152,12 +205,11 @@
   }
 
   main#mainPage {
-    height: 210rem;
+    height: 183rem;
   }
 
   h2.titleSectionOriNews {
     margin-top: 108px;
-    font-size: 50px;
   }
 
   .blocOriBookTextil {
@@ -194,7 +246,6 @@
   }
 
   h2#titleSectionOriArticles {
-    font-size: 50px;
     margin-top: 15rem;
   }
 
@@ -202,8 +253,8 @@
     justify-content: center;
     display: grid;
     /*row(rang) / column (col) */
-    grid-template: repeat(2, 250px)/400px 100px 400px;
-    margin-top: 12rem;
+    grid-template: repeat(2, 17rem)/4fr 50px 4fr;
+    margin-top: 7rem;
   }
 
   div.oriTeddiesCards {
@@ -212,38 +263,40 @@
     margin-top: 0px;
   }
   div.oriTeddiesCards a h2.titleOriTeddies {
-    margin-right: 15px;
+    width: 400px;
   }
   div.oriTeddiesCards img {
-    margin-right: 15px;
+    width: 400px;
+    height: 16rem;
   }
 
   .oriCamerasCards {
     /*debut row / debut col / fin row / fin col */
-    grid-area: 1/2/3/-1;
+    grid-area: 1/3/1/3;
   }
   .oriCamerasCards a h2.titleOriCameras {
-    margin-left: 115px;
+    width: 400px;
   }
   .oriCamerasCards img {
-    margin-left: 115px;
+    width: 400px;
+    height: 16rem;
   }
 
   .oriFurnituresCards {
     /*debut row / debut col / fin row / fin col */
-    grid-area: 2/1/3/-1;
+    grid-area: 2/1/2/2;
     margin-top: 100px;
   }
   .oriFurnituresCards .oriFurnituresSection .titleOriFurnitures {
-    width: 900px;
+    width: 400px;
   }
   .oriFurnituresCards img {
-    width: 900px;
-    height: 30rem;
+    width: 400px;
+    height: 16rem;
   }
 
   div.bioSection {
-    margin-top: 45rem;
+    margin-top: 23rem;
     height: 181px;
     width: 800px;
   }
@@ -255,6 +308,10 @@
   }
 
   /*-------Fin index.html-------*/
+  /*-------Debut _oriteddiesarticles.html-------*/
+  main#mainArticlesTeddies {
+    margin-top: 65px;
+  }
 }
 @media only screen and (min-width: 1345px) {
   /*-------Debut index.html-------*/
@@ -291,19 +348,390 @@
   .oriFurnituresCards {
     margin-top: 0px;
   }
-  .oriFurnituresCards .oriFurnituresSection .titleOriFurnitures {
-    width: 384px;
-  }
-  .oriFurnituresCards img {
-    height: 15rem;
-    width: 384px;
-  }
 
   div.bioSection {
     margin-top: 17rem;
   }
 
   /*-------Fin index.html-------*/
+  /*-------Debut _oriteddiesarticles.html-------*/
+  main#mainArticlesTeddies {
+    height: 92rem;
+  }
+
+  #blocAllArticlesTeddies {
+    display: grid;
+    /*row(rang) / column (col) */
+    grid-template: repeat(2, 500px)/1fr 1fr 1fr;
+  }
+
+  /*-------Fin _oriteddiesarticles.html-------*/
+  /*-------Debut _oriteddyproduct.html-------*/
+  main#mainProductTeddy {
+    height: 72rem;
+  }
+
+  Section#blocSectionProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article#blocCardProduct {
+    display: grid;
+    padding: 16px;
+  }
+
+  div#blocHeaderCardProduct {
+    grid-area: 1/1/1/3;
+    width: 100%;
+    height: 440px;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: initial;
+    border: 2px solid;
+  }
+  div#blocHeaderCardProduct img#imageCardProduct {
+    border-top-right-radius: initial;
+  }
+
+  #blocDetailedProduct {
+    grid-area: 1/3/1/7;
+  }
+
+  div#blocDetailedProduct {
+    /*row(rang) / column (col) */
+    width: 100%;
+    height: 440px;
+    margin-top: 160px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(5, 1fr);
+  }
+  div#blocDetailedProduct #noteOpinionCustomer {
+    /*debut row / debut col / fin row / fin col */
+    grid-area: 1/1/1/2;
+    border-top: 2px solid black;
+  }
+  div#blocDetailedProduct #numberOpinionCustomer {
+    grid-area: 1/2/1/3;
+    border-right: 2px solid;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProduct #descriptionNumberCardProduct {
+    grid-area: 2/1/2/3;
+    border-right: 2px solid;
+  }
+  div#blocDetailedProduct #descriptionPriceCardProduct {
+    grid-area: 3/1/3/2;
+    border-bottom: 2px solid;
+  }
+  div#blocDetailedProduct #priceCardProduct {
+    grid-area: 3/2/3/3;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+  div#blocDetailedProduct label#descriptionProductColorsOption {
+    grid-area: 1/3/1/4;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProduct #blocProductColorsOption {
+    grid-area: 1/4/1/5;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProduct #amountOrderProduct {
+    grid-area: 2/3/2/4;
+  }
+  div#blocDetailedProduct #numberOrderProduct {
+    grid-area: 2/4/2/5;
+    height: 35px;
+    margin-top: 53px;
+  }
+  div#blocDetailedProduct #blocButtonAddBasket {
+    grid-area: 1/5/1/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProduct #blocButtonAddBasket #buttonAddBasket {
+    width: 90%;
+    font-size: 16px;
+  }
+  div#blocDetailedProduct #blocButtonSeeBasket {
+    grid-area: 2/5/2/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+  }
+  div#blocDetailedProduct #blocButtonSeeBasket #buttonSeeBasket {
+    width: 90%;
+    font-size: 16px;
+  }
+  div#blocDetailedProduct #blocButtonContinuedBuy {
+    grid-area: 3/5/3/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+  }
+  div#blocDetailedProduct #blocButtonContinuedBuy #buttonContinuedBuy {
+    width: 90%;
+    font-size: 15px;
+  }
+  div#blocDetailedProduct #informationPriceCardProduct {
+    grid-area: 3/3/3/5;
+    border-bottom: 2px solid;
+  }
+
+  /*-------Fin _oriteddyproduct.html-------*/
+  /*-------Debut _oricamerasarticles.html-------*/
+  main#mainArticlesCameras {
+    height: 92rem;
+  }
+
+  #blocAllArticlesCameras {
+    display: grid;
+    /*row(rang) / column (col) */
+    grid-template: repeat(2, 500px)/1fr 1fr 1fr;
+  }
+
+  /*-------Fin _oricamerasarticles.html-------*/
+  /*-------Debut _oricameraproduct.html-------*/
+  main#mainProductCamera {
+    height: 72rem;
+  }
+
+  Section#blocSectionProductCamera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article#blocCardProductCamera {
+    display: grid;
+    padding: 16px;
+  }
+
+  div#blocHeaderCardProductCamera {
+    grid-area: 1/1/1/3;
+    width: 100%;
+    height: 440px;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: initial;
+    border: 2px solid;
+  }
+  div#blocHeaderCardProductCamera img#imageCardProductCamera {
+    border-top-right-radius: initial;
+  }
+
+  #blocDetailedProductCamera {
+    grid-area: 1/3/1/7;
+  }
+
+  div#blocDetailedProductCamera {
+    /*row(rang) / column (col) */
+    width: 100%;
+    height: 440px;
+    margin-top: 160px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(5, 1fr);
+  }
+  div#blocDetailedProductCamera #noteOpinionCustomerCamera {
+    /*debut row / debut col / fin row / fin col */
+    grid-area: 1/1/1/2;
+    border-top: 2px solid black;
+  }
+  div#blocDetailedProductCamera #numberOpinionCustomerCamera {
+    grid-area: 1/2/1/3;
+    border-right: 2px solid;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProductCamera #descriptionNumberCardProductCamera {
+    grid-area: 2/1/2/3;
+    border-right: 2px solid;
+  }
+  div#blocDetailedProductCamera #descriptionPriceCardProductCamera {
+    grid-area: 3/1/3/2;
+    border-bottom: 2px solid;
+  }
+  div#blocDetailedProductCamera #priceCardProductCamera {
+    grid-area: 3/2/3/3;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+  div#blocDetailedProductCamera label#descriptionProductLensesOptionCamera {
+    grid-area: 1/3/1/4;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProductCamera #blocProductLensesOptionCamera {
+    grid-area: 1/4/1/5;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProductCamera #amountOrderProductCamera {
+    grid-area: 2/3/2/4;
+  }
+  div#blocDetailedProductCamera #numberOrderProductCamera {
+    grid-area: 2/4/2/5;
+    height: 35px;
+    margin-top: 53px;
+  }
+  div#blocDetailedProductCamera #blocButtonAddBasketCamera {
+    grid-area: 1/5/1/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProductCamera #blocButtonAddBasketCamera #buttonAddBasketCamera {
+    width: 90%;
+    font-size: 16px;
+  }
+  div#blocDetailedProductCamera #blocButtonSeeBasketCamera {
+    grid-area: 2/5/2/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+  }
+  div#blocDetailedProductCamera #blocButtonSeeBasketCamera #buttonSeeBasketCamera {
+    width: 90%;
+    font-size: 16px;
+  }
+  div#blocDetailedProductCamera #blocButtonContinuedBuyCamera {
+    grid-area: 3/5/3/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+  }
+  div#blocDetailedProductCamera #blocButtonContinuedBuyCamera #buttonContinuedBuyCamera {
+    width: 90%;
+    font-size: 15px;
+  }
+  div#blocDetailedProductCamera #informationPriceCardProductCamera {
+    grid-area: 3/3/3/5;
+    border-bottom: 2px solid;
+  }
+
+  /*-------Fin _oritcameraroduct.html-------*/
+  /*-------Debut _orifurnituresarticles.html-------*/
+  main#mainArticlesFurnitures {
+    height: 92rem;
+  }
+
+  #blocAllArticlesFurnitures {
+    display: grid;
+    /*row(rang) / column (col) */
+    grid-template: repeat(2, 500px)/1fr 1fr 1fr;
+  }
+
+  /*-------Fin _orifurnituresarticles.html-------*/
+  /*-------Debut _orifurnitureproduct.html-------*/
+  main#mainProductFurniture {
+    height: 72rem;
+  }
+
+  Section#blocSectionProductCamera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article#blocCardProductFurniture {
+    display: grid;
+    padding: 16px;
+  }
+
+  div#blocHeaderCardProductFurniture {
+    grid-area: 1/1/1/3;
+    width: 100%;
+    height: 440px;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: initial;
+    border: 2px solid;
+  }
+  div#blocHeaderCardProductFurniture img#imageCardProductCamera {
+    border-top-right-radius: initial;
+  }
+
+  #blocDetailedProductFurniture {
+    grid-area: 1/3/1/7;
+  }
+
+  div#blocDetailedProductFurniture {
+    /*row(rang) / column (col) */
+    width: 100%;
+    height: 440px;
+    margin-top: 160px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(5, 1fr);
+  }
+  div#blocDetailedProductFurniture #noteOpinionCustomerFurniture {
+    /*debut row / debut col / fin row / fin col */
+    grid-area: 1/1/1/2;
+    border-top: 2px solid black;
+  }
+  div#blocDetailedProductFurniture #numberOpinionCustomerFurniture {
+    grid-area: 1/2/1/3;
+    border-right: 2px solid;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProductFurniture #descriptionNumberCardProductFurniture {
+    grid-area: 2/1/2/3;
+    border-right: 2px solid;
+  }
+  div#blocDetailedProductFurniture #descriptionPriceCardProductFurniture {
+    grid-area: 3/1/3/2;
+    border-bottom: 2px solid;
+  }
+  div#blocDetailedProductFurniture #priceCardProductFurniture {
+    grid-area: 3/2/3/3;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+  div#blocDetailedProductFurniture label#descriptionProductVarnishOptionFurniture {
+    grid-area: 1/3/1/4;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProductFurniture #blocProductVarnishOptionFurniture {
+    grid-area: 1/4/1/5;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProductFurniture #amountOrderProductFurniture {
+    grid-area: 2/3/2/4;
+  }
+  div#blocDetailedProductFurniture #numberOrderProductFurniture {
+    grid-area: 2/4/2/5;
+    height: 35px;
+    margin-top: 53px;
+  }
+  div#blocDetailedProductFurniture #blocButtonAddBasketFurniture {
+    grid-area: 1/5/1/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-top: 2px solid;
+  }
+  div#blocDetailedProductFurniture #blocButtonAddBasketFurniture #buttonAddBasketFurniture {
+    width: 90%;
+    font-size: 16px;
+  }
+  div#blocDetailedProductFurniture #blocButtonSeeBasketFurniture {
+    grid-area: 2/5/2/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+  }
+  div#blocDetailedProductFurniture #blocButtonSeeBasketFurniture #buttonSeeBasketFurniture {
+    width: 90%;
+    font-size: 16px;
+  }
+  div#blocDetailedProductFurniture #blocButtonContinuedBuyFurniture {
+    grid-area: 3/5/3/6;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+  }
+  div#blocDetailedProductFurniture #blocButtonContinuedBuyFurniture #buttonContinuedBuyFurniture {
+    width: 90%;
+    font-size: 15px;
+  }
+  div#blocDetailedProductFurniture #informationPriceCardProductFurniture {
+    grid-area: 3/3/3/5;
+    border-bottom: 2px solid;
+  }
+
+  /*-------Fin _oritfurnitureroduct.html-------*/
   /*-------Debut _oribasket.html-------*/
   #mainOriBasket {
     padding-top: 20rem;
@@ -353,11 +781,11 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 375px;
+  min-width: 400px;
 }
 
 #header {
-  min-width: 375px;
+  min-width: 400px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -466,25 +894,30 @@ body {
 #mainPage {
   margin: 0;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   margin-top: -42px;
   height: 162rem;
   background-color: #e0e0e0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blocMainPage {
+  padding-top: 50px;
   min-width: 400px;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
 }
 
 .titleSectionOriNews {
   margin-top: 160px;
-  font-size: 30px;
+  font-size: 35px;
+  width: 360px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  color: black;
+  border: 2px solid #778899;
 }
 .titleSectionOriNews .titleOriNews {
   font-family: "Finger Paint", cursive, sans-serif;
@@ -498,7 +931,7 @@ body {
 .blocImgOriBook img {
   cursor: pointer;
   margin-top: 32px;
-  border: 3px solid #778899;
+  border: 2px solid #778899;
   border-radius: 20px;
 }
 
@@ -510,7 +943,7 @@ body {
 .blocImgOriTextil img {
   cursor: pointer;
   margin-top: 30px;
-  border: 3px solid #778899;
+  border: 2px solid #778899;
   border-radius: 20px;
 }
 
@@ -538,7 +971,12 @@ h2 {
 
 #titleSectionOriArticles {
   margin-top: 7rem;
-  font-size: 30px;
+  font-size: 35px;
+  width: 360px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  color: black;
+  border: 2px solid #778899;
 }
 #titleSectionOriArticles .titleOriArticles {
   font-family: "Finger Paint", cursive, sans-serif;
@@ -604,7 +1042,7 @@ h2 {
 }
 
 .titleOriCameras {
-  background-color: #d3d3d3;
+  background-color: #c0c8d0;
   width: 385px;
   margin-left: auto;
   margin-right: auto;
@@ -616,7 +1054,7 @@ h2 {
 }
 
 .titleOriFurnitures {
-  background-color: #f5f5f5;
+  background-color: #d3d3d3;
   width: 385px;
   margin-left: auto;
   margin-right: auto;
@@ -984,12 +1422,12 @@ footer ul li {
 }
 
 /****************************
-Debut _oriteddyarticles.html
+Debut _oriteddiesarticles.html
 *****************************/
 #mainArticlesTeddies {
   text-align: center;
-  margin-top: 90px;
-  height: 200rem;
+  margin-top: 65px;
+  height: 172rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1002,27 +1440,12 @@ Debut _oriteddyarticles.html
 }
 #mainArticlesTeddies #titlePageTeddies {
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 7px;
+  padding: 5px;
   background-color: #deb887;
-  width: 400px;
+  width: 360px;
   font-size: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#welcomeOriteddies {
-  width: 400px;
-  margin-top: 20px;
-  text-align: justify;
-  font-size: 22px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#pWelcomeOriteddies {
-  width: 400px;
-  text-align: justify;
-  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1049,7 +1472,7 @@ Debut _oriteddyarticles.html
 #imageCardArticle {
   width: 100%;
   height: 15rem;
-  border: 3px solid #778899;
+  border: 2px solid #778899;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-left: 3px solid #778899;
@@ -1060,13 +1483,12 @@ Debut _oriteddyarticles.html
 .detailsCardArticle {
   display: grid;
   /*row(rang) / column (col) */
-  grid-template: 1fr 1fr 1fr/repeat(2, 1fr);
+  grid-template: 1fr 16px 1fr/repeat(2, 1fr);
   background-color: #fbcd8d;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: -8px;
-  border: 3px solid #778899;
+  border: 2px solid #778899;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-left: 3px solid #778899;
@@ -1075,56 +1497,40 @@ Debut _oriteddyarticles.html
 }
 
 #titleCardArticle {
-  grid-area: 1/1/1/-1;
-  font-size: 25px;
-  background-color: #f1f1f1;
+  grid-area: 1/1/2/4;
+  background-color: white;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #778899;
+  border-radius: 5px;
+  border: 2px solid #778899;
 }
 
 #priceCardArticle {
   /*debut row / debut col / fin row / fin col */
-  grid-area: 2/3/2/-1;
-  font-size: 20px;
-  margin-right: 4px;
-  margin-top: -5px;
-  padding-left: 3px;
+  grid-area: 3/3/3/4;
   flex-direction: row-reverse;
-  background-color: #f1f1f1;
-  border-radius: 50px;
-  height: 50px;
-  width: 50px;
-  border: 3px solid #778899;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.buyCardArticle {
-  grid-area: 3/1/3/-1;
-  font-size: 25px;
+  background-color: white;
   border-radius: 25px;
-  background-color: #f1f1f1;
+  padding: 5px;
+  border: 2px solid #778899;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #778899;
 }
 
 /****************************
-Fin _oriteddyarticles.html
+Fin _oriteddiesarticles.html
 *****************************/
 /****************************
 Debut _oriteddyproduct.html
 *****************************/
 #mainProductTeddy {
   text-align: center;
-  margin-top: 66px;
+  margin-top: 65px;
   padding-top: 7rem;
-  height: 130rem;
+  height: 110rem;
   background-color: #e8e8e8;
   margin-left: auto;
   margin-right: auto;
@@ -1137,10 +1543,12 @@ Debut _oriteddyproduct.html
 }
 #mainProductTeddy #titlePageTeddy {
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 7px;
+  padding: 5px;
   background-color: #deb887;
-  width: 400px;
+  width: 360px;
   font-size: 30px;
+  border-radius: 15px;
+  border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1161,14 +1569,19 @@ Debut _oriteddyproduct.html
 }
 
 #blocHeaderCardProduct {
-  margin-top: 16rem;
+  margin-top: 10rem;
   background-color: #fbcd8d;
   width: 384px;
+  border-radius: 10px;
+  /*pas utiliser la mixin car ce n'est pas la même valeur de px*/
 }
 #blocHeaderCardProduct img {
   width: 100%;
   height: 360px;
   cursor: zoom-in;
+  border-top-left-radius: 10px;
+  /*pas utiliser la mixin car ce n'est pas la même valeur de px*/
+  border-top-right-radius: 10px;
 }
 #blocHeaderCardProduct #titleCardProduct {
   font-size: 30px;
@@ -1233,14 +1646,6 @@ Debut _oriteddyproduct.html
 }
 #blocDetailedProduct #blocProductColorsOption {
   grid-area: 4/3/4/-1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 16px;
-}
-#blocDetailedProduct #descriptionProductColorsOption {
-  grid-area: 4/1/4/3;
-  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1338,7 +1743,7 @@ Debut _oricamerasarticles.html
 #mainArticlesCameras {
   text-align: center;
   margin-top: 65px;
-  height: 200rem;
+  height: 172rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1351,10 +1756,12 @@ Debut _oricamerasarticles.html
 }
 #mainArticlesCameras #titlePageCameras {
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 7px;
+  padding: 5px;
   background-color: #d3d3d3;
-  width: 400px;
+  width: 360px;
   font-size: 30px;
+  border-radius: 10px;
+  border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1381,7 +1788,7 @@ Debut _oricamerasarticles.html
 #imageCardArticleCameras {
   width: 100%;
   height: 15rem;
-  border: 3px solid #778899;
+  border: 2px solid #778899;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-left: 3px solid #778899;
@@ -1392,13 +1799,12 @@ Debut _oricamerasarticles.html
 .detailsCardArticleCameras {
   display: grid;
   /*row(rang) / column (col) */
-  grid-template: 1fr 1fr 1fr/repeat(2, 1fr);
+  grid-template: 1fr 16px 1fr/repeat(2, 1fr);
   background-color: #d3d3d3;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: -8px;
-  border: 3px solid #778899;
+  border: 2px solid #778899;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-left: 3px solid #778899;
@@ -1407,43 +1813,28 @@ Debut _oricamerasarticles.html
 }
 
 #titleCardArticleCameras {
-  grid-area: 1/1/1/-1;
-  font-size: 25px;
-  background-color: #f1f1f1;
+  grid-area: 1/1/2/4;
+  background-color: white;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #778899;
+  border-radius: 5px;
+  border: 2px solid #778899;
 }
 
 #priceCardArticleCameras {
   /*debut row / debut col / fin row / fin col */
-  grid-area: 2/3/2/-1;
-  font-size: 20px;
-  margin-right: 4px;
-  margin-top: -5px;
-  padding-left: 3px;
+  grid-area: 3/3/3/4;
+  font-size: 18px;
   flex-direction: row-reverse;
-  background-color: #f1f1f1;
-  border-radius: 18px;
-  height: 50px;
-  width: 80px;
-  border: 3px solid #778899;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.buyCardArticleCameras {
-  grid-area: 3/1/3/-1;
-  font-size: 25px;
+  background-color: white;
   border-radius: 25px;
-  background-color: #f1f1f1;
+  padding: 5px;
+  border: 2px solid #778899;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #778899;
 }
 
 /****************************
@@ -1454,9 +1845,9 @@ Debut _oricamerasproduct.html
 *****************************/
 #mainProductCamera {
   text-align: center;
-  margin-top: 66px;
+  margin-top: 65px;
   padding-top: 7rem;
-  height: 130rem;
+  height: 110rem;
   background-color: #e8e8e8;
   margin-left: auto;
   margin-right: auto;
@@ -1469,10 +1860,12 @@ Debut _oricamerasproduct.html
 }
 #mainProductCamera #titlePageCamera {
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 7px;
+  padding: 5px;
   background-color: #d3d3d3;
-  width: 400px;
+  width: 360px;
   font-size: 30px;
+  border-radius: 15px;
+  border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1493,14 +1886,19 @@ Debut _oricamerasproduct.html
 }
 
 #blocHeaderCardProductCamera {
-  margin-top: 16rem;
+  margin-top: 10rem;
   background-color: #d3d3d3;
   width: 384px;
+  border-radius: 10px;
+  /*pas utiliser la mixin car ce n'est pas la même valeur de px*/
 }
 #blocHeaderCardProductCamera img {
   width: 100%;
   height: 360px;
   cursor: zoom-in;
+  border-top-left-radius: 10px;
+  /*pas utiliser la mixin car ce n'est pas la même valeur de px*/
+  border-top-right-radius: 10px;
 }
 #blocHeaderCardProductCamera #titleCardProductCamera {
   font-size: 30px;
@@ -1565,14 +1963,6 @@ Debut _oricamerasproduct.html
 }
 #blocDetailedProductCamera #blocProductLensesOptionCamera {
   grid-area: 4/3/4/-1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 16px;
-}
-#blocDetailedProductCamera #descriptionProductLensesOptionCamera {
-  grid-area: 4/1/4/3;
-  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1670,7 +2060,7 @@ Debut _orifurnituresarticles.html
 #mainArticlesFurnitures {
   text-align: center;
   margin-top: 65px;
-  height: 200rem;
+  height: 172rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1683,10 +2073,12 @@ Debut _orifurnituresarticles.html
 }
 #mainArticlesFurnitures #titlePageFurnitures {
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 7px;
+  padding: 5px;
   background-color: #f5f5f5;
-  width: 400px;
+  width: 360px;
   font-size: 30px;
+  border-radius: 10px;
+  border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1713,7 +2105,7 @@ Debut _orifurnituresarticles.html
 #imageCardArticleFurnitures {
   width: 100%;
   height: 15rem;
-  border: 3px solid #778899;
+  border: 2px solid #778899;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-left: 3px solid #778899;
@@ -1724,13 +2116,12 @@ Debut _orifurnituresarticles.html
 .detailsCardArticleFurnitures {
   display: grid;
   /*row(rang) / column (col) */
-  grid-template: 1fr 1fr 1fr/repeat(2, 1fr);
+  grid-template: 1fr 16px 1fr/repeat(2, 1fr);
   background-color: #f5f5f5;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: -8px;
-  border: 3px solid #778899;
+  border: 2px solid #778899;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-left: 3px solid #778899;
@@ -1739,43 +2130,27 @@ Debut _orifurnituresarticles.html
 }
 
 #titleCardArticleFurnitures {
-  grid-area: 1/1/1/-1;
-  font-size: 25px;
-  background-color: #f1f1f1;
+  grid-area: 1/1/2/4;
+  background-color: white;
   padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #778899;
+  border-radius: 5px;
+  border: 2px solid #778899;
 }
 
 #priceCardArticleFurnitures {
   /*debut row / debut col / fin row / fin col */
-  grid-area: 2/3/2/-1;
-  font-size: 20px;
-  margin-right: 4px;
-  margin-top: -5px;
-  padding-left: 3px;
+  grid-area: 3/3/3/4;
   flex-direction: row-reverse;
-  background-color: #f1f1f1;
-  border-radius: 18px;
-  height: 50px;
-  width: 80px;
-  border: 3px solid #778899;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.buyCardArticleFurnitures {
-  grid-area: 3/1/3/-1;
-  font-size: 25px;
+  background-color: white;
   border-radius: 25px;
-  background-color: #f1f1f1;
+  padding: 5px;
+  border: 2px solid #778899;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #778899;
 }
 
 /****************************
@@ -1788,9 +2163,9 @@ Debut _orifurnitureproduct.html
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 66px;
+  margin-top: 65px;
   padding-top: 7rem;
-  height: 130rem;
+  height: 110rem;
   background-color: #e8e8e8;
 }
 #mainProductFurniture .blocMainProductFurniture {
@@ -1801,10 +2176,12 @@ Debut _orifurnitureproduct.html
 }
 #mainProductFurniture #titlePageFurniture {
   font-family: "Finger Paint", cursive, sans-serif;
-  padding-top: 7px;
+  padding: 5px;
   background-color: #f5f5f5;
-  width: 400px;
+  width: 360px;
   font-size: 30px;
+  border-radius: 15px;
+  border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1825,14 +2202,19 @@ Debut _orifurnitureproduct.html
 }
 
 #blocHeaderCardProductFurniture {
-  margin-top: 16rem;
+  margin-top: 10rem;
   background-color: #f5f5f5;
   width: 384px;
+  border-radius: 10px;
+  /*pas utiliser la mixin car ce n'est pas la même valeur de px*/
 }
 #blocHeaderCardProductFurniture img {
   width: 100%;
   height: 360px;
   cursor: zoom-in;
+  border-top-left-radius: 10px;
+  /*pas utiliser la mixin car ce n'est pas la même valeur de px*/
+  border-top-right-radius: 10px;
 }
 #blocHeaderCardProductFurniture #titleCardProductFurniture {
   font-size: 30px;
@@ -1897,14 +2279,6 @@ Debut _orifurnitureproduct.html
 }
 #blocDetailedProductFurniture #blocProductVarnishOptionFurniture {
   grid-area: 4/3/4/-1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 16px;
-}
-#blocDetailedProductFurniture #descriptionProductVarnishOptionFurniture {
-  grid-area: 4/1/4/3;
-  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;

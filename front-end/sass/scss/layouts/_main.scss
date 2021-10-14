@@ -9,22 +9,27 @@
 #mainPage {
   margin: 0;
   padding: 0;
-  @include center;
   text-align: center;
   margin-top: -42px;
   height: 162rem;
-  background-color: lighten($color: $color-tertiary, $amount: 5)  
+  background-color: lighten($color: $color-tertiary, $amount: 5);
+  @include center;
 }
 
 .blocMainPage{
+  padding-top: 50px;
   @include minMaxWidth;
   @include center;
-  padding-top: 50px;
 }
 
 .titleSectionOriNews{
   margin-top: 160px;
-  font-size: 30px;
+  font-size: 35px;
+  width: 360px;
+  border-radius: 10px;
+  background-color: $color-quatenary;
+  color: darken($color: $color-twitter, $amount: 100);
+  @include borderColorSolid;
   .titleOriNews{
     font-family: 'Finger Paint',cursive, sans-serif;
   }
@@ -76,7 +81,12 @@ h2{
 
 #titleSectionOriArticles{
   margin-top: 7rem;
-  font-size: 30px;
+  font-size: 35px;
+  width: 360px;
+  border-radius: 10px;
+  background-color: $color-quatenary;
+  color: darken($color: $color-twitter, $amount: 100);
+  @include borderColorSolid;
   .titleOriArticles{
     font-family: 'Finger Paint',cursive, sans-serif;
   }
@@ -138,7 +148,7 @@ h2{
 }
 
 .titleOriCameras{
-  background-color: $color-tertiary;
+  background-color: lighten($color: $color-quinquenary, $amount: 25);
   width: 385px ;
   @include center;
   @include borderTopRightLeftRadius;
@@ -146,7 +156,7 @@ h2{
 }
 
 .titleOriFurnitures{
-  background-color:$color-quatenary;
+  background-color:$color-tertiary;
   width: 385px ;
   @include center;
   @include borderTopRightLeftRadius;

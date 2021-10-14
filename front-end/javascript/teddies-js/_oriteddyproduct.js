@@ -44,7 +44,7 @@ function transferProduct(productDetailed){
   cloneBlocTemplateProduct.getElementById("descriptionPriceCardProduct").textContent = "Prix* unitaire : "
   cloneBlocTemplateProduct.getElementById("priceCardProduct").textContent = productDetailed.price / 100 + ",00" + " " + "€";
 
-  cloneBlocTemplateProduct.getElementById("descriptionProductColorsOption").textContent = "Couleur désirée:";
+  cloneBlocTemplateProduct.getElementById("descriptionProductColorsOption").textContent = "Couleur désirée :";
   cloneBlocTemplateProduct.getElementById("productOptionOne").value = productDetailed.colors[0];
   cloneBlocTemplateProduct.getElementById("productOptionTwo").value= productDetailed.colors[1];
   cloneBlocTemplateProduct.getElementById("productOptionThree").value = productDetailed.colors[2];
