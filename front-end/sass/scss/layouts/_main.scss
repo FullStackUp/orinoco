@@ -30,6 +30,10 @@
   background-color: $color-quatenary;
   color: darken($color: $color-twitter, $amount: 100);
   @include borderColorSolid;
+  &:hover{
+    text-shadow: 1px 0px 15px black;
+    border-color: black;
+  }
   .titleOriNews{
     font-family: 'Finger Paint',cursive, sans-serif;
   }
@@ -87,6 +91,10 @@ h2{
   background-color: $color-quatenary;
   color: darken($color: $color-twitter, $amount: 100);
   @include borderColorSolid;
+  &:hover{
+    text-shadow: 1px 0px 15px black;
+    border-color: black;
+  }
   .titleOriArticles{
     font-family: 'Finger Paint',cursive, sans-serif;
   }

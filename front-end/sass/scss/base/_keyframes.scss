@@ -15,3 +15,55 @@
       opacity:1;
     }
 }
+
+@keyframes loader-light {
+  0% {
+    color: $color-primary;
+    text-shadow: 0 0 .1rem $color-primary;
+  }
+  30% {
+    color: $color-secondary;
+    text-shadow: 0 0 .1rem $color-secondary;
+  }
+  60% {
+    color: $color-tertiary;
+    text-shadow: 0 0 .1rem $color-tertiary;
+  }
+  90% {
+    color: $color-secondary;
+    text-shadow: 0 0 .1rem $color-secondary;
+  }
+
+  100% {
+    color: $color-primary;
+    text-shadow: 0 0 .1rem $color-primary;
+  }
+}
+
+@keyframes loader-spinner{
+  0%{
+    visibility: visible;
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loader-cercle {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}

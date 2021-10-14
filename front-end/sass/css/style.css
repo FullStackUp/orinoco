@@ -16,6 +16,54 @@
     opacity: 1;
   }
 }
+@keyframes loader-light {
+  0% {
+    color: #e68a09;
+    text-shadow: 0 0 0.1rem #e68a09;
+  }
+  30% {
+    color: #8f5bfe;
+    text-shadow: 0 0 0.1rem #8f5bfe;
+  }
+  60% {
+    color: #d3d3d3;
+    text-shadow: 0 0 0.1rem #d3d3d3;
+  }
+  90% {
+    color: #8f5bfe;
+    text-shadow: 0 0 0.1rem #8f5bfe;
+  }
+  100% {
+    color: #e68a09;
+    text-shadow: 0 0 0.1rem #e68a09;
+  }
+}
+@keyframes loader-spinner {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loader-cercle {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
 @media only screen and (min-width: 768px) {
   /*-------Debut index.html-------*/
   main#mainPage {
@@ -78,7 +126,7 @@
   main#mainArticlesTeddies {
     background-image: url("/front-end/image/backgroundTeddies.jpg");
     background-attachment: fixed;
-    height: 115rem;
+    height: 110rem;
   }
 
   #blocAllArticlesTeddies {
@@ -308,10 +356,6 @@
   }
 
   /*-------Fin index.html-------*/
-  /*-------Debut _oriteddiesarticles.html-------*/
-  main#mainArticlesTeddies {
-    margin-top: 65px;
-  }
 }
 @media only screen and (min-width: 1345px) {
   /*-------Debut index.html-------*/
@@ -919,6 +963,10 @@ body {
   color: black;
   border: 2px solid #778899;
 }
+.titleSectionOriNews:hover {
+  text-shadow: 1px 0px 15px black;
+  border-color: black;
+}
 .titleSectionOriNews .titleOriNews {
   font-family: "Finger Paint", cursive, sans-serif;
 }
@@ -977,6 +1025,10 @@ h2 {
   background-color: #f5f5f5;
   color: black;
   border: 2px solid #778899;
+}
+#titleSectionOriArticles:hover {
+  text-shadow: 1px 0px 15px black;
+  border-color: black;
 }
 #titleSectionOriArticles .titleOriArticles {
   font-family: "Finger Paint", cursive, sans-serif;
@@ -1428,6 +1480,7 @@ Debut _oriteddiesarticles.html
   text-align: center;
   margin-top: 65px;
   height: 172rem;
+  background-color: #e0e0e0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1448,6 +1501,10 @@ Debut _oriteddiesarticles.html
   border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
+}
+#mainArticlesTeddies #titlePageTeddies:hover {
+  text-shadow: 1px 0px 15px black;
+  box-shadow: 1px 0px 15px black;
 }
 
 .blocSectionArticles {
@@ -1479,6 +1536,12 @@ Debut _oriteddiesarticles.html
   border-top: 3px solid #778899;
   border-right: 3px solid #778899;
 }
+#imageCardArticle:hover {
+  border-top-color: black;
+  border-left-color: black;
+  border-right-color: black;
+  box-shadow: 1px 0px 15px black;
+}
 
 .detailsCardArticle {
   display: grid;
@@ -1495,6 +1558,12 @@ Debut _oriteddiesarticles.html
   border-bottom: 3px solid #778899;
   border-right: 3px solid #778899;
 }
+.detailsCardArticle:hover {
+  border-bottom-color: black;
+  border-left-color: black;
+  border-right-color: black;
+  box-shadow: 1px 0px 15px black;
+}
 
 #titleCardArticle {
   grid-area: 1/1/2/4;
@@ -1505,6 +1574,10 @@ Debut _oriteddiesarticles.html
   align-items: center;
   border-radius: 5px;
   border: 2px solid #778899;
+}
+#titleCardArticle:hover {
+  border-color: black;
+  box-shadow: 1px 0px 15px black;
 }
 
 #priceCardArticle {
@@ -1518,6 +1591,10 @@ Debut _oriteddiesarticles.html
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#priceCardArticle:hover {
+  border-color: black;
+  box-shadow: 1px 0px 15px black;
 }
 
 /****************************
@@ -1744,6 +1821,7 @@ Debut _oricamerasarticles.html
   text-align: center;
   margin-top: 65px;
   height: 172rem;
+  background-color: #e0e0e0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1764,6 +1842,10 @@ Debut _oricamerasarticles.html
   border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
+}
+#mainArticlesCameras #titlePageCameras:hover {
+  text-shadow: 1px 0px 15px #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
 }
 
 .blocSectionArticlesCameras {
@@ -1795,6 +1877,12 @@ Debut _oricamerasarticles.html
   border-top: 3px solid #778899;
   border-right: 3px solid #778899;
 }
+#imageCardArticleCameras:hover {
+  border-top-color: #f1f1f1;
+  border-left-color: #f1f1f1;
+  border-right-color: #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
+}
 
 .detailsCardArticleCameras {
   display: grid;
@@ -1811,6 +1899,12 @@ Debut _oricamerasarticles.html
   border-bottom: 3px solid #778899;
   border-right: 3px solid #778899;
 }
+.detailsCardArticleCameras:hover {
+  border-bottom-color: #f1f1f1;
+  border-left-color: #f1f1f1;
+  border-right-color: #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
+}
 
 #titleCardArticleCameras {
   grid-area: 1/1/2/4;
@@ -1821,6 +1915,10 @@ Debut _oricamerasarticles.html
   align-items: center;
   border-radius: 5px;
   border: 2px solid #778899;
+}
+#titleCardArticleCameras:hover {
+  border-color: #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
 }
 
 #priceCardArticleCameras {
@@ -1835,6 +1933,10 @@ Debut _oricamerasarticles.html
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#priceCardArticleCameras:hover {
+  border-color: #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
 }
 
 /****************************
@@ -2061,6 +2163,7 @@ Debut _orifurnituresarticles.html
   text-align: center;
   margin-top: 65px;
   height: 172rem;
+  background-color: #e0e0e0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2081,6 +2184,10 @@ Debut _orifurnituresarticles.html
   border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
+}
+#mainArticlesFurnitures #titlePageFurnitures:hover {
+  text-shadow: 1px 0px 15px #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
 }
 
 .blocSectionArticlesFurnitures {
@@ -2112,6 +2219,12 @@ Debut _orifurnituresarticles.html
   border-top: 3px solid #778899;
   border-right: 3px solid #778899;
 }
+#imageCardArticleFurnitures:hover {
+  border-top-color: #f1f1f1;
+  border-left-color: #f1f1f1;
+  border-right-color: #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
+}
 
 .detailsCardArticleFurnitures {
   display: grid;
@@ -2128,6 +2241,12 @@ Debut _orifurnituresarticles.html
   border-bottom: 3px solid #778899;
   border-right: 3px solid #778899;
 }
+.detailsCardArticleFurnitures:hover {
+  border-bottom-color: #f1f1f1;
+  border-left-color: #f1f1f1;
+  border-right-color: #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
+}
 
 #titleCardArticleFurnitures {
   grid-area: 1/1/2/4;
@@ -2138,6 +2257,10 @@ Debut _orifurnituresarticles.html
   align-items: center;
   border-radius: 5px;
   border: 2px solid #778899;
+}
+#titleCardArticleFurnitures:hover {
+  border-color: #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
 }
 
 #priceCardArticleFurnitures {
@@ -2151,6 +2274,10 @@ Debut _orifurnituresarticles.html
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#priceCardArticleFurnitures:hover {
+  border-color: #f1f1f1;
+  box-shadow: 1px 0px 15px #f1f1f1;
 }
 
 /****************************
@@ -2607,6 +2734,93 @@ Fin _orifurnitureproduct.html
   border-radius: 25px;
   height: 40px;
   width: 300px;
+}
+
+.page-loader {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  animation: loader-spinner 3s;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.letter {
+  color: black;
+  font-size: 50px;
+  font-family: "Shrikhand", "Sans serif";
+  animation: loader-light 2s linear infinite;
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.letter:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.loader-cercle {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader-cercle:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 16px solid black;
+  border-color: #8f5bfe #e68a09 #d3d3d3 #e68a09;
+  animation: loader-cercle 1.2s infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
