@@ -23,8 +23,9 @@ Debut _orifurnituresarticles.html
     @include borderColorSolid;
     @include center;
     &:hover{
-      text-shadow: 1px 0px 15px $color-card;
-      box-shadow: 1px 0px 15px $color-card;
+      text-shadow: 1px 0px 15px black;
+      box-shadow: 1px 0px 15px black;
+      cursor: default;
     }
   }
 }
@@ -135,6 +136,11 @@ background-color: darken($color: whitesmoke, $amount: 5);
   border-radius: 15px;
   @include borderColorSolid;
   @include center;
+  &:hover{
+    text-shadow: 1px 0px 15px black;
+    box-shadow: 1px 0px 15px black;
+    cursor: default;
+  }
 }
 }
 

@@ -25,6 +25,7 @@ Debut _oriteddiesarticles.html
     &:hover{
       text-shadow: 1px 0px 15px black;
       box-shadow: 1px 0px 15px black;
+      cursor: default;
     }
   }
 }
@@ -135,6 +136,11 @@ Debut _oriteddyproduct.html
     border-radius: 15px;
     @include borderColorSolid;
     @include center;
+    &:hover{
+      text-shadow: 1px 0px 15px black;
+      box-shadow: 1px 0px 15px black;
+      cursor: default;
+    }
   }
 }
 

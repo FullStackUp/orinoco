@@ -454,24 +454,29 @@
     /*debut row / debut col / fin row / fin col */
     grid-area: 1/1/1/2;
     border-top: 2px solid black;
+    background-color: white;
   }
   div#blocDetailedProduct #numberOpinionCustomer {
     grid-area: 1/2/1/3;
     border-right: 2px solid;
     border-top: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProduct #descriptionNumberCardProduct {
     grid-area: 2/1/2/3;
     border-right: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProduct #descriptionPriceCardProduct {
     grid-area: 3/1/3/2;
     border-bottom: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProduct #priceCardProduct {
     grid-area: 3/2/3/3;
     border-bottom: 2px solid;
     border-right: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProduct label#descriptionProductColorsOption {
     grid-area: 1/3/1/4;
@@ -494,6 +499,7 @@
     border-right: 2px solid;
     border-left: 2px solid;
     border-top: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProduct #blocButtonAddBasket #buttonAddBasket {
     width: 90%;
@@ -503,6 +509,7 @@
     grid-area: 2/5/2/6;
     border-right: 2px solid;
     border-left: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProduct #blocButtonSeeBasket #buttonSeeBasket {
     width: 90%;
@@ -513,6 +520,7 @@
     border-right: 2px solid;
     border-left: 2px solid;
     border-bottom: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProduct #blocButtonContinuedBuy #buttonContinuedBuy {
     width: 90%;
@@ -580,24 +588,29 @@
     /*debut row / debut col / fin row / fin col */
     grid-area: 1/1/1/2;
     border-top: 2px solid black;
+    background-color: white;
   }
   div#blocDetailedProductCamera #numberOpinionCustomerCamera {
     grid-area: 1/2/1/3;
     border-right: 2px solid;
     border-top: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductCamera #descriptionNumberCardProductCamera {
     grid-area: 2/1/2/3;
     border-right: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductCamera #descriptionPriceCardProductCamera {
     grid-area: 3/1/3/2;
     border-bottom: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductCamera #priceCardProductCamera {
     grid-area: 3/2/3/3;
     border-bottom: 2px solid;
     border-right: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductCamera label#descriptionProductLensesOptionCamera {
     grid-area: 1/3/1/4;
@@ -620,6 +633,7 @@
     border-right: 2px solid;
     border-left: 2px solid;
     border-top: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductCamera #blocButtonAddBasketCamera #buttonAddBasketCamera {
     width: 90%;
@@ -629,6 +643,7 @@
     grid-area: 2/5/2/6;
     border-right: 2px solid;
     border-left: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductCamera #blocButtonSeeBasketCamera #buttonSeeBasketCamera {
     width: 90%;
@@ -639,6 +654,7 @@
     border-right: 2px solid;
     border-left: 2px solid;
     border-bottom: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductCamera #blocButtonContinuedBuyCamera #buttonContinuedBuyCamera {
     width: 90%;
@@ -706,24 +722,29 @@
     /*debut row / debut col / fin row / fin col */
     grid-area: 1/1/1/2;
     border-top: 2px solid black;
+    background-color: white;
   }
   div#blocDetailedProductFurniture #numberOpinionCustomerFurniture {
     grid-area: 1/2/1/3;
     border-right: 2px solid;
     border-top: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductFurniture #descriptionNumberCardProductFurniture {
     grid-area: 2/1/2/3;
     border-right: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductFurniture #descriptionPriceCardProductFurniture {
     grid-area: 3/1/3/2;
     border-bottom: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductFurniture #priceCardProductFurniture {
     grid-area: 3/2/3/3;
     border-bottom: 2px solid;
     border-right: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductFurniture label#descriptionProductVarnishOptionFurniture {
     grid-area: 1/3/1/4;
@@ -746,6 +767,7 @@
     border-right: 2px solid;
     border-left: 2px solid;
     border-top: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductFurniture #blocButtonAddBasketFurniture #buttonAddBasketFurniture {
     width: 90%;
@@ -755,6 +777,7 @@
     grid-area: 2/5/2/6;
     border-right: 2px solid;
     border-left: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductFurniture #blocButtonSeeBasketFurniture #buttonSeeBasketFurniture {
     width: 90%;
@@ -765,6 +788,7 @@
     border-right: 2px solid;
     border-left: 2px solid;
     border-bottom: 2px solid;
+    background-color: white;
   }
   div#blocDetailedProductFurniture #blocButtonContinuedBuyFurniture #buttonContinuedBuyFurniture {
     width: 90%;
@@ -1505,6 +1529,7 @@ Debut _oriteddiesarticles.html
 #mainArticlesTeddies #titlePageTeddies:hover {
   text-shadow: 1px 0px 15px black;
   box-shadow: 1px 0px 15px black;
+  cursor: default;
 }
 
 .blocSectionArticles {
@@ -1628,6 +1653,11 @@ Debut _oriteddyproduct.html
   border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
+}
+#mainProductTeddy #titlePageTeddy:hover {
+  text-shadow: 1px 0px 15px black;
+  box-shadow: 1px 0px 15px black;
+  cursor: default;
 }
 
 #blocSectionProduct {
@@ -1844,8 +1874,9 @@ Debut _oricamerasarticles.html
   margin-right: auto;
 }
 #mainArticlesCameras #titlePageCameras:hover {
-  text-shadow: 1px 0px 15px #f1f1f1;
-  box-shadow: 1px 0px 15px #f1f1f1;
+  text-shadow: 1px 0px 15px black;
+  box-shadow: 1px 0px 15px black;
+  cursor: default;
 }
 
 .blocSectionArticlesCameras {
@@ -1970,6 +2001,11 @@ Debut _oricamerasproduct.html
   border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
+}
+#mainProductCamera #titlePageCamera:hover {
+  text-shadow: 1px 0px 15px black;
+  box-shadow: 1px 0px 15px black;
+  cursor: default;
 }
 
 #blocSectionProductCamera {
@@ -2186,8 +2222,9 @@ Debut _orifurnituresarticles.html
   margin-right: auto;
 }
 #mainArticlesFurnitures #titlePageFurnitures:hover {
-  text-shadow: 1px 0px 15px #f1f1f1;
-  box-shadow: 1px 0px 15px #f1f1f1;
+  text-shadow: 1px 0px 15px black;
+  box-shadow: 1px 0px 15px black;
+  cursor: default;
 }
 
 .blocSectionArticlesFurnitures {
@@ -2311,6 +2348,11 @@ Debut _orifurnitureproduct.html
   border: 2px solid #778899;
   margin-left: auto;
   margin-right: auto;
+}
+#mainProductFurniture #titlePageFurniture:hover {
+  text-shadow: 1px 0px 15px black;
+  box-shadow: 1px 0px 15px black;
+  cursor: default;
 }
 
 #blocSectionProductFurniture {

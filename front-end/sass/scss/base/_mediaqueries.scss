@@ -395,24 +395,29 @@
        /*debut row / debut col / fin row / fin col */
          grid-area: 1 / 1 / 1 / 2;
          border-top: 2px solid black;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #numberOpinionCustomer{
          grid-area: 1 / 2 / 1 / 3 ;
          border-right: 2px solid;
          border-top: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #descriptionNumberCardProduct{
          grid-area: 2 / 1 / 2 / 3;
          border-right: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #descriptionPriceCardProduct{
          grid-area: 3 / 1 / 3 / 2;
          border-bottom: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #priceCardProduct{
          grid-area: 3 / 2 / 3 / 3;
          border-bottom: 2px solid;
          border-right: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        label#descriptionProductColorsOption{
          grid-area: 1 / 3 / 1 / 4;
@@ -439,6 +444,7 @@
          border-right: 2px solid;
          border-left: 2px solid;
          border-top: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonAddBasket{
             width: 90%;
             font-size: 16px;
@@ -449,6 +455,7 @@
          grid-area: 2 / 5 / 2 / 6;
          border-right: 2px solid;
          border-left: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonSeeBasket{
             width: 90%;
             font-size: 16px;
@@ -460,6 +467,7 @@
          border-right: 2px solid;
          border-left: 2px solid;
          border-bottom: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonContinuedBuy{
             width: 90%;
             font-size: 15px;
@@ -527,24 +535,29 @@
        /*debut row / debut col / fin row / fin col */
          grid-area: 1 / 1 / 1 / 2;
          border-top: 2px solid black;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #numberOpinionCustomerCamera{
          grid-area: 1 / 2 / 1 / 3 ;
          border-right: 2px solid;
          border-top: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #descriptionNumberCardProductCamera{
          grid-area: 2 / 1 / 2 / 3;
          border-right: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #descriptionPriceCardProductCamera{
          grid-area: 3 / 1 / 3 / 2;
          border-bottom: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #priceCardProductCamera{
          grid-area: 3 / 2 / 3 / 3;
          border-bottom: 2px solid;
          border-right: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        label#descriptionProductLensesOptionCamera{
          grid-area: 1 / 3 / 1 / 4;
@@ -571,6 +584,7 @@
          border-right: 2px solid;
          border-left: 2px solid;
          border-top: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonAddBasketCamera {
             width: 90%;
             font-size: 16px;
@@ -581,6 +595,7 @@
          grid-area: 2 / 5 / 2 / 6;
          border-right: 2px solid;
          border-left: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonSeeBasketCamera{
             width: 90%;
             font-size: 16px;
@@ -592,6 +607,7 @@
          border-right: 2px solid;
          border-left: 2px solid;
          border-bottom: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonContinuedBuyCamera{
             width: 90%;
             font-size: 15px;
@@ -659,24 +675,29 @@
        /*debut row / debut col / fin row / fin col */
          grid-area: 1 / 1 / 1 / 2;
          border-top: 2px solid black;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #numberOpinionCustomerFurniture {
          grid-area: 1 / 2 / 1 / 3 ;
          border-right: 2px solid;
          border-top: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #descriptionNumberCardProductFurniture {
          grid-area: 2 / 1 / 2 / 3;
          border-right: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #descriptionPriceCardProductFurniture {
          grid-area: 3 / 1 / 3 / 2;
          border-bottom: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        #priceCardProductFurniture {
          grid-area: 3 / 2 / 3 / 3;
          border-bottom: 2px solid;
          border-right: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
        }
        label#descriptionProductVarnishOptionFurniture {
          grid-area: 1 / 3 / 1 / 4;
@@ -703,6 +724,7 @@
          border-right: 2px solid;
          border-left: 2px solid;
          border-top: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonAddBasketFurniture {
             width: 90%;
             font-size: 16px;
@@ -713,6 +735,7 @@
          grid-area: 2 / 5 / 2 / 6;
          border-right: 2px solid;
          border-left: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonSeeBasketFurniture {
             width: 90%;
             font-size: 16px;
@@ -724,6 +747,7 @@
          border-right: 2px solid;
          border-left: 2px solid;
          border-bottom: 2px solid;
+         background-color: lighten($color: $color-card, $amount: 40);
          #buttonContinuedBuyFurniture {
             width: 90%;
             font-size: 15px;
