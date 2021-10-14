@@ -152,7 +152,7 @@ const displayFormHtml = () => {
 
         <div id="btnSendFormBlocFormOrder">
           <button id="btnSendFormOrder" type="submit" name="btnSendFormOrder">
-            Confirmer votre commande
+            Confirmer
           </button>
         </div>
     </form>

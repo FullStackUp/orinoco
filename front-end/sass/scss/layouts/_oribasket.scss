@@ -208,6 +208,16 @@
 #btnSendFormBlocFormOrder{/*depuis le _oribasket.js*/
     padding-left: 50px;
     padding-top: 20px;
+    &:hover{
+        -webkit-transition: all 250ms ease-in;
+        -webkit-transform: scale(0.9);
+        -ms-transition: all 250ms ease-in;
+        -ms-transform: scale(0.9);   
+        -moz-transition: all 250ms ease-in;
+        -moz-transform: scale(0.9);
+        transition: all 250ms ease-in;
+        transform: scale(0.9);
+    }
 }
 
 #btnSendFormOrder{/*depuis le _oribasket.js*/
@@ -217,5 +227,6 @@
     font-size: 20px;
     border-radius: 25px;
     height: 40px;
-    width: 300px;
+    width: 200px;
+    margin-left: 50px;
 }

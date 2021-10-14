@@ -76,6 +76,16 @@
     margin-top: 160px;
   }
 
+  figure.blocImgOriBook img:hover {
+    box-shadow: 1px 0px 30px white;
+    border-color: white;
+  }
+
+  figure.blocImgOriTextil img:hover {
+    box-shadow: 1px 0px 30px white;
+    border-color: white;
+  }
+
   h2#titleSectionOriArticles {
     margin-top: 6rem;
   }
@@ -1006,6 +1016,9 @@ body {
   border: 2px solid #778899;
   border-radius: 20px;
 }
+.blocImgOriBook img:hover {
+  box-shadow: 1px 0px 10px black;
+}
 
 .blocImgOriTextil {
   height: 20rem;
@@ -1017,6 +1030,9 @@ body {
   margin-top: 30px;
   border: 2px solid #778899;
   border-radius: 20px;
+}
+.blocImgOriTextil img:hover {
+  box-shadow: 1px 0px 10px black;
 }
 
 img {
@@ -1796,6 +1812,16 @@ Debut _oriteddyproduct.html
   justify-content: center;
   align-items: center;
 }
+#blocDetailedProduct #blocButtonAddBasket #buttonAddBasket:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
 #blocDetailedProduct #blocButtonSeeBasket {
   grid-area: 7/1/7/-1;
   display: flex;
@@ -1815,6 +1841,16 @@ Debut _oriteddyproduct.html
   justify-content: center;
   align-items: center;
 }
+#blocDetailedProduct #blocButtonSeeBasket #buttonSeeBasket:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
 #blocDetailedProduct #blocButtonContinuedBuy {
   grid-area: 8/1/8/-1;
   display: flex;
@@ -1833,6 +1869,16 @@ Debut _oriteddyproduct.html
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#blocDetailedProduct #blocButtonContinuedBuy #buttonContinuedBuy:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
 }
 #blocDetailedProduct #informationPriceCardProduct {
   grid-area: 9/1/9/-1;
@@ -1967,7 +2013,7 @@ Debut _oricamerasarticles.html
 }
 #priceCardArticleCameras:hover {
   border-color: #f1f1f1;
-  box-shadow: 1px 0px 15px #f1f1f1;
+  box-shadow: 1px 0px 15px white;
 }
 
 /****************************
@@ -2144,6 +2190,16 @@ Debut _oricamerasproduct.html
   justify-content: center;
   align-items: center;
 }
+#blocDetailedProductCamera #blocButtonAddBasketCamera #buttonAddBasketCamera:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
 #blocDetailedProductCamera #blocButtonSeeBasketCamera {
   grid-area: 7/1/7/-1;
   display: flex;
@@ -2163,6 +2219,16 @@ Debut _oricamerasproduct.html
   justify-content: center;
   align-items: center;
 }
+#blocDetailedProductCamera #blocButtonSeeBasketCamera #buttonSeeBasketCamera:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
 #blocDetailedProductCamera #blocButtonContinuedBuyCamera {
   grid-area: 8/1/8/-1;
   display: flex;
@@ -2181,6 +2247,16 @@ Debut _oricamerasproduct.html
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#blocDetailedProductCamera #blocButtonContinuedBuyCamera #buttonContinuedBuyCamera:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
 }
 #blocDetailedProductCamera #informationPriceCardProductCamera {
   grid-area: 9/1/9/-1;
@@ -2491,6 +2567,16 @@ Debut _orifurnitureproduct.html
   justify-content: center;
   align-items: center;
 }
+#blocDetailedProductFurniture #blocButtonAddBasketFurniture #buttonAddBasketFurniture:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
 #blocDetailedProductFurniture #blocButtonSeeBasketFurniture {
   grid-area: 7/1/7/-1;
   display: flex;
@@ -2510,6 +2596,16 @@ Debut _orifurnitureproduct.html
   justify-content: center;
   align-items: center;
 }
+#blocDetailedProductFurniture #blocButtonSeeBasketFurniture #buttonSeeBasketFurniture:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
 #blocDetailedProductFurniture #blocButtonContinuedBuyFurniture {
   grid-area: 8/1/8/-1;
   display: flex;
@@ -2528,6 +2624,16 @@ Debut _orifurnitureproduct.html
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#blocDetailedProductFurniture #blocButtonContinuedBuyFurniture #buttonContinuedBuyFurniture:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
 }
 #blocDetailedProductFurniture #informationPriceCardProductFurniture {
   grid-area: 9/1/9/-1;
@@ -2766,6 +2872,16 @@ Fin _orifurnitureproduct.html
   padding-left: 50px;
   padding-top: 20px;
 }
+#btnSendFormBlocFormOrder:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
 
 #btnSendFormOrder {
   /*depuis le _oribasket.js*/
@@ -2775,7 +2891,8 @@ Fin _orifurnitureproduct.html
   font-size: 20px;
   border-radius: 25px;
   height: 40px;
-  width: 300px;
+  width: 200px;
+  margin-left: 50px;
 }
 
 .page-loader {

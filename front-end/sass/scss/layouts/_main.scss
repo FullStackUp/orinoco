@@ -49,6 +49,9 @@
   margin-top: 32px;
   @include borderColorSolid;
   @include borderRadiusAll;
+  &:hover{
+    box-shadow: 1px 0px 10px black;
+  }
 }
 
 .blocImgOriTextil {
@@ -61,6 +64,9 @@
     margin-top: 30px;
     @include borderColorSolid;
     @include borderRadiusAll;
+    &:hover{
+      box-shadow: 1px 0px 10px black;
+    }
 }
 
 img{
