@@ -1,15 +1,15 @@
-# EricJanvier_5_05082021
+# Orinoco
 
-Projet 5 OpenClassrooms : Orinoco "version avant 29-09-21".
+This is the back end server for Project 5 of the Junior Web Developer path.
 
-Etape à suivre :
+### Prerequisites
 
-1/ Cloner ce repository : https://github.com/Esheric/EricJanvier_5_05082021.git => qui est le projet complet (à la fois back-end et front-end)
+You will need to have Node and `npm` installed locally on your machine.
 
-2/ Se placer dans le dossier back-end à l'aide du terminal (et y rester pour les prochaines étapes)
+### Installation
 
-3/ Installer Node.js et npm (taper "node -v" et "npm -v")
-
-4/ Lancer npm avec la commande "npm install" pour installer les dépendances
-
-5/ Taper "node server" pour lancer le serveur (port : 3000)
+Clone this repo. From within the project folder, run `npm install`. You
+can then run the server with `node server`.
+The server should run on `localhost` with default port `3000`. If the
+server runs on another port for any reason, this is printed to the
+console when the server starts, e.g. `Listening on port 3001`.
